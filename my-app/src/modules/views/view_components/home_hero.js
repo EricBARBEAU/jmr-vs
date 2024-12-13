@@ -2,7 +2,7 @@ import hero_visual from '../../../img/home_hero-visual@2x.png';
 
 function HomeHero() {
   return (
-    <div className="home_hero">
+    <div className="home_hero ctnr_cntr">
     	<div className="home_hero-content">
     		<div className="content_copy">
     			<h1 className="content_copy-main">The gateway to your European dream</h1>

@@ -33,14 +33,31 @@ table {
     font-weight: 400;
   }
 
-  h1, h2
-  {
-    font-size: 7.0rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-  }
-
   b
   {
     font-weight: 800;
+  }
+
+  // Container sizing
+  .ctnr_cntr {
+
+    padding-left: 14vw;
+    padding-right: 14vw;
+
+    @media screen and (max-width: 1480px) {
+      padding-left: 10vw;
+      padding-right: 10vw;
+    }
+    @media screen and (max-width: 1000px) {
+      padding-left: 8vw;
+      padding-right: 8vw;
+    }
+    @media screen and (max-width: 680px) {
+      padding-left: 6vw;
+      padding-right: 6vw;
+    }
+    @media screen and (max-width: 320px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }

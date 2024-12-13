@@ -31,6 +31,10 @@
 
 	html {
 		font-family: $font-copy;
+
+		b {
+			font-weight: 600;
+		}
 	}
 	h1, h2, h3, h4 {
 		font-family: $font-title;
@@ -55,8 +59,14 @@
 	$font-size-20:			2.0rem;
 	$font-size-22:			2.2rem;
 	$font-size-24:			2.4rem;
+
 	$font-size-h1:			5.0rem;	
 	$font-size-h2:			4.0rem;
+	$font-size-h3:			$font-size-24;
+
+	h1 {	font-size: $font-size-h1; font-weight: 800;	}
+	h2 {	font-size: $font-size-h2; font-weight: 600;	}
+	h3 {	font-size: $font-size-h3; font-weight: 600;	}
 
 	// Letter Spacing
 

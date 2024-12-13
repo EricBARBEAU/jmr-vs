@@ -6,9 +6,30 @@
 	border-radius: 30px;
   	font-weight: 600;
 
+  	// Transition
+    transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+
+    transform: translateY(0px);
+
+    &:hover {
+      transform: translateY(-1px);
+    }
+    &:active, &:focus {
+      transform: translateY(1px);
+    }
+
 	// Primary
 	&_primary {
-  		
+		box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+
+  		&:hover {
+  			box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+  		}
+  		&:active, &:focus {
+  			box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+  		}
 	}
 	// Secondary
 	&_secondary {
@@ -16,9 +37,23 @@
 	}
 	// Tertiary
 	&_tertiary {
-  		color: #fff;
+  		color: rgba(255,255,255,0.8);
   		border: 1px solid rgba(255,255,255,0.5);
   		background-color: rgba(255,255,255,0.02);
+
+  		box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+
+  		&:hover, &:active, &:focus {
+  			color: #fff;
+  			border: 1px solid rgba(255,255,255,0.75);
+  			background-color: rgba(255,255,255,0.06);
+  		}
+  		&:hover {
+  			box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+  		}
+  		&:active, &:focus {
+  			box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+  		}
 	}
 
 	// 02 - Colours
@@ -33,6 +68,10 @@
 		background-color: $colour-jmr-yellow;
 		border: 1px solid #f79641;
 		color: #26180D;
+
+		&:hover, &:active, &:focus{
+			background-color: #f79641;
+		}
 	}
 	&_green {
 
