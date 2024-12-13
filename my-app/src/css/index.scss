@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Table of Content
+==================================================
+  
+  01 - Core
+  02 - Modules
+  03 - External
+
+==================================================  */
+
+    /* 01 - Core
+================================================== */
+
+@import 'core/reset';
+@import 'core/variables';
+@import 'core/mixins';
+
+    /* 02 - Modules
+================================================== */
+
+    /* 02 - External
+================================================== */
+
