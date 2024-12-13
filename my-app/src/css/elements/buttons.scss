@@ -1,0 +1,53 @@
+// Styling for buttons
+
+.btn {
+
+	// 01 - Design
+	border-radius: 30px;
+  	font-weight: 600;
+
+	// Primary
+	&_primary {
+  		
+	}
+	// Secondary
+	&_secondary {
+
+	}
+	// Tertiary
+	&_tertiary {
+  		color: #fff;
+  		border: 1px solid rgba(255,255,255,0.5);
+  		background-color: rgba(255,255,255,0.02);
+	}
+
+	// 02 - Colours
+
+	&_blue {
+
+	}
+	&_red {
+
+	}
+	&_yellow {
+		background-color: $colour-jmr-yellow;
+		border: 1px solid #f79641;
+		color: #26180D;
+	}
+	&_green {
+
+	}
+
+	// 03 - Size
+
+	&_lg {
+		font-size: $font-size-18;
+		padding: 14px 24px;
+	}
+	&_md {
+		font-size: $font-size-16;
+	}
+	&_sm {
+		font-size: $font-size-14;
+	}
+}

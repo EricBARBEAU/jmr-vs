@@ -1,7 +1,7 @@
 function Testimonials() {
   return (
     <div>
-      Testimonials page
+      <h1>Testimonials page</h1>
     </div>
   )
 }

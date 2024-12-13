@@ -6,8 +6,9 @@
 ==================================================
   
   01 - Core
-  02 - Modules
-  03 - External
+  02 - Elements
+  03 - Views
+  04 - External
 
 ==================================================  */
 
@@ -18,9 +19,17 @@
 @import 'core/variables';
 @import 'core/mixins';
 
-    /* 02 - Modules
+    /* 02 - Elements
 ================================================== */
 
-    /* 02 - External
+@import 'elements/navbar';
+@import 'elements/buttons';
+
+    /* 02 - Views
+================================================== */
+
+@import 'views/home';
+
+    /* 04 - External
 ================================================== */
 

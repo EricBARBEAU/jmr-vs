@@ -1,25 +1,51 @@
 // Variables used for the website
 
 @use 'sass:color';
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 // 01 - Colours
 
-	// 01-1 - Background Colours
+	// Main
+
+	$colour-jmr-blue:		#5359E9;
+	$colour-jmr-red:		#E5656A;
+	$colour-jmr-yellow:		#FBA356;
+	$colour-jmr-green:		#88D0E2;
+
+	// Background Colours
 
 	
-	// 01-2 - Font Colours
+	// Font Colours
 
 
 // 02 - Typography
 
-	// 01 - Fonts
+	// Fonts
 
-	$font-title:		sans-serif;
-	$font-copy:    		sans-serif;
+	$font-title:		"Afacad", sans-serif;
+	$font-copy:    		"Inter", serif;
 	$font-mono:			monospace;
-	$font-link:			sans-serif;
+	$font-link:			"Inter", serif;
+	$font-button:		"Afacad", sans-serif;
 
-	// 02 - Size
+	html {
+		font-family: $font-copy;
+	}
+	h1, h2, h3, h4 {
+		font-family: $font-title;
+	}
+	code {
+		font-family: $font-mono;
+	}
+	a {
+		font-family: $font-link;
+	}
+	button, .btn {
+		font-family: $font-button;
+	}
+
+	// Size
 
 	$font-size-10:      	1.0rem;
 	$font-size-12:      	1.2rem;
@@ -32,14 +58,12 @@
 	$font-size-h1:			5.0rem;	
 	$font-size-h2:			4.0rem;
 
-	// 03 - Weight
-
-	$font-weight-200:				200;
-	$font-weight-400:				400;
-	$font-weight-500:				500;
-	$font-weight-600:				600;
-	$font-weight-800:				800;
-
-	// 04 - Letter Spacing
+	// Letter Spacing
 
 	$font-spacing-title:	-0.02em;
+
+	// Line Height
+
+	$line-height-100:		100%;
+	$line-height-120:		120%;
+	$line-height-140:		140%;

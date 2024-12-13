@@ -1,0 +1,60 @@
+// Styles below are for the navbar
+
+.navbar {
+
+	// Position
+	position: sticky;
+	top:0px;
+	left: 0px;
+	right: 0px;
+	padding: 30px 62px;
+	// Display
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+  	align-items: center;
+
+
+	// Logo
+	.logo_jmr {
+
+		height: 60px;
+		width:auto;
+		// Logo visual
+		&-img {
+			height: 60px;
+			width:auto;
+		}
+	}
+
+	// Menu
+	&_menu {
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		max-width: 60vw;
+		height: 32px;
+
+		// Menu item
+		&-item {
+
+			padding: 8px;
+			border-radius: 8px;
+
+			a {
+				font-size: $font-size-16;
+				padding: 8px;
+				border-radius: 8px;
+
+				// Hover & Active
+				&:hover, &:active, &:visited {
+					background-color: #F5F5F5;
+				}
+				&:active, &:visited {
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}

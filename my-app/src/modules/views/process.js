@@ -1,7 +1,7 @@
 function Process() {
   return (
     <div>
-      Process page
+      <h1>Process page</h1>
     </div>
   )
 }

@@ -1,7 +1,10 @@
+// Components
+import HomeHero from './view_components/home_hero';
+
 function Home() {
   return (
-    <div>
-      Home page
+    <div className="view view_home">
+      <HomeHero />
     </div>
   )
 }

@@ -8,7 +8,6 @@ import {
 import Nav from './elements/navbar';
 import Footer from './elements/footer';
 // Views import
-// import Test from './views/test';
 import Home from './views/home';
 import Services from './views/services';
 import Process from './views/process';
