@@ -111,10 +111,6 @@
 				// Visual
 				&-visual {
 
-					img {
-						max-height: 210px;
-						width: auto;
-					}
 				}
 			}
   		}
@@ -148,8 +144,26 @@
 				gap: 24px;
 				padding: 24px;
 				width: calc((100% / 3) - 48px);
-				min-height: 260px;
+				min-height: 240px;
 				justify-content: space-between;
+
+				// Transition
+				transition: all .2s ease-in-out;
+				-moz-transition: all .2s ease-in-out;
+				-webkit-transition: all .2s ease-in-out;
+
+				transform: translateY(0px);
+
+				&:hover {
+					transform: translateY(4px);
+				}
+
+				@media screen and (max-width: 1480px) {
+			      min-height: 260px;
+			    }
+			    @media screen and (max-width: 1000px) {
+			      min-height: 300x;
+			    }
 
 				// Styling for each block
 				&-01 {
