@@ -2,88 +2,6 @@
 
 .view_home {
 
-	// 01 - Hero
-	.home_hero {
-		position: relative;
-		display: flex;
-		align-items: center;
-  		align-self: stretch;
-  		gap: 60px;
-  		min-height: 532px;
-  		width: 100%;
-  		justify-content: center;
-		background: linear-gradient(280deg, rgb(98.35181728005409, 103.72326985001564, 246.60389453172684) 0%, rgb(117.00000062584877, 122.00000032782555, 255) 17.499999701976776%, rgb(64.65957999229431, 68.8354267179966, 179.91262435913086) 88.49999904632568%);
-		padding-top: 100px;
-		padding-bottom: 100px;
-
-		// Content (Left)
-		&-content {
-
-			display: flex;
-			flex-direction: column;
-			gap: 30px;
-			
-			// Copy
-			.content_copy {
-				color: #fff;
-				max-width: 40vw;
-				display: flex;
-			  	flex-direction: column;
-			  	gap: 24px;
-
-				// Main
-				&-main {
-				    @media screen and (max-width: 1480px) {
-				      font-size: 4.6rem;
-				    }
-				    @media screen and (max-width: 1000px) {
-				      font-size: 4rem;
-				    }
-				    @media screen and (max-width: 680px) {
-				      font-size: 3.8rem;
-				    }
-				    @media screen and (max-width: 320px) {
-				      font-size: 3.2rem;
-				    }
-				}
-				// Secondary
-				&-secondary {
-					font-size: $font-size-18;
-					line-height: $line-height-140;
-					color: #BBBDFF;
-					max-width: 80%;
-
-					b {
-						color: #fff;
-					}
-				}
-
-			}
-
-			// CTAs
-			.content_ctas {
-				display: inline-flex;
-			  	flex: 0 0 auto;
-			  	gap: 15px;
-			}
-		}
-
-		// Visual (Right)
-		&-visual {
-
-			img {
-				max-width: 40vw;
-				height: auto;
-
-				@media screen and (max-width: 1000px) {
-			      max-width: 30vw;
-			    }
-			}
-		}
-
-	}
-
-	// 02 - Services
 	.home_services {
 		position: relative;
 		display: flex;
@@ -95,5 +13,98 @@
   		width: 100%;
   		padding-top: 85px;
   		padding-bottom: 100px;
+
+  		// Intro
+  		&-intro {
+  			display: flex;
+  			align-items: flex-start;
+  			flex: 0 0 auto;
+			flex-direction: column;
+			gap: 20px;
+			padding-left: 10vw;
+			padding-right: 10vw;
+			text-align: center;
+
+			.intro_title, .intro_subtitle {
+				align-self: stretch;
+			}
+
+			.intro_title {
+				color: $font-color-dark;
+			}
+			.intro_subtitle {
+				color: $font-color-reg;
+				font-size: $font-size-16;
+				line-height: $line-height-140;
+			}
+  		}
+
+  		// Services grid
+  		&-grid {
+  			display: flex;
+  			position: relative;
+			flex: 0 0 auto;
+			flex-direction: column;
+			gap: 60px;
+			justify-content: center;
+			align-items: center;
+
+			// Grid block
+			.grid_blk {
+				position: relative;
+				display: flex;
+				flex: 0 0 auto;
+				gap: 60px;
+				justify-content: center;
+				align-items: center;
+				padding-left: 10vw;
+				padding-right: 10vw;
+
+				&-01, &-03 {
+					flex-direction: row;
+				}
+				&-02 {
+					flex-direction: row-reverse;
+				}
+
+				// Content
+				&-content {
+					display: flex;
+					position: relative;
+					flex-direction: column;
+					align-items: flex-start;
+					flex-grow: 1;
+					gap: 16px;
+					justify-content: center;
+
+					// Title
+					.content_title {
+						color: $font-color-dark;
+					}
+
+					// Copy
+					.content_copy {
+						color: $font-color-reg;
+						font-size: $font-size-14;
+						line-height: $line-height-140;
+
+						b {
+							color: $font-color-dark;
+						}
+					}
+
+					// CTAs
+					.content_ctas {
+						display: inline-flex;
+					}
+				}
+
+				// Visual
+				&-visual {
+
+				}
+			}
+  		}
 	}
 }
+

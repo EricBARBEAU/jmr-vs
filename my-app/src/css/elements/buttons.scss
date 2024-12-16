@@ -2,9 +2,10 @@
 
 .btn {
 
-	// 01 - Design
-	border-radius: 30px;
+		// 01 - Design
+		border-radius: 30px;
   	font-weight: 600;
+  	box-shadow: 0px 1px 10px rgba(0,0,0,0.15);
 
   	// Transition
     transition: all .1s ease-in-out;
@@ -14,25 +15,52 @@
     transform: translateY(0px);
 
     &:hover {
-      transform: translateY(-1px);
+    	transform: translateY(-1px);
+     	box-shadow: 0px 2px 14px rgba(0,0,0,0.1);
     }
     &:active, &:focus {
       transform: translateY(1px);
+      box-shadow: 0px 0px 6px rgba(0,0,0,0.3);
     }
 
 	// Primary
 	&_primary {
-		box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
 
-  		&:hover {
-  			box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
-  		}
-  		&:active, &:focus {
-  			box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
-  		}
+		&.btn_blue {
+
+		}
+		&.btn_red {
+
+		}
+		&.btn_yellow {
+			background-color: $colour-jmr-yellow;
+			border: 1px solid #f79641;
+			color: #26180D;
+
+			&:hover, &:active, &:focus{
+				background-color: #f79641;
+			}
+		}
+		&.btn_green {
+
+		}
+		
 	}
 	// Secondary
 	&_secondary {
+
+		&.btn_blue {
+			color: #575BD3;
+		}
+		&.btn_red {
+			color: #FF8181;
+		}
+		&.btn_yellow {
+			color: #FBA356;
+		}
+		&.btn_green {
+
+		}
 
 	}
 	// Tertiary
@@ -41,50 +69,22 @@
   		border: 1px solid rgba(255,255,255,0.5);
   		background-color: rgba(255,255,255,0.02);
 
-  		box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
-
   		&:hover, &:active, &:focus {
   			color: #fff;
   			border: 1px solid rgba(255,255,255,0.75);
   			background-color: rgba(255,255,255,0.06);
   		}
-  		&:hover {
-  			box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
-  		}
-  		&:active, &:focus {
-  			box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
-  		}
 	}
 
-	// 02 - Colours
-
-	&_blue {
-
-	}
-	&_red {
-
-	}
-	&_yellow {
-		background-color: $colour-jmr-yellow;
-		border: 1px solid #f79641;
-		color: #26180D;
-
-		&:hover, &:active, &:focus{
-			background-color: #f79641;
-		}
-	}
-	&_green {
-
-	}
-
-	// 03 - Size
+	// 02 - Size
 
 	&_lg {
 		font-size: $font-size-18;
 		padding: 14px 24px;
 	}
 	&_md {
-		font-size: $font-size-16;
+		font-size: $font-size-18;
+		padding: 12px 20px;
 	}
 	&_sm {
 		font-size: $font-size-14;

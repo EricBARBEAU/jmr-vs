@@ -1,0 +1,100 @@
+// Global styling
+.hero {
+	position: relative;
+	display: flex;
+	width: 100%;
+
+	.hero_content {
+
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+
+		.content_copy {
+			display: flex;
+		  	flex-direction: column;
+		  	gap: 24px;
+		}
+
+		.content_ctas {
+			display: inline-flex;
+		  	flex: 0 0 auto;
+		  	gap: 15px;
+		}
+
+	}
+	
+	.hero_visual {
+
+	}
+
+}
+
+
+// 01 - Homepage hero
+.home_hero {
+	align-items: center;
+	align-self: stretch;
+	gap: 60px;
+	min-height: 532px;
+	justify-content: center;
+	background: linear-gradient(280deg, rgb(98.35181728005409, 103.72326985001564, 246.60389453172684) 0%, rgb(117.00000062584877, 122.00000032782555, 255) 17.499999701976776%, rgb(64.65957999229431, 68.8354267179966, 179.91262435913086) 88.49999904632568%);
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	// Content (Left)
+	&-content {
+		
+		// Copy
+		.content_copy {
+			color: #fff;
+			max-width: 40vw;
+
+			// Main
+			&-main {
+			    @media screen and (max-width: 1480px) {
+			      font-size: 4.6rem;
+			    }
+			    @media screen and (max-width: 1000px) {
+			      font-size: 4rem;
+			    }
+			    @media screen and (max-width: 680px) {
+			      font-size: 3.8rem;
+			    }
+			    @media screen and (max-width: 320px) {
+			      font-size: 3.2rem;
+			    }
+			}
+			// Secondary
+			&-secondary {
+				font-size: $font-size-18;
+				line-height: $line-height-140;
+				color: #BBBDFF;
+				max-width: 80%;
+
+				b {
+					color: #fff;
+				}
+			}
+
+		}
+
+	}
+
+	// Visual (Right)
+	&-visual {
+
+		img {
+			max-width: 40vw;
+			height: auto;
+
+			@media screen and (max-width: 1000px) {
+		      max-width: 30vw;
+		    }
+		}
+	}
+}
+
+// 01 - Homepage hero
+
+// 02 - Process page hero
