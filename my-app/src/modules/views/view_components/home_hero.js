@@ -16,7 +16,7 @@ function HomeHero() {
     		</div>
     	</div>
     	<div className="hero_visual home_hero-visual">
-    		<img src={hero_visual} alt="Something" />
+    		<img src={hero_visual} alt="Hero visual" />
     	</div>
     </div>
   );
