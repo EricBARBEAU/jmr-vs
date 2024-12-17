@@ -13,14 +13,9 @@
 		padding-right: 10px;
 		text-align: left;
 
-		@media screen and (min-width: 1001px) {
+		@media screen and (min-width: 680px) {
 			padding-left: 6vw;
 			padding-right: 6vw;
-			text-align: center;
-		}
-		@media screen and (min-width: 680px) and (max-width: 1000px) {
-			padding-left: 10vw;
-			padding-right: 10vw;
 			text-align: center;
 		}
 

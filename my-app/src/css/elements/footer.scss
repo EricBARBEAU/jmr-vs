@@ -95,6 +95,16 @@
 		background-color: #23268A;
 		height: 100%;
 		width: calc((25% - 75px) + 12vw);
+
+		@media screen and (max-width: 1480px) {
+	      width: calc((25% - 75px) + 10vw);
+	    }
+	    @media screen and (max-width: 1000px) {
+	      width: calc((25% - 75px) + 8vw);
+	    }
+	    @media screen and (max-width: 680px) {
+	      width: calc((25% - 75px) + 6vw);
+	    }
 	}
 
 

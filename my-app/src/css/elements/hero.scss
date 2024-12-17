@@ -3,6 +3,9 @@
 	position: relative;
 	display: flex;
 	width: 100%;
+	align-items: center;
+	align-self: stretch;
+	justify-content: center;
 
 	.hero_content {
 
@@ -14,40 +17,7 @@
 			display: flex;
 		  	flex-direction: column;
 		  	gap: 24px;
-		}
-
-		.content_ctas {
-			display: inline-flex;
-		  	flex: 0 0 auto;
-		  	gap: 15px;
-		}
-
-	}
-	
-	.hero_visual {
-
-	}
-
-}
-
-
-// 01 - Homepage hero
-.home_hero {
-	align-items: center;
-	align-self: stretch;
-	gap: 60px;
-	min-height: 532px;
-	justify-content: center;
-	background: linear-gradient(280deg, rgb(98.35181728005409, 103.72326985001564, 246.60389453172684) 0%, rgb(117.00000062584877, 122.00000032782555, 255) 17.499999701976776%, rgb(64.65957999229431, 68.8354267179966, 179.91262435913086) 88.49999904632568%);
-	padding-top: 100px;
-	padding-bottom: 100px;
-
-	// Content (Left)
-	&-content {
-		
-		// Copy
-		.content_copy {
-			color: #fff;
+		  	color: #fff;
 			max-width: 40vw;
 
 			// Main
@@ -69,32 +39,113 @@
 			&-secondary {
 				font-size: $font-size-18;
 				line-height: $line-height-140;
-				color: #BBBDFF;
 				max-width: 80%;
 
 				b {
 					color: #fff;
 				}
 			}
-
 		}
 
+		.content_ctas {
+			display: inline-flex;
+		  	flex: 0 0 auto;
+		  	gap: 15px;
+		}
+
+	}
+	
+	.hero_visual {
+
+	}
+
+}
+
+
+// 01 - Homepage hero
+.home_hero {
+	gap: 60px;
+	min-height: 532px;
+	background: linear-gradient(280deg, rgb(98.35181728005409, 103.72326985001564, 246.60389453172684) 0%, rgb(117.00000062584877, 122.00000032782555, 255) 17.499999701976776%, rgb(64.65957999229431, 68.8354267179966, 179.91262435913086) 88.49999904632568%);
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	// Content
+	.content_copy-secondary {
+		color: #BBBDFF;
 	}
 
 	// Visual (Right)
 	&-visual {
 
 		img {
-			max-width: 40vw;
+			max-width: 36vw;
 			height: auto;
 
 			@media screen and (max-width: 1000px) {
-		      max-width: 30vw;
+		      max-width: 28vw;
 		    }
 		}
+
 	}
 }
 
-// 01 - Homepage hero
-
 // 02 - Process page hero
+.process_hero {
+	gap: 60px;
+	min-height: 520px;
+	background: linear-gradient(280deg, rgb(255, 108.46967875957489, 134.9510657787323) 0%, rgb(255, 119.23177286982536, 143.76818865537643) 17.499999701976776%, rgb(255, 88.97101745009422, 119.40966412425041) 88.49999904632568%);
+	padding-top: 100px;
+	padding-bottom: 80px;
+
+	// Content
+	.content_copy-main {
+		max-width: 80%;
+	}
+	.content_copy-secondary {
+		color: #FFC4C4;
+	}
+
+	// Visual (Right)
+	&-visual {
+
+		img {
+			max-width: 36vw;
+			height: auto;
+
+			@media screen and (max-width: 1000px) {
+		      max-width: 28vw;
+		    }
+		}
+
+	}
+}
+
+// 03 - Contact page hero
+.contact_hero {
+	gap: 60px;
+	min-height: 460px;
+	background: linear-gradient(280deg, rgb(98.35181728005409, 103.72326985001564, 246.60389453172684) 0%, rgb(117.00000062584877, 122.00000032782555, 255) 17.499999701976776%, rgb(64.65957999229431, 68.8354267179966, 179.91262435913086) 88.49999904632568%);
+	padding-top: 100px;
+	padding-bottom: 80px;
+
+	// Content
+	.content_copy-secondary {
+		color: #BBBDFF;
+	}
+
+	// Visual (Right)
+	&-visual {
+
+		img {
+			max-width: 32vw;
+			height: auto;
+
+			@media screen and (max-width: 1000px) {
+		      max-width: 24vw;
+		    }
+		}
+
+	}
+}
+
