@@ -1,8 +1,61 @@
+import jmr_logo from '../../img/jmr-logo_ondark.svg';
+import facebook from '../../img/logo_footer-facebook.svg';
+import instagram from '../../img/logo_footer-instagram.svg';
+import youtube from '../../img/logo_footer-youtube.svg';
 
 function Footer() {
   return (
-    <footer className="">
-      This is the footer
+    <footer className="footer ctnr_cntr">
+      <div className="footer_blk footer_blk-01">
+        <img src={jmr_logo} className="logo_jmr-img" alt="JMR Visas Services logo" />
+        <div className="social_links">
+          <a href="https://www.facebook.com/jmrvisaservices" className="social_link social_link-fb" alt="Facebook">
+            <img src={facebook} className="" alt="Facebook logo" />
+          </a>
+          <a href="https://www.instagram.com/jmr.vs/" className="social_link social_link-ig" alt="Instagram">
+            <img src={instagram} className="" alt="Instagram logo" />
+          </a>
+          <a href="https://www.youtube.com/@JMRvisas" className="social_link social_link-yt" alt="Youtube">
+            <img src={youtube} className="" alt="Youtube logo" />
+          </a>
+        </div>
+        <div className="footer_email">
+          contact@jmrvisas.com
+        </div>
+      </div>
+      <div className="footer_blk footer_blk-02">
+        <h4 className="footer_blk-title">Our services</h4>
+        <div className="footer_blk-content">
+          <a href="">Visa service packages</a>
+          <a href="">Consultation calls</a>
+          <a href="">Letter services</a>
+          <a href="">Flight/Hotel reservation</a>
+          <a href="">Appointment scheduling</a>
+        </div>
+      </div>
+      <div className="footer_blk footer_blk-03">
+        <h4 className="footer_blk-title">Our process</h4>
+        <div className="footer_blk-content">
+          <a href="">Visa service packages</a>
+          <a href="">Consultation calls</a>
+        </div>
+      </div>
+      <div className="footer_blk footer_blk-04">
+        <h4 className="footer_blk-title">Legal informations</h4>
+        <div className="footer_blk-content">
+          <div>
+            Business name registered under the Department of Trade and 
+            Industry of the Philippines.
+          </div>
+          <div>
+            Registration number: <b>6482135</b>
+          </div>
+        </div>
+        <div className="footer_legal">
+          jmrvisas.com · 2025 · All Rights Reserved. 
+        </div>
+      </div>
+      <div className="footer-bg"></div>
     </footer>
   );
 }

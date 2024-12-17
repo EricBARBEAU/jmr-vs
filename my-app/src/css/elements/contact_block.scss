@@ -1,0 +1,64 @@
+// Styling for contact block
+
+.contact_block {
+	position: relative;
+	min-height: 342px;
+	justify-content: center;
+	align-content: center;
+	background: linear-gradient(280deg, rgb(98.35181728005409, 103.72326985001564, 246.60389453172684) 0%, rgb(117.00000062584877, 122.00000032782555, 255) 17.499999701976776%, rgb(64.65957999229431, 68.8354267179966, 179.91262435913086) 88.49999904632568%);
+	overflow: hidden;
+	padding-top: 85px;
+	padding-bottom: 100px;
+
+	// Content
+	&-content {
+		position: relative;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		align-self: stretch;
+		gap: 48px;
+		flex-direction: row;
+		z-index: 10;
+
+		.contact_text, .contact_ctas {
+			width: calc(50% - 48px);
+		}
+
+		.contact_text {
+			display: inline-flex;
+			position: relative;
+			align-items: flex-start;
+			flex: 0 0 auto;
+			flex-direction: column;
+			gap: 10px;
+
+			&-title {
+				color: #fff;
+			}
+			&-body {
+				color: #DEDFFF;
+				font-size: $font-size-16;
+				line-height: $line-height-140;
+			}
+		}
+		.contact_ctas {
+			.btn {
+				display: block;
+			}
+		}
+	}
+
+	// Background
+	&-bg {
+		background-color: transparent;
+		background-image: url("../../img/contact_bg.svg");
+		background-size: 100% 100%;
+		height: 342px;
+		opacity: 1;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 773px;
+	}
+}

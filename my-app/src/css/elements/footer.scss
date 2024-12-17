@@ -1,0 +1,101 @@
+// Styles below are for the footer
+
+.footer {
+
+	display: flex;
+	position: relative;
+	align-items: flex-start;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #2a2c8f;
+	overflow: hidden;
+	padding-top: 60px;
+	padding-bottom: 100px;
+
+	// Global block design
+	&_blk {
+
+		display: flex;
+		position: relative;
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 24px;
+		width: calc((100% / 4) - 72px);
+		z-index: 10;
+
+		// Title
+		&-title {
+			font-size: $font-size-h4;
+			color: #fff;
+			font-weight: 600;
+			height: 40px;
+		}
+
+		// Content
+		&-content {
+			display: flex;
+			position: relative;
+			flex-direction: column;
+			font-size: $font-size-16;
+			gap: 16px;
+			color: #BBBDFF;
+
+			a:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	// Block 1
+	&_blk-01 {
+
+		.social_links {
+			display: inline-flex;
+			position: relative;
+			align-items: center;
+			flex: 0 0 auto;
+			gap: 16px;
+			padding: 10px 0px 0px;
+		}
+
+		.footer_email {
+			color: #fff;
+			font-size: $font-size-16;
+			text-decoration: underline;
+			font-weight: 600;
+		}
+	}
+
+	// Block 4
+	&_blk-04 {
+
+		.footer_blk-content {
+			font-size: $font-size-12;
+			line-height: $line-height-140;
+
+			b {
+				font-weight: 600;
+				font-size: $font-size-14;
+			}
+		}
+
+		.footer_legal {
+			color: #fff;
+			font-size: $font-size-10;
+			margin-top: 20px;
+		}
+	}
+
+	// Background
+	.footer-bg {
+		display: block;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		background-color: #23268A;
+		height: 100%;
+		width: calc((25% - 75px) + 12vw);
+	}
+
+
+}

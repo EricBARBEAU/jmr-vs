@@ -9,9 +9,20 @@
 		flex: 0 0 auto;
 		flex-direction: column;
 		gap: 20px;
-		padding-left: 10vw;
-		padding-right: 10vw;
-		text-align: center;
+		padding-left: 10px;
+		padding-right: 10px;
+		text-align: left;
+
+		@media screen and (min-width: 1001px) {
+			padding-left: 6vw;
+			padding-right: 6vw;
+			text-align: center;
+		}
+		@media screen and (min-width: 680px) and (max-width: 1000px) {
+			padding-left: 10vw;
+			padding-right: 10vw;
+			text-align: center;
+		}
 
 		.intro_title, .intro_subtitle {
 			align-self: stretch;
@@ -39,11 +50,32 @@
   		align-self: stretch;
   		flex-direction: column;
   		justify-content: center;
-  		gap: 80px;
+  		gap: 40px;
   		width: 100%;
-  		padding-top: 85px;
-  		padding-bottom: 100px;
-	}
+  		padding-top: 50px;
+  		padding-bottom: 60px;
+
+  		@media screen and (min-width: 1001px) {
+	    	padding-top: 85px;
+  			padding-bottom: 100px;
+  			gap: 80px;
+	    }
+	    @media screen and (max-width: 1000px) {
+	    	padding-top: 65px;
+  			padding-bottom: 80px;
+  			gap: 60px;
+	    }
+	    @media screen and (max-width: 680px) {
+	    	padding-top: 65px;
+  			padding-bottom: 80px;
+  			gap: 60px;
+	    }
+	    @media screen and (max-width: 480px) {
+	    	padding-top: 50px;
+  			padding-bottom: 60px;
+  			gap: 40px;
+	    }
+}
 
 	// Services section
 	.home_services {
@@ -63,17 +95,35 @@
 				position: relative;
 				display: flex;
 				flex: 0 0 auto;
+				flex-direction: row;
 				gap: 60px;
 				justify-content: center;
 				align-items: center;
-				padding-left: 10vw;
-				padding-right: 10vw;
+				padding-left: 10px;
+				padding-right: 10px;
 
-				&-01, &-03 {
-					flex-direction: row;
+				@media screen and (min-width: 1001px) {
+					padding-left: 6vw;
+					padding-right: 6vw;
 				}
+				@media screen and (min-width: 680px) and (max-width: 1000px) {
+					padding-left: 10vw;
+					padding-right: 10vw;
+				}
+
+
 				&-02 {
-					flex-direction: row-reverse;
+
+					@media screen and (min-width: 1000px) {
+				    	flex-direction: row-reverse;
+
+						// Text-align from right
+						.grid_blk-content {
+							align-items: flex-end;
+							text-align: right;
+						}
+				    }
+					
 				}
 
 				// Content
@@ -132,6 +182,15 @@
 			width: 100%;
 			flex-direction: row;
 
+			@media screen and (max-width: 1000px) {
+		    	flex-direction: column;
+
+		    	.testimonial_blk {
+		    		width: 100% !important;
+		    		min-height: 200px !important;
+		    	}
+		    }
+
 			// Block
 			.testimonial_blk {
 				display: flex;
@@ -160,9 +219,6 @@
 
 				@media screen and (max-width: 1480px) {
 			      min-height: 260px;
-			    }
-			    @media screen and (max-width: 1000px) {
-			      min-height: 300x;
 			    }
 
 				// Styling for each block
