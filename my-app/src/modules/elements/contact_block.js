@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 function ContactBlk() {
   return (
@@ -12,7 +13,7 @@ function ContactBlk() {
     			</div>
     		</div>
     		<div className="contact_ctas">
-    			<a className="btn btn_secondary btn_xlg btn_blue" type="button" href="/contact" >Send us a message</a>
+          <Link to="/contact" className="btn btn_secondary btn_xlg btn_blue" type="button" alt ="Contact us">Send us a message</Link>
     		</div>
     	</div>
     	<div className="contact_block-bg"></div>

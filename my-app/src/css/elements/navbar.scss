@@ -15,6 +15,11 @@
   	justify-content: space-between;
   	align-items: center;
 
+  	@media screen and (max-width: 1000px) {
+		padding-top: 20px;
+		padding-bottom: 20px;
+    }
+
 
 	// Logo
 	.logo_jmr {
@@ -26,6 +31,13 @@
 			height: 60px;
 			width:auto;
 		}
+
+		@media screen and (max-width: 1000px) {
+			height: 40px;
+			&-img {
+				height: 40px;
+			}
+	    }
 	}
 
 	// Menu
@@ -36,6 +48,13 @@
 		justify-content: space-between;
 		max-width: 60vw;
 		height: 32px;
+
+		@media screen and (max-width: 1000px) {
+			max-width: 80vw;
+	    }
+		@media screen and (max-width: 680px) {
+	      display: none;
+	    }
 
 		// Menu item
 		&-item {
@@ -48,6 +67,12 @@
 				padding: 8px;
 				border-radius: 8px;
 
+				@media screen and (max-width: 1000px) {
+					font-size: $font-size-14;
+					padding: 6px;
+					border-radius: 6px;
+			    }
+
 				// Hover & Active
 				&:hover, &:active, &:focus {
 					background-color: #F5F5F5;
@@ -57,5 +82,15 @@
 				}
 			}
 		}
+	}
+
+	// Mobile menu (hamburger)
+	.mobile_menu {
+		display: block;
+		cursor: pointer;
+
+		@media screen and (min-width: 680px) {
+	      display: none;
+	    }
 	}
 }

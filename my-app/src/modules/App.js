@@ -1,13 +1,10 @@
 // React router
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Elements import
 import Nav from './elements/navbar';
 import Footer from './elements/footer';
 // Views import
+import Layout from './views/layout';
 import Home from './views/home';
 import Services from './views/services';
 import Process from './views/process';
@@ -19,18 +16,20 @@ import Contact from './views/contact';
 function App() {
     return (
       <div className="App">
-        <Router>
+        <BrowserRouter>
             <Nav />
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/services" element={<Services />} />
-                <Route path="/our-process" element={<Process />} />
-                <Route path="/testimonials" element={<Testimonials />} />
-                <Route path="/about-us" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
+                <Route path="/" element={<Layout />} >
+                    <Route index element={<Home />} />
+                    <Route path="/services" element={<Services />} />
+                    <Route path="/our-process" element={<Process />} />
+                    <Route path="/testimonials" element={<Testimonials />} />
+                    <Route path="/about-us" element={<About />} />
+                    <Route path="/contact" element={<Contact />} />
+                </Route>                
             </Routes>
             <Footer />
-        </Router>
+        </BrowserRouter>
       </div>
     );
 }

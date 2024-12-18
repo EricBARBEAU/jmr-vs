@@ -1,18 +1,36 @@
 import jmr_logo from '../../img/jmr-logo_onwhite@2x.png';
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
     <nav className="navbar ctnr_cntr">
-			<a href="/" className="logo logo_jmr" alt="Home">
-				<img src={jmr_logo} className="logo_jmr-img" alt="JMR Visas Services logo" />
-			</a>
+    	<Link to="/" className="logo logo_jmr" alt="Home">
+    		<img src={jmr_logo} className="logo_jmr-img" alt="JMR Visas Services logo" />
+    	</Link>
 			<ul className="navbar_menu">
-				<li className="navbar_menu-item navbar_menu-item--services" ><a href="/services"  target="blank">Services</a></li>
-				<li className="navbar_menu-item navbar_menu-item--process" ><a href="/our-process"  target="blank">Our process</a></li>
-				<li className="navbar_menu-item navbar_menu-item--testimonials" ><a href="/testimonials"  target="blank">Testimonials</a></li>
-				<li className="navbar_menu-item navbar_menu-item--about" ><a href="/about-us"  target="blank">About us</a></li>
-				<li className="navbar_menu-item navbar_menu-item--contact" ><a href="/contact"  target="blank">Contact</a></li>
+				<li className="navbar_menu-item navbar_menu-item--services" >
+					<Link to="/services" alt="Services">Services</Link>
+				</li>
+				<li className="navbar_menu-item navbar_menu-item--process" >
+					<Link to="/our-process" alt="Process">Our process</Link>
+				</li>
+				<li className="navbar_menu-item navbar_menu-item--testimonials" >
+					<Link to="/testimonials" alt="Testimonials">Testimonials</Link>
+				</li>
+				<li className="navbar_menu-item navbar_menu-item--about" >
+					<Link to="/about-us" alt="About us">About us</Link>
+				</li>
+				<li className="navbar_menu-item navbar_menu-item--contact" >
+					<Link to="/contact" alt="Contact">Contact</Link>
+				</li>
 			</ul>
+			<div className="mobile_menu">
+				<svg viewBox="0 0 100 80" width="20" height="20">
+					<rect width="100" height="15"></rect>
+					<rect y="35" width="100" height="15"></rect>
+					<rect y="70" width="100" height="15"></rect>
+				</svg>
+			</div>
     </nav>
   );
 }
