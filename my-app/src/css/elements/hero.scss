@@ -121,7 +121,33 @@
 	}
 }
 
-// 03 - Contact page hero
+// 03 - About page hero
+.about_hero {
+	min-height: 520px;
+	background: url("../../img/about_hero-background@2x.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	&-content {
+		width: 100%;
+	}
+
+	// Content
+	.content_copy {
+
+		&-main {
+			max-width: 80%;
+		}
+		&-secondary {
+			color: #DDD2DD;
+		}
+	}
+}
+
+// 04 - Contact page hero
 .contact_hero {
 	gap: 60px;
 	min-height: 460px;

@@ -21,7 +21,7 @@ function HomeServices() {
             <img src={services_visual_01} alt="Visa service packages" />
           </div>
           <div className="grid_blk-content">
-            <h3 classNAme="content_title">Visa service packages</h3>
+            <h3 className="content_title">Visa service packages</h3>
             <div className="content_copy">
               Navigating the complexities of visa applications can be 
               overwhelming, but our <b>visa service packages</b> are here to 
@@ -38,7 +38,7 @@ function HomeServices() {
             <img src={services_visual_02} alt="Consultation calls" />
           </div>
           <div className="grid_blk-content">
-            <h3 classNAme="content_title">Consultation calls</h3>
+            <h3 className="content_title">Consultation calls</h3>
             <div className="content_copy">
               We offer <b>expert consultation calls</b> designed to maximise your 
               chances of a <b>successful visa application</b>. With <b>personalised 
@@ -55,7 +55,7 @@ function HomeServices() {
             <img src={services_visual_03} alt="Letter services" />
           </div>
           <div className="grid_blk-content">
-            <h3 classNAme="content_title">Letter services</h3>
+            <h3 className="content_title">Letter services</h3>
             <div className="content_copy">
               We specialise in assisting clients with the <b>writing and meticulous 
               review of their documents including cover letters</b>, ensuring every 

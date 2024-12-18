@@ -2,6 +2,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Elements import
 import Nav from './elements/navbar';
+import MobileNav from './elements/mobile-navbar';
 import Footer from './elements/footer';
 // Views import
 import Layout from './views/layout';
@@ -17,6 +18,7 @@ function App() {
     return (
       <div className="App">
         <BrowserRouter>
+            <MobileNav />
             <Nav />
             <Routes>
                 <Route path="/" element={<Layout />} >

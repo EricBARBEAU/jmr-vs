@@ -3,7 +3,7 @@ import ContactHero from './view_components/contact_hero';
 
 function Contact() {
   return (
-    <div>
+    <div className="view view_contact">
       <ContactHero />
       <h1>Contact page</h1>
     </div>

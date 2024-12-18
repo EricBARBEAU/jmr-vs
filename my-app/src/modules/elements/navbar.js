@@ -1,7 +1,14 @@
 import jmr_logo from '../../img/jmr-logo_onwhite@2x.png';
 import { Link } from "react-router-dom";
+import { useState } from 'react';
+
+function openNav() {
+	const mobileNav = document.getElementsByClassName("navbar_mobile");
+	alert(mobileNav);
+}
 
 function Nav() {
+
   return (
     <nav className="navbar ctnr_cntr">
     	<Link to="/" className="logo logo_jmr" alt="Home">
@@ -24,7 +31,7 @@ function Nav() {
 					<Link to="/contact" alt="Contact">Contact</Link>
 				</li>
 			</ul>
-			<div className="mobile_menu">
+			<div className="mobile_menu-cta" onClick={openNav} >
 				<svg viewBox="0 0 100 80" width="20" height="20">
 					<rect width="100" height="15"></rect>
 					<rect y="35" width="100" height="15"></rect>
