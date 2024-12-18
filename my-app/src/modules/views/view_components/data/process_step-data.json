@@ -1,0 +1,58 @@
+[
+  {
+    "id": "process_step process_step-01",
+    "alt": "Step 01",
+    "color": "pill pill_red",
+    "title": "Filling up your information service form",
+    "body": "To be able to best evaluate your profile and visa application chances, some information about yourself will be collected."
+  },
+  {
+    "id": "process_step process_step-02",
+    "alt": "Step 02",
+    "color": "pill pill_yellow",
+    "title": "Pay the service fee",
+    "body": "You will receive an invoice letter with the details for payment in your email for the service(s) you chose. If you have successfully transferred the payment, send us a copy of this transaction for proof of payment. We will confirm the payment as soon as it’s received."
+  },
+  {
+    "id": "process_step process_step-03",
+    "alt": "Step 03",
+    "color": "pill pill_blue",
+    "title": "Your 1 hour consultation call",
+    "body": "We will conduct a one-on-one virtual consultation call for your visa application process. We will discuss, plan strategically and assess all the documentations we will be preparing for your visa application."
+  },
+  {
+    "id": "process_step process_step-04",
+    "alt": "Step 04",
+    "color": "pill pill_green",
+    "title": "Collecting your visa documents",
+    "body": "We will send you the list of requirements you need to gather on your end. Meanwhile, we will be working on the major supporting documents (Scheduling an appointment, fill-up application form, etc) as stated on the visa services you have chosen."
+  },
+  {
+    "id": "process_step process_step-05",
+    "alt": "Step 05",
+    "color": "pill pill_red",
+    "title": "Review of your documents",
+    "body": "Send us your documents at least one week before your visa appointment so we can review them and ensure nothing is missing or wrong.",
+    "body_sub1": "Notice:",
+    "body_sub2": " Submit all documents together. Partial submissions will not be accepted."
+  },
+  {
+    "id": "process_step process_step-06",
+    "alt": "Step 06",
+    "color": "pill pill_yellow",
+    "title": "Attend your visa demand appointment",
+    "body": "After making sure you have all your documents in order, go to your visa demand appointment.",
+    "body_sub1": "Our advices:",
+    "body_sub2": " Do not be late, do not forget your passport, submit ALL your documents, have a positive attitude."
+  },
+  {
+    "id": "process_step process_step-07",
+    "alt": "Step 07",
+    "color": "pill pill_blue",
+    "title": "Wait for the result",
+    "body": "Once you have submitted all the requirements, the visa centre will forward your application to the Embassy/consulate you are applying for.",
+    "body_sub1": "Notice:",
+    "body_sub2": " Embassy’s standard processing timeline is from 15-30 days"
+  }
+
+]

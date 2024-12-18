@@ -1,0 +1,156 @@
+// Styling for the process page
+
+.view_process {
+
+	// Sizing for content
+	.process_content {
+		position: relative;
+		display: flex;
+		align-items: center;
+  		align-self: stretch;
+  		flex-direction: column;
+  		justify-content: center;
+  		gap: 50px;
+  		width: 100%;
+  		padding-top: 60px;
+  		padding-bottom: 80px;
+
+  		// padding-left: 10px;
+		// padding-right: 10px;
+
+		// @media screen and (min-width: 680px) {
+		// 	padding-left: 6vw;
+		// 	padding-right: 6vw;
+		// }
+
+  		// Process steps
+  		.process_step {
+
+  			//Global
+  			display: flex;
+  			position: relative;
+			align-items: center;
+			align-self: stretch;
+			gap: 40px;
+			width: 100%;
+
+			// Border
+			&-01, &-02, &-03, &-04, &-05, &-06 {
+				border-bottom: 1px solid #ECECEC;
+			}
+			// Alignment
+			&-01, &-03, &-05, &-07 {
+				padding: 0px 0px 40px 20px;
+			}
+			&-02, &-04, &-06 {
+				padding: 0px 0px 40px 40px;
+			}
+
+			// Visual
+			.step_visual {
+				display: block;
+				height: 80px;
+				width: 80px;
+			}
+
+			&-01 .step_visual {
+				background: url("../../img/process_step-01@2x.png") no-repeat;
+				background-size: contain;
+			}
+			&-02 .step_visual {
+				background: url("../../img/process_step-02@2x.png") no-repeat;
+				background-size: contain;
+			}
+			&-03 .step_visual {
+				background: url("../../img/process_step-03@2x.png") no-repeat;
+				background-size: contain;
+			}
+			&-04 .step_visual {
+				background: url("../../img/process_step-04@2x.png") no-repeat;
+				background-size: contain;
+			}
+			&-05 .step_visual {
+				background: url("../../img/process_step-05@2x.png") no-repeat;
+				background-size: contain;
+			}
+			&-06 .step_visual {
+				background: url("../../img/process_step-06@2x.png") no-repeat;
+				background-size: contain;
+			}
+			&-07 .step_visual {
+				background: url("../../img/process_step-07@2x.png") no-repeat;
+				background-size: contain;
+			}
+
+			// Content
+			.step_content {
+				display: flex;
+				position: relative;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 10px;
+				max-width: 90%;
+
+				@media screen and (min-width: 1200px) {
+					max-width: 80%;
+				}	
+
+				// Title
+				&-title {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					gap: 8px;
+					color: $font-color-dark;
+					line-height: $line-height-120;
+				}
+
+				// Body
+				&-body {
+					font-size: $font-size-14;
+					color: $font-color-reg;
+					line-height: $line-height-140;
+				}
+
+				// Sub
+				&-sub {
+					font-size: $font-size-14;
+					color: $font-color-reg;
+					line-height: $line-height-140;
+					font-style: italic;
+
+					b {
+						color: $font-color-dark;
+						font-weight: 800;
+						font-style: normal;
+					}
+				}
+
+				// Pill
+				.pill {
+					display: block;
+					padding: 8px 12px;
+					border-radius: 30px;
+					text-transform: uppercase;
+					font-size: $font-size-12;
+					font-weight: 800;
+					color: #fff;
+
+					// Colors
+					&_red {
+						background-color: #FD6969;
+					}
+					&_yellow {
+						background-color: #FBA356;
+					}
+					&_blue {
+						background-color: #6E74FC;
+					}
+					&_green {
+						background-color: #4CAFAF;
+					}
+				}
+			}
+  		}
+  	}
+}
