@@ -16,7 +16,7 @@ function Nav() {
     	</Link>
 			<ul className="navbar_menu">
 				<li className="navbar_menu-item navbar_menu-item--services" >
-					<Link to="/services" alt="Services">Services</Link>
+					<Link to="/services/visa-service-packages" alt="Services">Services</Link>
 				</li>
 				<li className="navbar_menu-item navbar_menu-item--process" >
 					<Link to="/our-process" alt="Process">Our process</Link>

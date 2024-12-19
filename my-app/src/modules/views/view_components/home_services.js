@@ -2,6 +2,8 @@ import services_visual_01 from '../../../img/home_services-packages@2x.png';
 import services_visual_02 from '../../../img/home_services-calls@2x.png';
 import services_visual_03 from '../../../img/home_services-letters@2x.png';
 
+import { Link } from "react-router-dom";
+
 function HomeServices() {
   return (
     <div className="home_services ctnr_cntr">
@@ -29,7 +31,7 @@ function HomeServices() {
               paperwork while you <b>focus on planning your journey</b>.
             </div>
             <div className="content_ctas">
-              <a href="/services" className="btn btn_secondary btn_lg btn_red">Learn more</a>
+              <Link to="/services/visa-service-packages" className="btn btn_secondary btn_lg btn_red" alt="Service packages">Learn more</Link>
             </div>
           </div>
         </div>
@@ -46,7 +48,7 @@ function HomeServices() {
               with confidence and clarity.
             </div>
             <div className="content_ctas">
-              <a href="/services" className="btn btn_secondary btn_lg btn_yellow">Learn more</a>
+              <Link to="/services/consultation-calls" className="btn btn_secondary btn_lg btn_yellow" alt="Consultation calls">Learn more</Link>
             </div>
           </div>
         </div>
@@ -63,7 +65,7 @@ function HomeServices() {
               <b>successful application</b>.
             </div>
             <div className="content_ctas">
-              <a href="/services" className="btn btn_secondary btn_lg btn_blue">Learn more</a>
+              <Link to="/services/letter-services" className="btn btn_secondary btn_lg btn_blue" alt="Letter services">Learn more</Link>
             </div>
           </div>
         </div>

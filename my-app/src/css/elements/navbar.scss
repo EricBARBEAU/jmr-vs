@@ -1,5 +1,6 @@
 // Styles below are for the navbar
 
+// 01 - Main navbar
 .navbar {
 
 	// Position
@@ -101,7 +102,7 @@
 	}
 }
 
-// Actual mobile navbar
+// 02 - Mobile navbar
 .navbar_mobile {
 
 	display: none;
@@ -145,4 +146,58 @@
 		}
 	}
 	
+}
+
+
+// 03 - Service Navbar
+.services_subnav {
+
+	position: relative;
+	top: 0px;
+  	left: 0px;
+  	right: 0px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	background-color: #ecedff;
+	flex-wrap: wrap;
+	gap: 24px;
+	overflow: hidden;
+	height: 64px;
+
+	.subnav_root {
+		font-size: $font-size-18;
+		font-weight: 600;
+		color: $font-color-dark;
+		padding-top: 22px;
+	}
+
+	.subnav_menu {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+
+		li.subnav_menu-item a {
+			position: relative;
+			display: inline-flex;
+			border-bottom: 4px solid transparent;
+			gap: 8px;
+			justify-content: center;
+			padding: 24px 10px 20px 10px;
+			font-size: $font-size-16;
+			color: $font-color-dark;
+
+			&:hover {
+				background-color: #E5E6FF;
+				border-color: #E5E6FF;
+			}
+
+			&:active, &:focus {
+				border-color: #e5656a;
+				color: #e5656a;
+				font-weight: 600;
+			}
+		}
+	}
+
 }
