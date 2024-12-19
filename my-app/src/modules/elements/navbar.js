@@ -1,6 +1,5 @@
 import jmr_logo from '../../img/jmr-logo_onwhite@2x.png';
 import { NavLink } from "react-router-dom";
-import { useState } from 'react';
 
 function openNav() {
 	const mobileNav = document.getElementsByClassName("navbar_mobile");

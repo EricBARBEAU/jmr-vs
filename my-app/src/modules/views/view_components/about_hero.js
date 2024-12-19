@@ -1,4 +1,3 @@
-import hero_visual from '../../../img/about_hero-background@2x.jpg';
 
 function AboutHero() {
   return (
