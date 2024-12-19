@@ -1,4 +1,5 @@
 import hero_visual from '../../../img/process_hero-visual@2x.png';
+import { Link } from "react-router-dom";
 
 function ProcessHero() {
   return (
@@ -13,8 +14,8 @@ function ProcessHero() {
     			</div>
     		</div>
     		<div className="content_ctas">
-    			<a className="btn btn_primary btn_yellow btn_lg" type="button" href="/services" >Our services</a>
-    			<a className="btn btn_tertiary btn_lg" type="button" href="/contact" >Contact us</a>
+          <Link to="/services/visa-service-packages" className="btn btn_primary btn_yellow btn_lg" type="button" alt="Services">Our services</Link>
+          <Link to="/contact" className="btn btn_tertiary btn_lg" type="button" alt ="Contact">Contact us</Link>
     		</div>
     	</div>
     	<div className="hero_visual process_hero-visual">

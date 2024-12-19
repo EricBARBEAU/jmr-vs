@@ -76,9 +76,10 @@
 
 				// Hover & Active
 				&:hover, &:active, &:focus {
-					background-color: #F5F5F5;
+					background-color: #F7F7FD;
 				}
-				&:active, &:focus {
+				&.active {
+					background-color: #F7F7FD;
 					font-weight: 500;
 				}
 			}
@@ -183,16 +184,22 @@
 			border-bottom: 4px solid transparent;
 			gap: 8px;
 			justify-content: center;
-			padding: 24px 10px 20px 10px;
+			padding: 24px 12px 20px 12px;
 			font-size: $font-size-16;
 			color: $font-color-dark;
+
+			// Transition
+			transition: background-color .2s ease-in-out;
+			-moz-transition: background-color .2s ease-in-out;
+			-webkit-transition: background-color .2s ease-in-out;
 
 			&:hover {
 				background-color: #E5E6FF;
 				border-color: #E5E6FF;
 			}
 
-			&:active, &:focus {
+			&.active {
+				background-color: #E5E6FF;
 				border-color: #e5656a;
 				color: #e5656a;
 				font-weight: 600;

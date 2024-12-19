@@ -1,4 +1,5 @@
 import hero_visual from '../../../img/contact_hero-visual@2x.png';
+import { Link } from "react-router-dom";
 
 function ContactHero() {
   return (
@@ -13,7 +14,7 @@ function ContactHero() {
     			</div>
     		</div>
     		<div className="content_ctas">
-    			<a className="btn btn_primary btn_yellow btn_lg" type="button" href="/services" >See our services</a>
+          <Link to="/services/visa-service-packages" className="btn btn_primary btn_yellow btn_lg" type="button" alt="Services">See our services</Link>
     		</div>
     	</div>
     	<div className="hero_visual contact_hero-visual">

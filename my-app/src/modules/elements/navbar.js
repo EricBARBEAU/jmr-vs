@@ -1,5 +1,5 @@
 import jmr_logo from '../../img/jmr-logo_onwhite@2x.png';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from 'react';
 
 function openNav() {
@@ -11,24 +11,24 @@ function Nav() {
 
   return (
     <nav className="navbar ctnr_cntr">
-    	<Link to="/" className="logo logo_jmr" alt="Home">
+    	<NavLink to="/" className="logo logo_jmr" alt="Home">
     		<img src={jmr_logo} className="logo_jmr-img" alt="JMR Visas Services logo" />
-    	</Link>
+    	</NavLink>
 			<ul className="navbar_menu">
 				<li className="navbar_menu-item navbar_menu-item--services" >
-					<Link to="/services/visa-service-packages" alt="Services">Services</Link>
+					<NavLink to="/services/visa-service-packages" alt="Services">Services</NavLink>
 				</li>
 				<li className="navbar_menu-item navbar_menu-item--process" >
-					<Link to="/our-process" alt="Process">Our process</Link>
+					<NavLink to="/our-process" alt="Process">Our process</NavLink>
 				</li>
 				<li className="navbar_menu-item navbar_menu-item--testimonials" >
-					<Link to="/testimonials" alt="Testimonials">Testimonials</Link>
+					<NavLink to="/testimonials" alt="Testimonials">Testimonials</NavLink>
 				</li>
 				<li className="navbar_menu-item navbar_menu-item--about" >
-					<Link to="/about-us" alt="About us">About us</Link>
+					<NavLink to="/about-us" alt="About us">About us</NavLink>
 				</li>
 				<li className="navbar_menu-item navbar_menu-item--contact" >
-					<Link to="/contact" alt="Contact">Contact</Link>
+					<NavLink to="/contact" alt="Contact">Contact</NavLink>
 				</li>
 			</ul>
 			<div className="mobile_menu-cta" onClick={openNav} >
