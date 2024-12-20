@@ -3,6 +3,8 @@ import facebook from '../../img/logo_footer-facebook.svg';
 import instagram from '../../img/logo_footer-instagram.svg';
 import youtube from '../../img/logo_footer-youtube.svg';
 
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <footer className="footer ctnr_cntr">
@@ -26,11 +28,11 @@ function Footer() {
       <div className="footer_blk footer_blk-02">
         <h4 className="footer_blk-title">Our services</h4>
         <div className="footer_blk-content">
-          <a href="">Visa service packages</a>
-          <a href="">Consultation calls</a>
-          <a href="">Letter services</a>
-          <a href="">Flight/Hotel reservation</a>
-          <a href="">Appointment scheduling</a>
+          <Link to="/services/visa-service-packages" alt ="Service packages">Visa service packages</Link>
+          <Link to="/services/consultation-calls" alt ="Consultation calls">Consultation calls</Link>
+          <Link to="/services/letter-services" alt ="Letter services">Letter services</Link>
+          <Link to="/services/reservations" alt ="Flight/Hotel reservation">Flight/Hotel reservation</Link>
+          <Link to="/services/appointment-scheduling" alt ="Appointment scheduling">Appointment scheduling</Link>
         </div>
       </div>
       <div className="footer_blk footer_blk-03">
