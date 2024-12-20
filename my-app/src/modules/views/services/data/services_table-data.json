@@ -1,0 +1,109 @@
+[
+  {
+    "id": "tourist",
+    "title": "Tourist visa",
+    "processing_time": " 1 month",
+
+    "visa_info_01": "For ",
+    "visa_info_02": "self-funded ",
+    "visa_info_03": "travellers going to Europe.",
+
+    "inclusion_01": "1 hour consultation call",
+    "inclusion_02": "Completed list of requirements",
+	"inclusion_03": "Cover letter",
+	"inclusion_04": "Letter of intent to return",
+	"inclusion_05": "Day-to-Day itinerary",
+	"inclusion_06": "Confirmed flight reservations",
+	"inclusion_07": "Confirmed hotel reservations",
+	"inclusion_08": "Schengen application form",
+	"inclusion_09": "Visa appointment schedule",
+	"inclusion_10": "Chat support assistance 24/7",
+	"inclusion_11": "Full documents check up",
+	"inclusion_12": "Immigration tips and advices",
+
+	"exclusion_01": "Schengen travel insurance",
+	"exclusion_02": "Visa fees",
+	"exclusion_03": "Other consular services"
+  },
+  {
+    "id": "visit",
+    "title": "Visit visa",
+    "processing_time": " 1 month",
+
+    "visa_info_01": "For ",
+    "visa_info_02": "sponsored trip ",
+    "visa_info_03": "travellers going to Europe.",
+
+    "inclusion_01": "1 hour consultation call",
+    "inclusion_02": "Completed list of requirements",
+	"inclusion_03": "Cover letter",
+	"inclusion_04": "Invitation letter",
+	"inclusion_05": "Sponsorship letter",
+	"inclusion_06": "Day-to-Day itinerary",
+	"inclusion_07": "Confirmed flight reservations",
+	"inclusion_08": "Schengen application form",
+	"inclusion_09": "Visa appointment schedule",
+	"inclusion_10": "Chat support assistance 24/7",
+	"inclusion_11": "Full documents check up",
+	"inclusion_12": "Sponsorship certificates guide",
+	"inclusion_13": "Immigration tips and advices",
+
+	"exclusion_01": "Schengen travel insurance",
+	"exclusion_02": "Visa fees",
+	"exclusion_03": "Other consular services"
+  },
+  {
+    "id": "marriage",
+    "title": "Marriage/Fiancé visa",
+    "processing_time": " 2 months",
+
+    "visa_info_01": "For couples who want to ",
+    "visa_info_02": "get married ",
+    "visa_info_03": "in Europe.",
+
+    "inclusion_01": "1 hour consultation call",
+    "inclusion_02": "Completed list of requirements",
+	"inclusion_03": "Cover letter",
+	"inclusion_04": "Invitation letter",
+	"inclusion_05": "Sponsorship letter",
+	"inclusion_06": "Day-to-Day itinerary",
+	"inclusion_07": "Confirmed flight reservations",
+	"inclusion_08": "Schengen application form",
+	"inclusion_09": "Visa appointment schedule",
+	"inclusion_10": "Chat support assistance 24/7",
+	"inclusion_11": "Full documents check up",
+	"inclusion_12": "Immigration tips and advices",
+	"inclusion_13": "Marriage documents guide",
+	"inclusion_14": "CFO guide",
+
+	"exclusion_01": "Schengen travel insurance",
+	"exclusion_02": "Visa fees",
+	"exclusion_03": "Other consular services"
+  },
+  {
+    "id": "long-stay",
+    "title": "Long stay visa",
+    "processing_time": " 1 month",
+
+    "visa_info_01": "For travellers planning to  ",
+    "visa_info_02": "settle down ",
+    "visa_info_03": "in Europe.",
+
+    "inclusion_01": "1 hour consultation call",
+    "inclusion_02": "Completed list of requirements",
+	"inclusion_03": "Cover letter",
+	"inclusion_04": "Invitation letter",
+	"inclusion_05": "Sponsorship letter",
+	"inclusion_06": "Confirmed flight reservations",
+	"inclusion_07": "Schengen application form",
+	"inclusion_08": "Visa appointment schedule",
+	"inclusion_09": "Chat support assistance 24/7",
+	"inclusion_10": "Full documents check up",
+	"inclusion_11": "Immigration tips and advices",
+	"inclusion_12": "CFO guide",
+
+	"exclusion_01": "Schengen travel insurance",
+	"exclusion_02": "Visa fees",
+	"exclusion_03": "Other consular services"
+  }
+]

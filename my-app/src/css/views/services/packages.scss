@@ -1,0 +1,372 @@
+// Service Packages
+
+.services_view-packages {
+
+	// Table for services (global)
+	.services_table {
+		display: flex;
+		position: relative;
+		align-items: flex-start;
+		align-self: stretch;
+		flex-wrap: wrap;
+		gap: 6px 6px;
+		justify-content: center;
+		padding: 40px 30px 0px;
+
+		&-section {
+			display: flex;
+			align-items: flex-start;
+			position: relative;
+			flex-direction: column;
+			min-width: 270px;
+			max-width: 290px;
+			transform: translateY(0px);
+
+			// Transition
+			transition: all .3s ease-in-out;
+			-moz-transition: all .3s ease-in-out;
+			-webkit-transition: all .3s ease-in-out;
+
+			&:hover {
+				transform: translateY(-5px);
+			}
+		}
+	}
+
+	// Sections of table (global)
+	.table {
+
+		// Title
+		&_title {
+			display: flex;
+			position: relative;
+			width: 100%;
+			align-items: center;
+			align-self: stretch;
+			gap: 10px;
+			justify-content: center;
+			padding: 22px 0px 20px;
+			background-color: #ffffff;
+			border-top: 4px solid transparent;
+			border-left: 1px solid transparent;
+			border-right: 1px solid transparent;
+			border-radius: 6px 6px 0px 0px;
+
+			&-label {
+				font-family: $font-title !important;
+				font-size: $font-size-26;
+				font-weight: 600;
+				line-height: $line-height-120;
+				color: $font-color-dark;
+				position: relative;
+				text-align: center;
+				white-space: nowrap;
+				width: fit-content;
+			}
+
+			.pill {
+				padding: 10px 10px 9px 10px;
+				color: #fff;
+				background-color: #FD6969;
+				text-transform: uppercase;
+				font-size: $font-size-10;
+				font-weight: 800;
+				border-radius: 20px;
+				display: none;
+			}
+		}
+
+		// Timeframe
+		&_timeframe {
+			display: flex;
+			position: relative;
+			flex-direction: column;
+			align-items: center;
+			align-self: stretch;
+			gap: 10px;
+			justify-content: center;
+			padding: 18px;
+			width: 100%;
+
+			&-time {
+				display: inline-flex;
+				position: relative;
+				flex: 0 0 auto;
+				align-items: center;
+				background-color: rgba(0,0,0,0.03);
+				border: 1px solid rgba(255,255,255,0.3);
+				border-radius: 20px;
+				gap: 10px;
+				justify-content: center;
+				padding: 4px 10px;
+
+				font-size: $font-size-14;
+				line-height: $line-height-140;
+
+				span.duration {
+					font-size: $font-size-16;
+					font-weight: 600;
+					color: #fff;
+				}
+			}
+			&-info {
+				display: inline-flex;
+				position: relative;
+				max-width: 100%;
+				text-align: center;
+				font-size: $font-size-14;
+				line-height: $line-height-140;
+				width: 80%;
+
+				.timeframe-info-02 {
+					font-weight: 600;
+					color: #fff;
+				}
+			}
+		}
+
+		// Inclusions
+		&_inclusions {
+			display: flex;
+			position: relative;
+			align-items: flex-start;
+			flex: 0 0 auto;
+			flex-direction: column;
+			justify-content: center;
+			gap: 8px;
+			padding-top: 28px;
+			padding-left: 18px;
+			padding-right: 18px;
+			width: 100%;
+			background-color: #ffffff;
+			border-left: 1px solid transparent;
+			border-right: 1px solid transparent;
+		}
+
+		// Exclusions
+		&_exclusions {
+			display: flex;
+			position: relative;
+			align-items: flex-start;
+			flex: 0 0 auto;
+			flex-direction: column;
+			gap: 8px;
+			justify-content: center;
+			padding: 18px 18px 60px;
+			width: 100%;
+		}
+
+		&_inclusions, &_exclusions {
+			font-size: $font-size-14;
+			color: $font-color-dark;
+			line-height: $line-height-140;
+
+			.inclusions_title, .exclusions_title {
+				font-weight: 600;
+			}
+
+			.inclusions_list, .exclusions_list {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+				position: relative;
+			}
+
+			.inclusions_list .list_item, .exclusions_list .list_item {
+				&:before {
+					display: inline-block;
+					height: 10px;
+					width: 10px;
+					margin-right: 8px;
+				}
+			}
+		}
+	}
+
+	// Services individual styling
+	.services_table {
+
+		// 01 - Tourist visa
+		#tourist {
+
+			margin-top: 12px;
+
+			.table_title {
+				border-color: #5c62f6;
+			}
+			.table_timeframe {
+				background: linear-gradient(-280deg, rgb(92.00000211596489, 98.00000175833702, 246.0000005364418) 0%, rgb(120.99971160292625, 126.2205022573471, 255) 100%);
+
+				&-time, &-info {
+					color: #BFC1FF;
+				}
+			}
+			.table_inclusions {
+				border-image: linear-gradient(to bottom, rgb(226.0000017285347, 227.00000166893005, 254.00000005960464), rgb(241.00000083446503, 241.00000083446503, 254.00000005960464)) 1;
+				padding-bottom: 115px;
+
+				.inclusions_list .list_item {
+					&:before {
+						content: url("../../../img/services_tick-icon_blue.svg");
+					}
+					&-13, &-14 {
+						display: none;
+					}
+				}
+			}
+			.table_exclusions {
+				background: linear-gradient(180deg, rgb(240.88333189487457, 241.3554945588112, 254.1028681397438) 0%, rgb(255, 255, 255) 100%);
+
+				.exclusions_list .list_item {
+					&:before {
+						content: url("../../../img/services_cross-icon_blue.svg");
+					}
+				}	
+			}
+		}
+
+		// 02 - Visit visa
+		#visit {
+
+			.table_title {
+				border-color: #fd6969;
+				padding: 32px 0px 30px !important;
+
+				.pill {
+					display: inline-block;
+				}
+			}
+			.table_timeframe {
+				background: linear-gradient(-280deg, rgb(253.0000001192093, 105.00000134110451, 105.00000134110451) 0%, rgb(255, 122.20410257577896, 122.20410257577896) 100%);
+
+				&-time, &-info {
+					color: #FFC7C7;
+				}
+			}
+			.table_inclusions {
+				border-image: linear-gradient(to bottom, rgb(255, 234.517822265625, 234.517822265625), rgb(255, 243.73635560274124, 243.73635560274124)) 1;
+				padding-bottom: 56px;
+				padding-top: 20px;
+
+				.inclusions_list .list_item {
+					&:before {
+						content: url("../../../img/services_tick-icon_red.svg");
+					}
+
+					&-14 {
+						display: none;
+					}
+
+					&-12:after {
+						display: inline-block;
+						content: "Formal obligation, Attestation d’accueil, Affidavit of Support and Guarantee";
+						padding-left: 20px;
+						padding-top: 5px;
+						font-size: $font-size-10;
+						color: #7A7A7A;
+						line-height: $line-height-120;
+						max-width: 90%;
+					}
+				}
+			}
+			.table_exclusions {
+				background: linear-gradient(180deg, rgb(255, 243.73635560274124, 243.73635560274124) 0%, rgb(255, 255, 255) 100%);
+
+				.exclusions_list .list_item {
+					&:before {
+						content: url("../../../img/services_cross-icon_red.svg");
+					}
+				}	
+			}
+		}
+
+		// 03 - Marriage visa
+		#marriage {
+
+			margin-top: 12px;
+
+			.table_title {
+				border-color: #FF9B53;
+			}
+			.table_timeframe {
+				background: linear-gradient(-280deg, rgb(255, 139.0000069141388, 38.0000015348196) 0%, rgb(255, 160.96667379140854, 38.0000015348196) 100%);
+
+				&-time, &-info {
+					color: #FFE6D4;
+				}
+			}
+			.table_inclusions {
+				border-image: linear-gradient(to bottom, rgb(255, 231.92136079072952, 205.54576009511948), rgb(255, 246.12226277589798, 236.08654528856277)) 1;
+				padding-bottom: 40px;
+
+				.inclusions_list .list_item {
+					&:before {
+						content: url("../../../img/services_tick-icon_yellow.svg");
+					}
+
+					&-13:after {
+						display: inline-block;
+						content: "Marriage banns, Certificate de coutume";
+						padding-left: 20px;
+						padding-top: 5px;
+						font-size: $font-size-10;
+						color: #7A7A7A;
+						line-height: $line-height-120;
+						max-width: 90%;
+					}
+				}
+			}
+			.table_exclusions {
+				background: linear-gradient(180deg, rgb(255, 246.12226277589798, 236.08654528856277) 0%, rgb(255, 255, 255) 100%);
+
+				.exclusions_list .list_item {
+					&:before {
+						content: url("../../../img/services_cross-icon_yellow.svg");
+					}
+				}	
+			}
+		}
+
+		// 04 - Long stay visa
+		#long-stay {
+
+			margin-top: 12px;
+
+			.table_title {
+				border-color: #73c6dc;
+			}
+			.table_timeframe {
+				background: linear-gradient(-280deg, rgb(95.00000193715096, 188.0000039935112, 212.00000256299973) 0%, rgb(140.68377256393433, 205.7508882880211, 222.4824696779251) 100%);
+
+				&-time, &-info {
+					color: #E5F9FF;
+				}
+			}
+			.table_inclusions {
+				border-image: linear-gradient(to bottom, rgb(210.00000268220901, 240.00000089406967, 248.0000004172325), rgb(233.00000131130219, 250.00000029802322, 255)) 1;
+				padding-bottom: 115px;
+
+				.inclusions_list .list_item {
+					&:before {
+						content: url("../../../img/services_tick-icon_green.svg");
+					}
+
+					&-13, &-14 {
+						display: none;
+					}
+				}
+			}
+			.table_exclusions {
+				background: linear-gradient(180deg, rgb(232.18608498573303, 250.1112887263298, 255) 0%, rgb(255, 255, 255) 100%);
+
+				.exclusions_list .list_item {
+					&:before {
+						content: url("../../../img/services_cross-icon_green.svg");
+					}
+				}	
+			}
+		}
+
+	}
+
+}

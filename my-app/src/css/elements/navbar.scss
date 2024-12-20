@@ -162,15 +162,24 @@
 	align-items: flex-start;
 	background-color: #ecedff;
 	flex-wrap: wrap;
-	gap: 24px;
+	gap: 14px;
 	overflow: hidden;
 	height: 64px;
 
+	@media screen and (min-width: 1400px) {
+		gap: 20px;
+    }
+
 	.subnav_root {
-		font-size: $font-size-18;
+		font-size: $font-size-16;
 		font-weight: 600;
 		color: $font-color-dark;
-		padding-top: 22px;
+		padding-top: 24px;
+
+		@media screen and (min-width: 1400px) {
+			font-size: $font-size-18;
+			padding-top: 22px;
+	    }
 	}
 
 	.subnav_menu {
@@ -184,9 +193,14 @@
 			border-bottom: 4px solid transparent;
 			gap: 8px;
 			justify-content: center;
-			padding: 24px 12px 20px 12px;
-			font-size: $font-size-16;
+			padding: 26px 8px 20px 8px;
+			font-size: $font-size-14;
 			color: $font-color-dark;
+
+			@media screen and (min-width: 1400px) {
+				padding: 24px 12px 20px 12px;
+				font-size: $font-size-16;
+		    }
 
 			// Transition
 			transition: background-color .2s ease-in-out;
