@@ -1,12 +1,14 @@
 // Components
 import ServicesHero from './services_hero';
+import ServicesQuotation from './quotation_form'
 
-function Services_Reservations() {
+function ServicesReservations() {
   return (
-    <div className="services_view services_view-reservations ctnr_cntr">
+    <div className="services_view services_view-reservations">
       <ServicesHero />
+      <ServicesQuotation />
     </div>
   )
 }
 
-export default Services_Reservations;
+export default ServicesReservations;

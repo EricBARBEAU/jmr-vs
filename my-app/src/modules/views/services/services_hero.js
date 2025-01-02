@@ -2,7 +2,7 @@ import data from "./data/services_hero-data.json";
 
 function ServicesHero() {
   return (
-    <div className="hero services_hero">
+    <div className="hero services_hero ctnr_cntr">
     	{data.map((item) => (
 			<div className="hero_content services_hero-content" id={item.id}>
 				<div className="hero_visual" alt="test" ></div>

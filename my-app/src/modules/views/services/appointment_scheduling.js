@@ -1,12 +1,14 @@
 // Components
 import ServicesHero from './services_hero';
+import ServicesQuotation from './quotation_form'
 
-function Services_Appointment() {
+function ServicesAppointment() {
   return (
-    <div className="services_view services_view-appointment ctnr_cntr">
+    <div className="services_view services_view-appointment">
       <ServicesHero />
+      <ServicesQuotation />
     </div>
   )
 }
 
-export default Services_Appointment;
+export default ServicesAppointment;

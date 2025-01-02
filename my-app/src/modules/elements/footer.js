@@ -38,8 +38,8 @@ function Footer() {
       <div className="footer_blk footer_blk-03">
         <h4 className="footer_blk-title">Our process</h4>
         <div className="footer_blk-content">
-          <a href="">Visa service packages</a>
-          <a href="">Consultation calls</a>
+          <Link to="/our-process" alt ="Visa types">Visa types</Link>
+          <Link to="/our-process" alt ="JMR services guidelines">JMR services guidelines</Link>
         </div>
       </div>
       <div className="footer_blk footer_blk-04">

@@ -9,17 +9,18 @@
 		align-items: flex-start;
 		align-self: stretch;
 		flex-wrap: wrap;
+		flex-direction: row;
 		gap: 6px 6px;
 		justify-content: center;
-		padding: 40px 30px 0px;
+		padding-top: 40px;
 
 		&-section {
 			display: flex;
 			align-items: flex-start;
 			position: relative;
 			flex-direction: column;
-			min-width: 270px;
-			max-width: 290px;
+			width: 270px;
+			opacity: 0.9;
 			transform: translateY(0px);
 
 			// Transition
@@ -29,6 +30,17 @@
 
 			&:hover {
 				transform: translateY(-5px);
+				opacity: 1;
+			}
+
+			@media screen and (max-width: 1140px) {
+				width: 250px;
+			}
+			@media screen and (max-width: 1058px) {
+				width: 230px;
+			}
+			@media screen and (max-width: 680px) {
+
 			}
 		}
 	}
@@ -62,6 +74,10 @@
 				text-align: center;
 				white-space: nowrap;
 				width: fit-content;
+
+				@media screen and (max-width: 1058px) {
+					font-size: $font-size-22;
+				}
 			}
 
 			.pill {
@@ -107,6 +123,14 @@
 					font-size: $font-size-16;
 					font-weight: 600;
 					color: #fff;
+				}
+
+				@media screen and (max-width: 1058px) {
+					font-size: $font-size-12;
+
+					span.duration {
+						font-size: $font-size-14;
+					}
 				}
 			}
 			&-info {
@@ -160,6 +184,10 @@
 			font-size: $font-size-14;
 			color: $font-color-dark;
 			line-height: $line-height-140;
+
+			@media screen and (max-width: 1058px) {
+				font-size: $font-size-12;
+			}
 
 			.inclusions_title, .exclusions_title {
 				font-weight: 600;
@@ -228,6 +256,15 @@
 		// 02 - Visit visa
 		#visit {
 
+			width: 290px;
+
+			@media screen and (max-width: 1140px) {
+				width: 270px;
+			}
+			@media screen and (max-width: 1058px) {
+				width: 250px;
+			}
+
 			.table_title {
 				border-color: #fd6969;
 				padding: 32px 0px 30px !important;
@@ -247,6 +284,13 @@
 				border-image: linear-gradient(to bottom, rgb(255, 234.517822265625, 234.517822265625), rgb(255, 243.73635560274124, 243.73635560274124)) 1;
 				padding-bottom: 56px;
 				padding-top: 20px;
+
+				@media screen and (max-width: 1140px) {
+					padding-bottom: 96px;
+				}
+				@media screen and (max-width: 1058px) {
+					padding-bottom: 62px;
+				}
 
 				.inclusions_list .list_item {
 					&:before {
@@ -298,6 +342,13 @@
 			.table_inclusions {
 				border-image: linear-gradient(to bottom, rgb(255, 231.92136079072952, 205.54576009511948), rgb(255, 246.12226277589798, 236.08654528856277)) 1;
 				padding-bottom: 40px;
+
+				@media screen and (max-width: 1140px) {
+					padding-bottom: 29px;
+				}
+				@media screen and (max-width: 1058px) {
+					padding-bottom: 35px;
+				}
 
 				.inclusions_list .list_item {
 					&:before {

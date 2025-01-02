@@ -13,12 +13,12 @@ import Testimonials from './views/testimonials';
 import About from './views/about';
 import Contact from './views/contact';
 // Services views
-import Services_Layout from './views/services/_layout';
-import Services_Packages from './views/services/service_packages';
-import Services_Calls from './views/services/consultation_calls';
-import Services_Letter from './views/services/letter_services';
-import Services_Reservations from './views/services/reservations';
-import Services_Appointment from './views/services/appointment_scheduling';
+import ServicesLayout from './views/services/_layout';
+import ServicesPackages from './views/services/service_packages';
+import ServicesCalls from './views/services/consultation_calls';
+import ServicesLetter from './views/services/letter_services';
+import ServicesReservations from './views/services/reservations';
+import ServicesAppointment from './views/services/appointment_scheduling';
 
 
 function App() {
@@ -30,12 +30,12 @@ function App() {
             <Routes>
                 <Route path="/" element={<Layout />} >
                     <Route index element={<Home />} />
-                    <Route path="/" element={<Services_Layout />} >
-                        <Route index path="/services/visa-service-packages" element={<Services_Packages />} />
-                        <Route path="/services/consultation-calls" element={<Services_Calls />} />
-                        <Route path="/services/letter-services" element={<Services_Letter />} />
-                        <Route path="/services/reservations" element={<Services_Reservations />} />
-                        <Route path="/services/appointment-scheduling" element={<Services_Appointment />} />
+                    <Route path="/" element={<ServicesLayout />} >
+                        <Route index path="/services/visa-service-packages" element={<ServicesPackages />} />
+                        <Route path="/services/consultation-calls" element={<ServicesCalls />} />
+                        <Route path="/services/letter-services" element={<ServicesLetter />} />
+                        <Route path="/services/reservations" element={<ServicesReservations />} />
+                        <Route path="/services/appointment-scheduling" element={<ServicesAppointment />} />
                     </Route>
                     <Route path="/our-process" element={<Process />} />
                     <Route path="/testimonials" element={<Testimonials />} />
