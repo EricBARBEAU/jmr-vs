@@ -94,7 +94,14 @@
 					border-radius: 4px;
 					gap: 10px;
 					padding: 10px 40px 10px 10px;
-					width: 100%;	
+					width: 100%;
+					line-height: $line-height-120;	
+				}
+
+				// Body - Textarea input
+				textarea.input-body {
+					min-height: 100px;
+					line-height: $line-height-140;
 				}
 
 				// Radio input
@@ -108,6 +115,10 @@
 					gap: 12px 12px;
 					padding: 20px;
 					width: 100%;
+
+					&:has(+ .input-error) {
+						background-color: #FFEFEF;
+					}
 
 					.radio-item {
 						display: inline-flex;
@@ -127,7 +138,11 @@
 
 						// Radio input style
 						.radio-cta:checked {
-							filter: hue-rotate(320deg);
+							filter: hue-rotate(310deg);
+						}
+
+						.radio-cta, .label-main {
+							cursor: pointer;
 						}
 
 						// Label
@@ -162,15 +177,4 @@
 			}
 		}
 	}
-	
-
-	// 01 - Service Packages
-
-	// 02 - Consultation Calls
-
-	// 03 - Letter Services
-
-	// 04 - Flight/Hotel Reservations
-
-	// 05 - Appointment Scheduling
 }

@@ -1,15 +1,15 @@
 [
   {
-    "id": "tourist",
-    "title": "Tourist visa",
-    "processing_time": " 1 month",
+  "id": "tourist",
+  "title": "Tourist visa",
+  "processing_time": " 1 month",
 
-    "visa_info_01": "For ",
-    "visa_info_02": "self-funded ",
-    "visa_info_03": "travellers going to Europe.",
+  "visa_info_01": "For ",
+  "visa_info_02": "self-funded ",
+  "visa_info_03": "travellers going to Europe.",
 
-    "inclusion_01": "1 hour consultation call",
-    "inclusion_02": "Completed list of requirements",
+  "inclusion_01": "1 hour consultation call",
+  "inclusion_02": "Completed list of requirements",
 	"inclusion_03": "Cover letter",
 	"inclusion_04": "Letter of intent to return",
 	"inclusion_05": "Day-to-Day itinerary",
@@ -26,16 +26,16 @@
 	"exclusion_03": "Other consular services"
   },
   {
-    "id": "visit",
-    "title": "Visit visa",
-    "processing_time": " 1 month",
+  "id": "visit",
+  "title": "Visit visa",
+  "processing_time": " 1 month",
 
-    "visa_info_01": "For ",
-    "visa_info_02": "sponsored trip ",
-    "visa_info_03": "travellers going to Europe.",
+  "visa_info_01": "For ",
+  "visa_info_02": "sponsored trip ",
+  "visa_info_03": "travellers going to Europe.",
 
-    "inclusion_01": "1 hour consultation call",
-    "inclusion_02": "Completed list of requirements",
+  "inclusion_01": "1 hour consultation call",
+  "inclusion_02": "Completed list of requirements",
 	"inclusion_03": "Cover letter",
 	"inclusion_04": "Invitation letter",
 	"inclusion_05": "Sponsorship letter",
@@ -53,16 +53,16 @@
 	"exclusion_03": "Other consular services"
   },
   {
-    "id": "marriage",
-    "title": "Marriage/Fiancé visa",
-    "processing_time": " 2 months",
+  "id": "marriage",
+  "title": "Marriage/Fiancé visa",
+  "processing_time": " 2 months",
 
-    "visa_info_01": "For couples who want to ",
-    "visa_info_02": "get married ",
-    "visa_info_03": "in Europe.",
+  "visa_info_01": "For couples who want to ",
+  "visa_info_02": "get married ",
+  "visa_info_03": "in Europe.",
 
-    "inclusion_01": "1 hour consultation call",
-    "inclusion_02": "Completed list of requirements",
+  "inclusion_01": "1 hour consultation call",
+  "inclusion_02": "Completed list of requirements",
 	"inclusion_03": "Cover letter",
 	"inclusion_04": "Invitation letter",
 	"inclusion_05": "Sponsorship letter",
@@ -81,16 +81,16 @@
 	"exclusion_03": "Other consular services"
   },
   {
-    "id": "long-stay",
-    "title": "Long stay visa",
-    "processing_time": " 1 month",
+  "id": "long-stay",
+  "title": "Long stay visa",
+  "processing_time": " 1 month",
 
-    "visa_info_01": "For travellers planning to  ",
-    "visa_info_02": "settle down ",
-    "visa_info_03": "in Europe.",
+  "visa_info_01": "For travellers planning to  ",
+  "visa_info_02": "settle down ",
+  "visa_info_03": "in Europe.",
 
-    "inclusion_01": "1 hour consultation call",
-    "inclusion_02": "Completed list of requirements",
+  "inclusion_01": "1 hour consultation call",
+  "inclusion_02": "Completed list of requirements",
 	"inclusion_03": "Cover letter",
 	"inclusion_04": "Invitation letter",
 	"inclusion_05": "Sponsorship letter",
