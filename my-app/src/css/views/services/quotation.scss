@@ -46,7 +46,123 @@
 		gap: 30px;
 		padding: 60px;
 		width: 60%;
+
+
+		@media screen and (max-width: 1520px) {
+			width: 65%;
+		}
+		@media screen and (max-width: 1280px) {
+			width: 75%;
+		}
+		@media screen and (max-width: 1058px) {
+			width: 85%;
+		}
+		@media screen and (max-width: 680px) {
+			width: 100%;
+		}
+
+		.quotation-form {
+			display: flex;
+			position: relative;
+			align-items: flex-start;
+			flex-direction: column;
+			gap: 15px;
+			width: 100%;
+
+			// Input
+			.form-input {
+				display: flex;
+				position: relative;
+				align-items: flex-start;
+				align-self: stretch;
+				flex-direction: column;
+				gap: 8px;
+				width: 100%;
+				font-size: $font-size-14;
+
+				// Label
+				.input-label {
+					font-weight: 600;
+					color:$font-color-reg;
+				}
+
+				// Body - Regular text input
+				.input-body {
+					display: flex;
+					position: relative;
+					border: 1px solid #cbcbcb;
+					border-radius: 4px;
+					gap: 10px;
+					padding: 10px 40px 10px 10px;
+					width: 100%;	
+				}
+
+				// Radio input
+				.input-radio {
+					display: flex;
+					position: relative;
+					align-items: flex-start;
+					background-color: #f3f3f3;
+					border-radius: 4px;
+					flex-wrap: wrap;
+					gap: 12px 12px;
+					padding: 20px;
+					width: 100%;
+
+					.radio-item {
+						display: inline-flex;
+						position: relative;
+						align-items: flex-start;
+						background-color: #eeeeee;
+						border: 1px solid #d8d8d8;
+						border-radius: 6px;
+						flex-direction: row;
+						padding: 6px 20px 6px 12px;
+						gap: 10px;
+
+						&:has(> .radio-cta:checked) {
+							border-color:#FBA356;
+							background-color: #F4EAE2;
+						}
+
+						// Radio input style
+						.radio-cta:checked {
+							filter: hue-rotate(320deg);
+						}
+
+						// Label
+						.radio-label {
+							display: flex;
+							flex-direction: column;
+							gap: 4px;
+							position: relative;
+
+							.label-main {
+								font-weight: 500;
+							}
+							.label-secondary {
+								font-size: $font-size-12;
+								color: #757575;
+							}
+						}
+					}
+				}
+
+				// Error
+				.input-error {
+					font-size: $font-size-12;
+					color: #F76565;
+				}
+			}
+
+			// Submit button
+			input.btn {
+				color: #fff;
+				width: 100%;
+			}
+		}
 	}
+	
 
 	// 01 - Service Packages
 
