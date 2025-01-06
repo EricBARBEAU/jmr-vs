@@ -1,11 +1,52 @@
 // Components
 import React from 'react';
+import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 
 function ServicesQuotation() {
 
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data);
+  const { register, 
+        handleSubmit, 
+        watch,
+        reset, 
+        formState: { errors, isSubmitting, isSubmitSuccessful } 
+        } = useForm();
+
+  const [SubmitMessage, clientName] = React.useState('');
+
+  const sendEmail = async data => {
+
+    const emailData = {
+      user_name: data.name,
+      user_email: data.email,
+      service_selected: data.service_selection,
+      service_package: data.package_selection,
+      letter_service: data.letter_service,
+      message: data.message
+    };
+
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    clientName(`${data.name}`);
+    emailjs
+      .send("service_kl5d86n", "template_q09msrq", emailData, "2AlAPb8LU6099B9e6")
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log(data);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    reset();
+  };
+
+  // const onSubmit = async data => {
+  //   await new Promise(resolve => setTimeout(resolve, 2000));
+  //   console.log(data);
+  //   clientName(`${data.name}`);
+  //   reset();
+  // };
 
   const [status, setStatus] = React.useState(0); 
   // 0: no show // 1: service packages // 2: consultation calls // 3: letter services // 4: flight/hotel reservation // 5: show appointment scheduling // 6: show general information
@@ -25,12 +66,20 @@ function ServicesQuotation() {
       <div className="services_quotation-form">
 
         {/*"handleSubmit" will validate your inputs before invoking "onSubmit"*/}
-        <form onSubmit={handleSubmit(onSubmit)} className="quotation-form">
+        <form onSubmit={handleSubmit(sendEmail)} className="quotation-form" >
+
+          {/*Success*/}
+          {isSubmitSuccessful && 
+            <span className="form-success">
+            Thank you <b>{SubmitMessage}</b> for your request. We will get back to you within 2 working days.
+            </span>
+          }
 
           {/*Full name input - Mandatory*/}
           <div className="form-input form-input_name">
             <span className="input-label">Full name *</span>
-            <input className="input-body" 
+            <input name="name"
+              className="input-body" 
               {...register("name", 
               { required: true, pattern: /^[a-zA-Z\s]+$/i })} />
             {/*Errors*/}
@@ -41,7 +90,8 @@ function ServicesQuotation() {
           {/*Email input - Mandatory*/}
           <div className="form-input form-input_email">
             <span className="input-label">Email *</span>
-            <input className="input-body" 
+            <input name="email"
+              className="input-body" 
               {...register("email", 
               { required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i })} />
             {/*Errors*/}
@@ -57,7 +107,8 @@ function ServicesQuotation() {
 
               {/*Item: Service packages*/}
               <div className="radio-item">
-                <input className="radio-cta" type="radio" id="service-packages" 
+                <input name="Service: Service Packages"
+                  className="radio-cta" type="radio" id="service-packages" 
                   name="services-radio" value="Visa service packages" 
                   checked={status === 1} onClick={(e) => radioHandler(1)} 
                   onChange={e => {}} {...register("service_selection", { required: true })}  />
@@ -70,7 +121,8 @@ function ServicesQuotation() {
 
               {/*Item: Consultation calls*/}
               <div className="radio-item">
-                <input className="radio-cta" type="radio" id="consultation-calls" 
+                <input name="Service: Consultation Calls"
+                  className="radio-cta" type="radio" id="consultation-calls" 
                   name="services-radio" value="Consultation calls" 
                   checked={status === 2} onClick={(e) => radioHandler(2)} 
                   onChange={e => {}} {...register("service_selection", { required: true })} />
@@ -83,7 +135,8 @@ function ServicesQuotation() {
 
               {/*Item: Letter services*/}
               <div className="radio-item">
-                <input className="radio-cta" type="radio" id="letter-services" 
+                <input name="Service: Letter Services"
+                  className="radio-cta" type="radio" id="letter-services" 
                   name="services-radio" value="Letter services" 
                   checked={status === 3} onClick={(e) => radioHandler(3)} 
                   onChange={e => {}} {...register("service_selection", { required: true })} />
@@ -96,7 +149,8 @@ function ServicesQuotation() {
 
               {/*Item: Flight/hotel reservations*/}
               <div className="radio-item">
-                <input className="radio-cta" type="radio" id="flight-reservation" 
+                <input name="Service: Flight/hotel reservations"
+                  className="radio-cta" type="radio" id="flight-reservation" 
                   name="services-radio" value="Flight/hotel reservations" 
                   checked={status === 4} onClick={(e) => radioHandler(4)} 
                   onChange={e => {}} {...register("service_selection", { required: true })} />
@@ -109,7 +163,8 @@ function ServicesQuotation() {
 
               {/*Item: Appointment scheduling*/}
               <div className="radio-item">
-                <input className="radio-cta" type="radio" id="appointment-scheduling" 
+                <input name="Service: Appointment scheduling"
+                  className="radio-cta" type="radio" id="appointment-scheduling" 
                   name="services-radio" value="Appointment scheduling" 
                   checked={status === 5} onClick={(e) => radioHandler(5)} 
                   onChange={e => {}} {...register("service_selection", { required: true })} />
@@ -122,7 +177,8 @@ function ServicesQuotation() {
 
               {/*Item: General information*/}
               <div className="radio-item">
-                <input className="radio-cta" type="radio" id="general-information" 
+                <input name="Service: General information"
+                  className="radio-cta" type="radio" id="general-information" 
                   name="services-radio" value="General information" 
                   checked={status === 6} onClick={(e) => radioHandler(6)} 
                   onChange={e => {}} {...register("service_selection", { required: true })} />
@@ -279,8 +335,13 @@ function ServicesQuotation() {
               </textarea>
               {/*Errors*/}
           </div>
+
           
-          <input type="submit" className="btn btn_primary btn_yellow btn_md" value="Get a quote"/>
+          
+          <input  type="submit" 
+                  className="btn btn_primary btn_yellow btn_md" 
+                  value={isSubmitting ? "Submitting..." : "Get a quote"}
+                  disabled={isSubmitting}/>
         </form>
 
       </div>

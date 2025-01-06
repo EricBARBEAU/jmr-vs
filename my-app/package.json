@@ -4,11 +4,13 @@
   "private": true,
   "homepage": "https://ericbarbeau.github.io/",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "emailjs": "^4.0.3",
     "flyonui": "^1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
