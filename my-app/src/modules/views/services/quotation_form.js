@@ -7,7 +7,6 @@ function ServicesQuotation() {
 
   const { register, 
         handleSubmit, 
-        watch,
         reset, 
         formState: { errors, isSubmitting, isSubmitSuccessful } 
         } = useForm();
@@ -22,6 +21,7 @@ function ServicesQuotation() {
       service_selected: data.service_selection,
       service_package: data.package_selection,
       letter_service: data.letter_service,
+      flight_hotel: data.flight_hotel,
       message: data.message
     };
 
@@ -32,7 +32,7 @@ function ServicesQuotation() {
       .then(
         (result) => {
           console.log(result.text);
-          console.log(data);
+          // console.log(data);
         },
         (error) => {
           console.log(error.text);
@@ -40,13 +40,6 @@ function ServicesQuotation() {
       );
     reset();
   };
-
-  // const onSubmit = async data => {
-  //   await new Promise(resolve => setTimeout(resolve, 2000));
-  //   console.log(data);
-  //   clientName(`${data.name}`);
-  //   reset();
-  // };
 
   const [status, setStatus] = React.useState(0); 
   // 0: no show // 1: service packages // 2: consultation calls // 3: letter services // 4: flight/hotel reservation // 5: show appointment scheduling // 6: show general information
@@ -314,11 +307,39 @@ function ServicesQuotation() {
             }
             {/* 4 - Flight/hotel reservations*/}
             {status===4 && 
-              <div>This is the content for flight/hotel reservations</div>
+              <div className="form-input subservice-flight_hotel">
+                <span className="input-label">Your choice (Can select more than one) *</span>
+                {/*Radio list*/}
+                <div className="input-radio">
+
+                  {/*Item: Flight reservation*/}
+                  <div className="radio-item">
+                    <input className="radio-cta" type="checkbox" id="flight-reservation" 
+                      name="letter-checkbox" value="Flight reservation" 
+                      {...register("flight_hotel", { required: true })} />
+                    <div className="radio-label">
+                      <label className="label-main" for="flight-reservation">Flight reservation</label>
+                    </div>
+                  </div>
+
+                  {/*Item: Invitation letter*/}
+                  <div className="radio-item">
+                    <input className="radio-cta" type="checkbox" id="hotel-reservation" 
+                      name="letter-checkbox" value="Hotel reservation" 
+                      {...register("flight_hotel", { required: true })} />
+                    <div className="radio-label">
+                      <label className="label-main" for="hotel-reservation">Hotel reservation</label>
+                    </div>
+                  </div>
+
+                </div>
+                {/*Errors*/}
+                  {errors.flight_hotel && <span className="input-error">This field is required</span>}
+              </div>
             }
             {/* 5 - Appointment scheduling*/}
             {status===5 && 
-              <div>This is the content for appointment scheduling</div>
+              <div></div>
             }
             {/* 6 - Appointment scheduling*/}
             {status===6 && 
@@ -336,8 +357,7 @@ function ServicesQuotation() {
               {/*Errors*/}
           </div>
 
-          
-          
+          {/*Submit button*/}
           <input  type="submit" 
                   className="btn btn_primary btn_yellow btn_md" 
                   value={isSubmitting ? "Submitting..." : "Get a quote"}
