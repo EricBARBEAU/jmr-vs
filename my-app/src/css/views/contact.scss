@@ -1,0 +1,27 @@
+// Contact view
+
+.contact_body {
+
+	// Global styling
+	background-color: #E5EAFF;
+
+	// Form
+	&-form {
+
+		width: 80%;
+
+		@media screen and (max-width: 1520px) {
+			width: 90%;
+		}
+		@media screen and (max-width: 1280px) {
+			width: 100%;
+		}
+
+		.form-input {
+			textarea.input-body {
+				min-height: 220px;
+			}
+		}
+	}
+
+}

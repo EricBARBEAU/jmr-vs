@@ -48,18 +48,18 @@ function ServicesQuotation() {
   };
 
   return (
-    <div className="services_quotation ctnr_cntr">
-      <div className="services_quotation-title">
+    <div className="form_view services_quotation ctnr_cntr">
+      <div className="form_view-title services_quotation-title">
         <h2 className="quotation-title">Interested? Get a quote!</h2>
         <div className="quotation-intro">
           Give us some details about your project and 
           we will send you a quote <b>within a few business hours</b>.
         </div>
       </div>
-      <div className="services_quotation-form">
+      <div className="form_view-form services_quotation-form">
 
         {/*"handleSubmit" will validate your inputs before invoking "onSubmit"*/}
-        <form onSubmit={handleSubmit(sendEmail)} className="quotation-form" >
+        <form onSubmit={handleSubmit(sendEmail)} className="form quotation-form" >
 
           {/*Success*/}
           {isSubmitSuccessful && 

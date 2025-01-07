@@ -30,7 +30,12 @@
 
 		}
 		&.btn_red {
+			background-color: $colour-jmr-red;
+			border: 1px solid #F35F5F;
 
+			&:hover, &:active, &:focus{
+				background-color: #EE7277;
+			}
 		}
 		&.btn_yellow {
 			background-color: $colour-jmr-yellow;

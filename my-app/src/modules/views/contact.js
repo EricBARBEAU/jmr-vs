@@ -1,11 +1,12 @@
 // Components
 import ContactHero from './view_components/contact_hero';
+import ContactForm from './view_components/contact_form';
 
 function Contact() {
   return (
     <div className="view view_contact">
       <ContactHero />
-      <h1>Contact page</h1>
+      <ContactForm />
     </div>
   )
 }

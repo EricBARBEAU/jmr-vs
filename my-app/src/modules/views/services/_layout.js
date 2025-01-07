@@ -9,7 +9,7 @@ function Services_Layout() {
     <div className="view view_services">
       <ServicesNav />
       <Outlet />
-      <ContactBlk />
+      {/*<ContactBlk />*/}
     </div>
   )
 }
