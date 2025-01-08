@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 function HomeServices() {
   return (
-    <div className="home_services ctnr_cntr">
-    	<div className="home_intro">
+    <div className="content_blk home_services ctnr_cntr">
+    	<div className="intro home_intro">
         <h2 className="intro_title">Our Schengen visa services</h2>
         <div className="intro_subtitle">
           From our comprehensive solution that supports you through 

@@ -20,6 +20,19 @@
 		  	color: #fff;
 			max-width: 40vw;
 
+			@media screen and (max-width: 1480px) {
+		      max-width: 50vw;
+		    }
+		    @media screen and (max-width: 1000px) {
+		      max-width: 60vw;
+		    }
+		    @media screen and (max-width: 680px) {
+		      max-width: 70vw;
+		    }
+		    @media screen and (max-width: 480px) {
+		      max-width: 100%;
+		    }
+
 			// Main
 			&-main {
 			    @media screen and (max-width: 1480px) {
@@ -223,12 +236,12 @@
 
 // 04 - About page hero
 .about_hero {
-	min-height: 520px;
+	min-height: 580px;
 	background: url("../../img/about_hero-background@2x.jpg") no-repeat;
 	background-size: cover;
 	background-position: center;
 
-	padding-top: 100px;
+	padding-top: 80px;
 	padding-bottom: 100px;
 
 	&-content {
@@ -238,11 +251,150 @@
 	// Content
 	.content_copy {
 
+		max-width: 50vw !important;
+
 		&-main {
 			max-width: 80%;
 		}
 		&-secondary {
 			color: #DDD2DD;
+		}
+	}
+
+	// Approval rate item
+	.approval_rate {
+
+		display: inline-flex;
+		position: relative;
+		align-items: center;
+		background-color: rgba(255,255,255,0.2);
+		border-radius: 50px;
+		box-shadow: 0px 1px 20px rgba(0,0,0,0.1);
+		gap: 15px;
+		padding: 10px 20px;
+		width: 435px;
+
+		// Copy
+		&-copy {
+			display: inline-flex;
+			position: relative;
+			gap: 5px;
+			flex-direction: row;
+			line-height: $line-height-140;
+
+			.main {
+				font-size: $font-size-16;
+				font-weight: 600;
+				color: #fff;
+			}
+			.secondary {
+				font-size: $font-size-14;
+				color: #D2C9DD;
+			}
+		}
+
+		// Chart
+		&-chart {
+			display: flex;
+			flex-direction: row;
+			position: relative;
+			align-items: center;
+			background-color: rgba(255,255,255,0.5);
+			height: 26px;
+			width: 104px;
+			border-radius: 30px;
+			overflow: hidden;
+
+			// Chart bar
+			.chart {
+				display: inline-flex;
+				flex-direction: row;
+				align-items: center;
+				position: relative;
+				height: 24px;
+				background: linear-gradient(180deg, rgb(123.28408822417259, 100.25364562869072, 253.78990173339844) 0%, rgb(83.42135444283485, 88.82990822196007, 232.69741594791412) 100%);
+				border-radius: 30px;
+				margin-left: 1px;
+				font-size: $font-size-16;
+				font-weight: 600;
+				color: #fff;
+				padding: 0 14%;
+				float: right;
+				width: 88%;
+				overflow: hidden;
+
+  				animation-duration: 1s;
+  				animation-name: grow-percentage;
+  				animation-timing-function: ease-in-out;
+
+				@keyframes grow-percentage {
+				  0% {
+				    width: 0%;
+				    opacity: 0.2;
+				  }
+
+				  100% {
+				     opacity: 1;
+				  }
+				}
+
+				// Icon
+				&:before {
+					content: url("../../img/tick_icon-white.svg");
+					display: block;
+					padding-right:6px;
+				}
+			}
+		}
+	}
+
+	// Legend
+	.hero_legend {
+		display: inline-flex;
+		position: absolute;
+		background-color: rgba(38,23,38,0.5);
+		border-radius: 40px;
+		gap: 10px;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 10px 20px 8px 20px;
+		right: 10vw;
+		bottom: 8vh;
+		opacity: 0.75;
+		// Transition
+		transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-webkit-transition: all .3s ease-in-out;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		.main, .secondary {
+			display: inline-flex;
+			flex-direction: row;
+			align-items: center;
+			position: relative;
+			line-height: $line-height-140;
+			font-size: $font-size-16;
+		}
+
+		.main {
+
+			color: #fff;
+			font-weight: 600;
+
+			// Icon
+			&:before {
+				content: url("../../img/map_pointer-icon.svg");
+				display: block;
+				padding-right:10px;
+				padding-top: 2px;
+			}
+		}
+		.secondary {
+			color: #C4ACBA;
+			font-style: italic;
 		}
 	}
 }

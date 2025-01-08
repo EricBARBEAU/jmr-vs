@@ -18,6 +18,7 @@
 @import 'core/reset';
 @import 'core/variables';
 @import 'core/mixins';
+@import 'core/blocks';
 
     /* 02 - Elements
 ================================================== */
@@ -35,6 +36,7 @@
 @import 'views/home';
 @import 'views/process';
 @import 'views/contact';
+@import 'views/about';
 
 // Services
 @import 'views/services/packages';

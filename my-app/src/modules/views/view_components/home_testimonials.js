@@ -4,7 +4,7 @@ import testimonial_03 from '../../../img/home_services-letters@2x.png';
 
 function HomeTestimonials() {
   return (
-    <div className="home_testimonials ctnr_cntr">
+    <div className="content_blk home_testimonials ctnr_cntr">
     	<div className="home_intro">
 			<h2 className="intro_title">What our customers say about us</h2>
 			<div className="intro_subtitle">

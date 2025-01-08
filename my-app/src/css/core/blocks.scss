@@ -1,0 +1,67 @@
+// Global blocks styling
+
+.view {
+
+	// Content block
+	.content_blk {
+		position: relative;
+		display: flex;
+		align-items: center;
+  		align-self: stretch;
+  		flex-direction: column;
+  		justify-content: center;
+  		gap: 40px;
+  		width: 100%;
+  		padding-top: 50px;
+  		padding-bottom: 60px;
+
+  		@media screen and (min-width: 1001px) {
+	    	padding-top: 85px;
+  			padding-bottom: 100px;
+  			gap: 80px;
+	    }
+	    @media screen and (max-width: 1000px) {
+	    	padding-top: 65px;
+  			padding-bottom: 80px;
+  			gap: 60px;
+	    }
+	    @media screen and (max-width: 680px) {
+	    	padding-top: 65px;
+  			padding-bottom: 80px;
+  			gap: 60px;
+	    }
+	    @media screen and (max-width: 480px) {
+	    	padding-top: 50px;
+  			padding-bottom: 60px;
+  			gap: 40px;
+	    }
+	}
+	
+
+	// Intro block
+	.intro {
+		display: flex;
+		align-items: flex-start;
+		flex: 0 0 auto;
+		flex-direction: column;
+		gap: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+		text-align: left;
+
+		@media screen and (min-width: 680px) {
+			padding-left: 6vw;
+			padding-right: 6vw;
+			text-align: center;
+		}
+
+		.intro_title, .intro_subtitle {
+			align-self: stretch;
+		}
+
+		.intro_subtitle {
+			font-size: $font-size-16;
+			line-height: $line-height-140;
+		}
+	}
+}

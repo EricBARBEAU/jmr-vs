@@ -1,5 +1,8 @@
+// Components
+import CountUp from 'react-countup';
 
 function AboutHero() {
+
   return (
     <div className="hero about_hero ctnr_cntr">
     	<div className="hero_content about_hero-content">
@@ -11,16 +14,30 @@ function AboutHero() {
     				travel to the Schengen space. 
     			</div>
     		</div>
-    		<div className="content_ctas">
+    		<div className="approval_rate">
     			<div className="approval_rate-copy">
-    				Our visa approval rate
-					(January 2025)
+            <div className="main">
+    				  Our visa approval rate
+            </div>
+            <div className="secondary">  
+					    (January 2025)
+            </div>
     			</div>
     			<div className="approval_rate-chart">
-
+            <div className="chart">
+              <CountUp start={0} end={88} duration={2.5}/>%
+            </div>
     			</div>
     		</div>
     	</div>
+      <div className="hero_legend">
+        <div className="main">
+          Sierra Nevada, Spain
+        </div>
+        <div className="secondary">  
+          October 2024
+        </div>
+      </div>
     </div>
   );
 }
