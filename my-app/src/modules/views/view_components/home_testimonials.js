@@ -5,7 +5,7 @@ import testimonial_03 from '../../../img/home_services-letters@2x.png';
 function HomeTestimonials() {
   return (
     <div className="content_blk home_testimonials ctnr_cntr">
-    	<div className="home_intro">
+    	<div className="intro home_intro">
 			<h2 className="intro_title">What our customers say about us</h2>
 			<div className="intro_subtitle">
 			<b>Trust is a key factor</b> when engaging in the visa-demand process. 

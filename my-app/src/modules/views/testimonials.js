@@ -1,10 +1,11 @@
 // Components
 import ContactBlk from '../elements/contact_block';
+import TestimonialsHero from './view_components/testimonials_hero';
 
 function Testimonials() {
   return (
     <div className="view view_testimonials">
-      <h1>Testimonials page</h1>
+      <TestimonialsHero />
       <ContactBlk />
     </div>
   )
