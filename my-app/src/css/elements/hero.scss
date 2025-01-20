@@ -109,12 +109,12 @@
 	// Visual (Right)
 	&-visual {
 
-		img {
-			max-width: 36vw;
+		svg {
+			width: 36vw;
 			height: auto;
 
 			@media screen and (max-width: 1000px) {
-		      max-width: 28vw;
+		      width: 28vw;
 		    }
 		}
 
@@ -201,9 +201,9 @@
 		display: flex;
 
 		.hero_visual {
-			background: url("../../img/services_hero-letter.svg") no-repeat; background-size: contain;
-			height: 296px;
-			width: 306px;
+			background: url("../../img/services_hero-flighthotel.svg") no-repeat; background-size: contain;
+			height: 294px;
+			width: 336px;
 		}
 	}
 }
@@ -212,7 +212,7 @@
 		display: flex;
 
 		.hero_visual {
-			background: url("../../img/services_hero-letter.svg") no-repeat; background-size: contain;
+			background: url("../../img/services_hero-appointment.svg") no-repeat; background-size: contain;
 			height: 296px;
 			width: 306px;
 		}

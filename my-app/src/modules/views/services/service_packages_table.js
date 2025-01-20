@@ -39,8 +39,6 @@ function ServicesTable() {
 						<li className="list_item list_item-10">{item.inclusion_10}</li> 
 						<li className="list_item list_item-11">{item.inclusion_11}</li> 
 						<li className="list_item list_item-12">{item.inclusion_12}</li> 
-						<li className="list_item list_item-13">{item.inclusion_13}</li> 
-						<li className="list_item list_item-14">{item.inclusion_14}</li> 
 					</ul>
 				</div>
 				<div className="table_exclusions">

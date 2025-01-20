@@ -1,4 +1,4 @@
-import hero_visual from '../../../img/process_hero-visual@2x.png';
+import hero_visual from '../../../img/process_hero-visual.svg';
 import { Link } from "react-router-dom";
 
 function ProcessHero() {

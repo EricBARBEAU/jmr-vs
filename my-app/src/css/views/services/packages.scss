@@ -237,7 +237,7 @@
 					&:before {
 						content: url("../../../img/services_tick-icon_blue.svg");
 					}
-					&-13, &-14 {
+					&-11, &-12 {
 						display: none;
 					}
 				}
@@ -297,11 +297,11 @@
 						content: url("../../../img/services_tick-icon_red.svg");
 					}
 
-					&-14 {
+					&-12 {
 						display: none;
 					}
 
-					&-12:after {
+					&-10:after {
 						display: inline-block;
 						content: "Formal obligation, Attestation d’accueil, Affidavit of Support and Guarantee";
 						padding-left: 20px;
@@ -355,7 +355,7 @@
 						content: url("../../../img/services_tick-icon_yellow.svg");
 					}
 
-					&-13:after {
+					&-11:after {
 						display: inline-block;
 						content: "Marriage banns, Certificate de coutume";
 						padding-left: 20px;
@@ -402,7 +402,7 @@
 						content: url("../../../img/services_tick-icon_green.svg");
 					}
 
-					&-13, &-14 {
+					&-11, &-12 {
 						display: none;
 					}
 				}

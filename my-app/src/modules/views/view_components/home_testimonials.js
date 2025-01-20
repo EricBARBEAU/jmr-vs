@@ -1,6 +1,6 @@
-import testimonial_01 from '../../../img/home_services-packages@2x.png';
-import testimonial_02 from '../../../img/home_services-calls@2x.png';
-import testimonial_03 from '../../../img/home_services-letters@2x.png';
+import testimonial_01 from '../../../img/services_hero-packages.svg';
+import testimonial_02 from '../../../img/services_hero-calls.svg';
+import testimonial_03 from '../../../img/services_hero-letter.svg';
 
 function HomeTestimonials() {
   return (

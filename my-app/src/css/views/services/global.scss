@@ -1,0 +1,84 @@
+// Global styling for services
+
+.services_view {
+
+	@include css-animate(drop,1s,ease-in-out);
+
+	.letter_services, .reservations {
+		display: grid;
+		position: relative;
+		grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+		gap: 20px;
+		padding-top: 40px;
+		padding-bottom: 80px;
+
+		@media screen and (max-width: 1140px) {
+			grid-template-columns: 100%;
+		}
+	}
+
+	.services_blk {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		padding: 30px 40px 30px;
+		border-radius: 8px;
+		border: 1px solid;
+		opacity: 0.9;
+		transform: translateY(0px);
+
+		// Transition
+		transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		-webkit-transition: all .2s ease-in-out;
+
+		&:hover {
+			opacity: 1;
+			transform: translateY(2px);
+		}
+
+
+		&-01, &-03 {
+			grid-column: 1;
+		}
+		&-02, &-04 {
+			grid-column: 2;
+			@media screen and (max-width: 1140px) {
+				grid-column: 1;
+			}
+		}
+
+		// Title
+
+		// Content
+		&-content {
+			font-size: $font-size-14;
+			line-height: $line-height-140;
+			color: $font-color-reg;
+
+			p {
+				display: inline-block;
+				padding: 10px 0px;
+			}
+		}
+
+		// Color
+		&-01 {
+			background-color: #FFF8F1;
+			border-color: #FDEADA;
+		}
+		&-02 {
+			background-color: #F5F5FF;
+			border-color: #C6C8F8;
+		}
+		&-03 {
+			background-color: #FFF7F7;
+			border-color: #FFD6D6;
+		}
+		&-04 {
+			background-color: #ECFBFF;
+			border-color: #A1E2F3;
+		}
+	}
+}

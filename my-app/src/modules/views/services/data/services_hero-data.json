@@ -20,13 +20,13 @@
   {
     "id": "reservations",
     "title": "Flight and Hotel reservation",
-    "body_1": "Copy to be written",
-    "body_2": "Copy to be written"
+    "body_1": "We provide hotel and flight reservation services for Schengen visa applications, offering both confirmed bookings and dummy reservations based on client needs. Dummy reservations are a cost-effective option for proof of travel plans, while confirmed bookings suit finalised itineraries. ",
+    "body_2": "All reservations comply with Schengen visa requirements, ensuring accuracy and peace of mind for a successful application."
   },
   {
     "id": "appointment",
     "title": "Appointment scheduling",
-    "body_1": "Copy to be written",
-    "body_2": "Copy to be written"
+    "body_1": "We offer a convenient appointment scheduling service for travelers applying for Schengen visa. This service saves you the trouble of navigating complex online systems to secure a slot for submitting your visa application to the relevant embassy.",
+    "body_2": "By handling the process efficiently, we ensure timely appointments, allowing you to focus on your travel plans with ease and confidence, free from the stress of managing this critical step on your own."
   }
 ]

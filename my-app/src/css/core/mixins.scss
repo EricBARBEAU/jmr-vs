@@ -1,0 +1,25 @@
+
+// 01 - Animations
+
+@mixin css-animate($name,$duration,$ease) {
+
+  -webkit-animation: $name $duration $ease;
+  -ms-animation: $name $duration $ease;
+  -moz-animation: $name $duration $ease;
+  animation: $name $duration $ease;
+
+  @if $name == drop {
+
+    @keyframes drop {
+	  from {
+	  		transform: translateY(-25px);
+	  		opacity: 0;
+	  	}
+	  to {
+	  		transform: translateY(1px); 
+	  		opacity: 1;
+		}
+	}
+  }
+
+} 

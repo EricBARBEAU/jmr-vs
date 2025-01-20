@@ -263,7 +263,6 @@ function ServicesQuotation() {
                       {...register("letter_service", { required: true })} />
                     <div className="radio-label">
                       <label className="label-main" for="cover-letter">Cover letter</label>
-                      <span className="label-secondary">Something here</span>
                     </div>
                   </div>
 
@@ -274,7 +273,6 @@ function ServicesQuotation() {
                       {...register("letter_service", { required: true })} />
                     <div className="radio-label">
                       <label className="label-main" for="invitation-letter">Invitation letter</label>
-                      <span className="label-secondary">Something here</span>
                     </div>
                   </div>
 
@@ -285,7 +283,6 @@ function ServicesQuotation() {
                       {...register("letter_service", { required: true })} />
                     <div className="radio-label">
                       <label className="label-main" for="sponsorship-letter">Sponsorship letter</label>
-                      <span className="label-secondary">Something here</span>
                     </div>
                   </div>
 
@@ -296,7 +293,6 @@ function ServicesQuotation() {
                       {...register("letter_service", { required: true })} />
                     <div className="radio-label">
                       <label className="label-main" for="itinerary">Day-to-day itinerary</label>
-                      <span className="label-secondary">Something here</span>
                     </div>
                   </div>
 

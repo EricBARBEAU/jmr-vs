@@ -1,5 +1,5 @@
 import data from "./data/process_step-data.json";
-import support_visual from '../../../img/process_support@2x.png';
+import support_visual from '../../../img/process_support.svg';
 
 function ProcessContent() {
   return (

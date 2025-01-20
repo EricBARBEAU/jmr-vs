@@ -1,0 +1,14 @@
+[
+  {
+    "class": "services_blk services_blk-01",
+    "title": "Flight reservation",
+    "body_1": "We provide both dummy reservations and confirmed plane tickets, tailored to meet Schengen visa requirements.",
+    "body_2": "We ensure all documents are professionally prepared and fully compliant, providing you with the proof of travel needed for a seamless visa application process."
+  },
+  {
+    "class": "services_blk services_blk-02",
+    "title": "Hotel reservation",
+    "body_1": "An invitation letter from a host in the Schengen Area can greatly enhance your visa application.",
+    "body_2": "Whether for family visits, social gatherings, or business events, we assist in crafting a professional letter that meets requirements and strengthens your case."
+  }
+]
