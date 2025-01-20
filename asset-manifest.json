@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/jmr-vs/static/css/main.e53aa608.css",
-    "main.js": "/jmr-vs/static/js/main.09cef122.js",
+    "main.css": "/jmr-vs/static/css/main.2b839b57.css",
+    "main.js": "/jmr-vs/static/js/main.454ad8f2.js",
     "static/js/453.ed3810f9.chunk.js": "/jmr-vs/static/js/453.ed3810f9.chunk.js",
     "static/media/about_hero-background@2x.jpg": "/jmr-vs/static/media/about_hero-background@2x.cc894d7907c9351268f1.jpg",
     "static/media/testimonials_hero-background@2x.jpg": "/jmr-vs/static/media/testimonials_hero-background@2x.20914a84e44ba6b639d2.jpg",
-    "static/media/home_hero-visual@2x.png": "/jmr-vs/static/media/home_hero-visual@2x.06cb58699087e1466c9d.png",
     "static/media/about_id-picture@2x.png": "/jmr-vs/static/media/about_id-picture@2x.76d15d4ceddc6acfb694.png",
-    "static/media/process_hero-visual@2x.png": "/jmr-vs/static/media/process_hero-visual@2x.0521db15e56018cd1363.png",
     "static/media/about_id-background@2x.png": "/jmr-vs/static/media/about_id-background@2x.f1a20b8520dd3ad22270.png",
-    "static/media/services_hero-calls.svg": "/jmr-vs/static/media/services_hero-calls.7844f19c1c2b16e78651.svg",
+    "static/media/services_hero-flighthotel.svg": "/jmr-vs/static/media/services_hero-flighthotel.4fc84796f1c3e9936197.svg",
+    "static/media/home_hero-visual.svg": "/jmr-vs/static/media/home_hero-visual.65456878b63b7eea6453e5e752e006df.svg",
+    "static/media/services_hero-calls.svg": "/jmr-vs/static/media/services_hero-calls.7844f19c1c2b16e786518357a18a8b10.svg",
     "static/media/contact_hero-visual@2x.png": "/jmr-vs/static/media/contact_hero-visual@2x.a3601100f1a2f3846dab.png",
-    "static/media/services_hero-packages.svg": "/jmr-vs/static/media/services_hero-packages.93151553a21ef7f49899.svg",
-    "static/media/home_services-packages@2x.png": "/jmr-vs/static/media/home_services-packages@2x.40008ace33a21ac8a692.png",
-    "static/media/services_hero-letter.svg": "/jmr-vs/static/media/services_hero-letter.c935e2d766f619c7a12a.svg",
-    "static/media/home_services-calls@2x.png": "/jmr-vs/static/media/home_services-calls@2x.295fb02d41335a1c03aa.png",
-    "static/media/home_services-letters@2x.png": "/jmr-vs/static/media/home_services-letters@2x.6ddb3da51ca925ed4d49.png",
-    "static/media/process_support@2x.png": "/jmr-vs/static/media/process_support@2x.90b462935a72b19c32e4.png",
+    "static/media/process_hero-visual.svg": "/jmr-vs/static/media/process_hero-visual.09c3a9fd195f25e41e0b51cc966ada9d.svg",
+    "static/media/services_hero-packages.svg": "/jmr-vs/static/media/services_hero-packages.93151553a21ef7f498992c9a141dc1a2.svg",
+    "static/media/home_hero-visual--animated.svg": "/jmr-vs/static/media/home_hero-visual--animated.93ea986b1c758935c24d3ad29aa3688f.svg",
+    "static/media/services_hero-letter.svg": "/jmr-vs/static/media/services_hero-letter.c935e2d766f619c7a12af6c03155eedd.svg",
+    "static/media/process_support.svg": "/jmr-vs/static/media/process_support.36f1ba9d9652c2ceaf4d5902b5728933.svg",
+    "static/media/services_hero-appointment.svg": "/jmr-vs/static/media/services_hero-appointment.d0729116165a2ca5d6b3.svg",
     "static/media/contact_bg.svg": "/jmr-vs/static/media/contact_bg.68ac066641d5bb76ee96.svg",
     "static/media/jmr-logo_ondark.svg": "/jmr-vs/static/media/jmr-logo_ondark.528a6bfa773e6cb60db499d3bc054313.svg",
     "static/media/logo_footer-instagram.svg": "/jmr-vs/static/media/logo_footer-instagram.f0858c95e674a0145803c1bf9a68995e.svg",
@@ -34,12 +34,12 @@
     "static/media/services_tick-icon_yellow.svg": "/jmr-vs/static/media/services_tick-icon_yellow.ecbf3dcd715225e5e9a7.svg",
     "static/media/form_tick-icon_green.svg": "/jmr-vs/static/media/form_tick-icon_green.8f1fc8fd96caa5ac1efe.svg",
     "static/media/tick_icon-white.svg": "/jmr-vs/static/media/tick_icon-white.bd17b374670344a0788d.svg",
-    "main.e53aa608.css.map": "/jmr-vs/static/css/main.e53aa608.css.map",
-    "main.09cef122.js.map": "/jmr-vs/static/js/main.09cef122.js.map",
+    "main.2b839b57.css.map": "/jmr-vs/static/css/main.2b839b57.css.map",
+    "main.454ad8f2.js.map": "/jmr-vs/static/js/main.454ad8f2.js.map",
     "453.ed3810f9.chunk.js.map": "/jmr-vs/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e53aa608.css",
-    "static/js/main.09cef122.js"
+    "static/css/main.2b839b57.css",
+    "static/js/main.454ad8f2.js"
   ]
 }
