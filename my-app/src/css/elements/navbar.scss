@@ -172,6 +172,10 @@
     @media screen and (max-width: 1040px) {
 		gap: 10px;
     }
+    @media screen and (max-width: 760px) {
+    	padding-left: 0px !important;
+    	padding-right: 0px !important;
+    }	
 
 	.subnav_root {
 		font-size: $font-size-16;
@@ -187,6 +191,9 @@
 			font-size: $font-size-14;
 			padding-top: 26px;
 	    }
+	    @media screen and (max-width: 760px) {
+	    	display: none;
+	    }	
 	}
 
 	.subnav_menu {
@@ -211,6 +218,9 @@
 		    @media screen and (max-width: 1040px) {
 				padding: 28px 6px 20px 6px;
 				font-size: $font-size-12;
+		    }
+		    @media screen and (max-width: 650px) {
+		    	padding: 18px 8px;
 		    }
 
 			// Transition

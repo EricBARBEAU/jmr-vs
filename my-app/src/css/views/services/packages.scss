@@ -14,13 +14,10 @@
 		justify-content: center;
 		padding-top: 40px;
 
-		@media screen and (max-width: 980px) {
+		@media screen and (min-width: 860px) and (max-width: 980px) {
 			flex-direction: column;
-
-			&-section {
-				flex-direction: row !important;
-				width: 100% !important;
-			}
+			gap: 20px;
+			margin-bottom: 80px;
 		}
 
 		&-section {
@@ -31,6 +28,7 @@
 			width: 270px;
 			opacity: 0.9;
 			transform: translateY(0px);
+			overflow: hidden;
 
 			// Transition
 			transition: all .3s ease-in-out;
@@ -48,11 +46,38 @@
 			@media screen and (max-width: 1058px) {
 				width: 230px;
 			}
+
+			@media screen and (min-width: 860px) and (max-width: 980px) {
+				flex-direction: row;
+				width: 100% !important;
+				height: 260px;
+				box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+			}
+			@media screen and (max-width: 860px) {
+				width: calc( 50% - 20px) !important;
+			}
 		}
 	}
 
 	// Sections of table (global)
 	.table {
+
+		// Top (Title/Timeframe)
+		&_top {
+
+			display: flex;
+			position: relative;
+			align-items: flex-start;
+			flex-direction: column;
+
+			@media screen and (min-width: 860px) and (max-width: 980px) {
+				width: 25%;
+				height: 260px;
+			}
+			@media screen and (max-width: 860px) {
+				width: 100%;
+			}
+		}
 
 		// Title
 		&_title {
@@ -69,6 +94,11 @@
 			border-left: 1px solid transparent;
 			border-right: 1px solid transparent;
 			border-radius: 6px 6px 0px 0px;
+
+			@media screen and (min-width: 860px) and (max-width: 980px) {
+				border-radius: 0px;
+				border: none !important;
+			}
 
 			&-label {
 				font-family: $font-title !important;
@@ -110,6 +140,11 @@
 			padding: 18px;
 			width: 100%;
 
+			@media screen and (min-width: 860px) and (max-width: 980px) {
+				height: 100%;
+				padding: 18px 10px;
+			}
+
 			&-time {
 				display: inline-flex;
 				position: relative;
@@ -148,6 +183,14 @@
 				line-height: $line-height-140;
 				width: 80%;
 
+				@media screen and (max-width: 860px) {
+					width: 100%;
+				}
+
+				div {
+					width: 100%;
+				}
+
 				.timeframe-info-02 {
 					font-weight: 600;
 					color: #fff;
@@ -167,10 +210,30 @@
 			padding-top: 28px;
 			padding-left: 18px;
 			padding-right: 18px;
-			width: 100%;
 			background-color: #ffffff;
 			border-left: 1px solid transparent;
 			border-right: 1px solid transparent;
+			width: 100%;
+
+			@media screen and (min-width: 860px) and (max-width: 980px) {
+				width: 50%;
+				padding-top: 20px;
+			}
+
+			// List items
+			.inclusions_list {
+
+				@media screen and (min-width: 860px) and (max-width: 980px) {
+					width: 100%;
+					display: grid !important;
+					grid-template-columns: 1fr 1fr;
+				}
+
+				.list_item {
+					max-width: 300px;
+
+				}
+			}
 		}
 
 		// Exclusions
@@ -184,12 +247,21 @@
 			justify-content: center;
 			padding: 18px 18px 60px;
 			width: 100%;
+
+			@media screen and (min-width: 860px) and (max-width: 980px) {
+				width: 25%;
+			}
 		}
 
 		&_inclusions, &_exclusions {
 			font-size: $font-size-14;
 			color: $font-color-dark;
 			line-height: $line-height-140;
+
+			@media screen and (min-width: 860px) and (max-width: 980px) {
+				height: 260px;
+				justify-content: flex-start !important;
+			}
 
 			@media screen and (max-width: 1058px) {
 				font-size: $font-size-12;
@@ -223,7 +295,9 @@
 		// 01 - Tourist visa
 		#tourist {
 
-			margin-top: 12px;
+			@media screen and (min-width: 980px) {
+				margin-top: 12px;
+			}
 
 			.table_title {
 				border-color: #5c62f6;
@@ -237,13 +311,25 @@
 			}
 			.table_inclusions {
 				border-image: linear-gradient(to bottom, rgb(226.0000017285347, 227.00000166893005, 254.00000005960464), rgb(241.00000083446503, 241.00000083446503, 254.00000005960464)) 1;
-				padding-bottom: 115px;
+				
+				@media screen and (min-width: 1060px) {
+					padding-bottom: 100px;
+				}
+				@media screen and (min-width: 980px) and (max-width: 1060px) {
+					padding-bottom: 96px;
+				}
+				@media screen and (max-width: 860px) {
+					padding-bottom: 74px;
+				}
+				@media screen and (max-width: 572px) {
+					padding-bottom: 85px;
+				}
 
 				.inclusions_list .list_item {
 					&:before {
 						content: url("../../../img/services_tick-icon_blue.svg");
 					}
-					&-11, &-12 {
+					&-12 {
 						display: none;
 					}
 				}
@@ -273,7 +359,10 @@
 
 			.table_title {
 				border-color: #fd6969;
-				padding: 32px 0px 30px !important;
+
+				@media screen and (min-width: 980px) {
+					padding: 32px 0px 30px !important;
+				}
 
 				.pill {
 					display: inline-block;
@@ -288,14 +377,16 @@
 			}
 			.table_inclusions {
 				border-image: linear-gradient(to bottom, rgb(255, 234.517822265625, 234.517822265625), rgb(255, 243.73635560274124, 243.73635560274124)) 1;
-				padding-bottom: 56px;
-				padding-top: 20px;
 
-				@media screen and (max-width: 1140px) {
-					padding-bottom: 96px;
+				@media screen and (min-width: 980px) {
+					padding-top: 20px;
+					padding-bottom: 67px;
 				}
-				@media screen and (max-width: 1058px) {
-					padding-bottom: 62px;
+				@media screen and (min-width: 1060px) and (max-width: 1140px) {
+					padding-bottom: 106px !important;
+				}
+				@media screen and (max-width: 860px) {
+					padding-bottom: 40px;
 				}
 
 				.inclusions_list .list_item {
@@ -307,7 +398,13 @@
 						display: none;
 					}
 
-					&-10:after {
+					&-10 {
+
+						@media screen and (min-width: 860px) and (max-width: 980px) {
+							grid-area: 6 / 1;
+						}
+
+						&:after {
 						display: inline-block;
 						content: "Formal obligation, Attestation d’accueil, Affidavit of Support and Guarantee";
 						padding-left: 20px;
@@ -316,6 +413,7 @@
 						color: #7A7A7A;
 						line-height: $line-height-120;
 						max-width: 90%;
+						}
 					}
 				}
 			}
@@ -333,7 +431,9 @@
 		// 03 - Marriage visa
 		#marriage {
 
-			margin-top: 12px;
+			@media screen and (min-width: 980px) {
+				margin-top: 12px;
+			}
 
 			.table_title {
 				border-color: #FF9B53;
@@ -347,14 +447,8 @@
 			}
 			.table_inclusions {
 				border-image: linear-gradient(to bottom, rgb(255, 231.92136079072952, 205.54576009511948), rgb(255, 246.12226277589798, 236.08654528856277)) 1;
+				
 				padding-bottom: 40px;
-
-				@media screen and (max-width: 1140px) {
-					padding-bottom: 29px;
-				}
-				@media screen and (max-width: 1058px) {
-					padding-bottom: 35px;
-				}
 
 				.inclusions_list .list_item {
 					&:before {
@@ -363,7 +457,7 @@
 
 					&-11:after {
 						display: inline-block;
-						content: "Marriage banns, Certificate de coutume";
+						content: "Certificat de coutume, Marriage Delaration act, etc";
 						padding-left: 20px;
 						padding-top: 5px;
 						font-size: $font-size-10;
@@ -387,7 +481,9 @@
 		// 04 - Long stay visa
 		#long-stay {
 
-			margin-top: 12px;
+			@media screen and (min-width: 980px) {
+				margin-top: 12px;
+			}
 
 			.table_title {
 				border-color: #73c6dc;
@@ -401,7 +497,19 @@
 			}
 			.table_inclusions {
 				border-image: linear-gradient(to bottom, rgb(210.00000268220901, 240.00000089406967, 248.0000004172325), rgb(233.00000131130219, 250.00000029802322, 255)) 1;
-				padding-bottom: 115px;
+
+				@media screen and (min-width: 1060px) {
+					padding-bottom: 126px;
+				}
+				@media screen and (min-width: 980px) and (max-width: 1060px) {
+					padding-bottom: 120px;
+				}
+				@media screen and (max-width: 860px) {
+					padding-bottom: 108px;
+				}
+				@media screen and (max-width: 692px) {
+					padding-bottom: 120px;
+				}
 
 				.inclusions_list .list_item {
 					&:before {

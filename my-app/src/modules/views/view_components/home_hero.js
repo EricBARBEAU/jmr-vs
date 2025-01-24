@@ -1,4 +1,3 @@
-import hero_visual from '../../../img/home_hero-visual.svg';
 import AnimatedHero from './home_hero-visual';
 import { Link } from "react-router-dom";
 
@@ -19,7 +18,6 @@ function HomeHero() {
     	</div>
     	<div className="hero_visual home_hero-visual">
         <AnimatedHero />
-    		{/*<img src={hero_visual} alt="Hero visual" />*/}
     	</div>
     </div>
   );

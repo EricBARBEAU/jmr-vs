@@ -5,20 +5,22 @@ function ServicesTable() {
     <div className="services_table">
     	{data.map((item) => (
 			<div className="services_table-section" id={item.id}>
-				<div className="table_title">
-					<div className="table_title-label">{item.title}</div>
-					<span className="pill">in demand</span>
-				</div>
-				<div className="table_timeframe">
-					<div className="table_timeframe-time">
-						Processing time: 
-						<span className="duration">{item.processing_time}</span>
+				<div className="table_top">
+					<div className="table_title">
+						<div className="table_title-label">{item.title}</div>
+						<span className="pill">in demand</span>
 					</div>
-					<div className="table_timeframe-info">
-						<div>
-							<span className="timeframe-info-01">{item.visa_info_01}</span>
-							<span className="timeframe-info-02">{item.visa_info_02}</span>
-							<span className="timeframe-info-03">{item.visa_info_03}</span>
+					<div className="table_timeframe">
+						<div className="table_timeframe-time">
+							Processing time: 
+							<span className="duration">{item.processing_time}</span>
+						</div>
+						<div className="table_timeframe-info">
+							<div>
+								<span className="timeframe-info-01">{item.visa_info_01}</span>
+								<span className="timeframe-info-02">{item.visa_info_02}</span>
+								<span className="timeframe-info-03">{item.visa_info_03}</span>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -135,10 +135,21 @@
 		justify-content: center;
 		padding-top: 60px;
 		padding-bottom: 60px;
+
+		@media screen and (max-width: 980px) {
+			gap: 40px;
+		}
 	}
 
 	.hero_visual {
 		display: block;
+
+		@media screen and (max-width: 980px) {
+			width: 25vw !important;
+		}
+		@media screen and (max-width: 680px) {
+			display: none !important;
+		}
 	}
 
 	.hero_copy {
@@ -148,7 +159,14 @@
 		align-items: flex-start;
 		flex-direction: column;
 		gap: 20px;
-		max-width: 34vw;
+		width: 34vw;
+
+		@media screen and (max-width: 980px) {
+			width: 50vw;
+		}
+		@media screen and (max-width: 680px) {
+			width: 80vw;
+		}
 
 		&-title {
 			color: $font-color-dark;
@@ -171,6 +189,10 @@
 			background: url("../../img/services_hero-packages.svg") no-repeat; background-size: contain;
 			height: 310px;
 			width: 318px;
+
+			@media screen and (max-width: 980px) {
+				height: 220px;
+			}
 		}
 	}
 }
@@ -182,6 +204,10 @@
 			background: url("../../img/services_hero-calls.svg") no-repeat; background-size: contain;
 			height: 290px;
 			width: 295px;
+
+			@media screen and (max-width: 980px) {
+				height: 220px;
+			}
 		}
 	}
 }
@@ -193,6 +219,10 @@
 			background: url("../../img/services_hero-letter.svg") no-repeat; background-size: contain;
 			height: 296px;
 			width: 306px;
+
+			@media screen and (max-width: 980px) {
+				height: 220px;
+			}
 		}
 	}
 }
@@ -204,6 +234,10 @@
 			background: url("../../img/services_hero-flighthotel.svg") no-repeat; background-size: contain;
 			height: 294px;
 			width: 336px;
+
+			@media screen and (max-width: 980px) {
+				height: 220px;
+			}
 		}
 	}
 }
@@ -215,6 +249,10 @@
 			background: url("../../img/services_hero-appointment.svg") no-repeat; background-size: contain;
 			height: 296px;
 			width: 306px;
+
+			@media screen and (max-width: 980px) {
+				height: 220px;
+			}
 		}
 	}
 }
