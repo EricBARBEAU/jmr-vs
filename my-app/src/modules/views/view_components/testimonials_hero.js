@@ -13,6 +13,7 @@ function TestimonialsHero() {
     			</div>
     		</div>
     	</div>
+      <TestimonialsContent />
     </div>
   );
 }

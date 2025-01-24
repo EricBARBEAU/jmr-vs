@@ -141,18 +141,11 @@
 
 			// Block
 			.testimonial_blk {
-				display: flex;
-				position: relative;
-				align-items: flex-start;
 				border: 1px solid;
 				border-radius: 8px;
-				flex-grow: 1;
-				flex-direction: column;
-				gap: 24px;
 				padding: 24px;
 				width: calc((100% / 3) - 48px);
 				min-height: 240px;
-				justify-content: space-between;
 
 				// Transition
 				transition: all .2s ease-in-out;
@@ -192,52 +185,6 @@
 
 					.author_country {
 						color: #E95555;
-					}
-				}
-
-				// Content
-				.testimonial_content {
-					font-size: $font-size-18;
-					font-weight: 600;
-					color: $font-color-dark;
-					line-height: $line-height-120;
-				}
-
-				// Author
-				.testimonial_author {
-					display: flex;
-					position: relative;
-					align-items: center;
-					flex: 0 0 auto;
-					gap: 10px;
-					max-width: 95%;
-
-					.author_photo {
-						height: 40px;
-						width: 40px;
-						border-radius: 20px;
-					}
-
-					&-copy {
-						display: flex;
-						position: relative;
-						align-items: flex-start;
-						flex-grow: 1;
-						flex-direction: column;
-						gap: 2px;
-
-						// Name
-						.author_name {
-							font-size: $font-size-16;
-							font-weight: 600;
-							color: $font-color-dark;
-							line-height: $line-height-140;
-						}
-
-						// Country
-						.author_country {
-							font-size: $font-size-12;
-						}
 					}
 				}
 

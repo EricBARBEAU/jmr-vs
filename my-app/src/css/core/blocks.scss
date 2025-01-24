@@ -66,4 +66,61 @@
 			line-height: $line-height-140;
 		}
 	}
+
+	// Testimonial block
+	.testimonial_blk {
+		display: flex;
+		position: relative;
+		align-items: flex-start;
+		flex-grow: 1;
+		flex-direction: column;
+		gap: 24px;
+		justify-content: space-between;
+
+		// Content
+		.testimonial_content {
+			font-size: $font-size-18;
+			font-weight: 600;
+			color: $font-color-dark;
+			line-height: $line-height-120;
+		}
+
+		// Author
+		.testimonial_author {
+			display: flex;
+			position: relative;
+			align-items: center;
+			flex: 0 0 auto;
+			gap: 10px;
+			max-width: 95%;
+
+			.author_photo {
+				height: 40px;
+				width: 40px;
+				border-radius: 20px;
+			}
+
+			&-copy {
+				display: flex;
+				position: relative;
+				align-items: flex-start;
+				flex-grow: 1;
+				flex-direction: column;
+				gap: 2px;
+
+				// Name
+				.author_name {
+					font-size: $font-size-16;
+					font-weight: 600;
+					color: $font-color-dark;
+					line-height: $line-height-140;
+				}
+
+				// Country
+				.author_country {
+					font-size: $font-size-12;
+				}
+			}
+		}
+	}
 }

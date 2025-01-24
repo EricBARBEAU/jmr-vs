@@ -1,0 +1,24 @@
+[
+  {
+  	"isActive": "active",
+    "id": "testimonial_01",
+    "testimonial_class": "testimonial_blk testimonial_blk-01",
+    "content": "The team at JMR Visa Services was so patient and always very accomodative for all my queries. I really enjoy the professionalism and touch of empathy for their clients.",
+    "author_name": "Diana F.",
+    "author_country": "Approved Germany Visa"
+  },
+  {
+    "id": "testimonial_02",
+    "testimonial_class": "testimonial_blk testimonial_blk-02",
+    "content": "JMR Visa Services was very  helpful when it comes to any service, very trustworthy and  professional. I definitely recommend to avail their visa assistance.",
+    "author_name": "Sophia R.",
+    "author_country": "Approved French Visa"
+  },
+  {
+    "id": "testimonial_03",
+    "testimonial_class": "testimonial_blk testimonial_blk-03",
+    "content": "Jillian at JMR Visa Services is very easy to talk with given the fact that she can speaks different dialects. I love her services approach, she's so professional!",
+    "author_name": "April L.",
+    "author_country": "Approved Danemark Visa"
+  }
+]

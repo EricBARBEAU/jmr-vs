@@ -56,6 +56,9 @@
 			@media screen and (max-width: 860px) {
 				width: calc( 50% - 20px) !important;
 			}
+			@media screen and (max-width: 520px) {
+				width: calc( 100% - 40px) !important;
+			}
 		}
 	}
 
@@ -324,6 +327,9 @@
 				@media screen and (max-width: 572px) {
 					padding-bottom: 85px;
 				}
+				@media screen and (max-width: 520px) {
+					padding-bottom: 40px;
+				}
 
 				.inclusions_list .list_item {
 					&:before {
@@ -509,6 +515,9 @@
 				}
 				@media screen and (max-width: 692px) {
 					padding-bottom: 120px;
+				}
+				@media screen and (max-width: 520px) {
+					padding-bottom: 40px;
 				}
 
 				.inclusions_list .list_item {

@@ -46,9 +46,6 @@
 				background-color: #f79641;
 			}
 		}
-		&.btn_green {
-
-		}
 		
 	}
 	// Secondary
@@ -75,6 +72,7 @@
   		color: rgba(255,255,255,0.8);
   		border: 1px solid rgba(255,255,255,0.5);
   		background-color: rgba(255,255,255,0.02);
+  		box-shadow: none !important;
 
   		&:hover, &:active, &:focus {
   			color: #fff;

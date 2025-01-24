@@ -467,15 +467,23 @@
 	background: url("../../img/testimonials_hero-background@2x.jpg") no-repeat;
 	background-size: cover;
 	background-position: center;
-	flex-direction: row;
-	align-items: flex-start !important;
-
+	flex-direction: column;
+	justify-content: flex-start;
 	padding-top: 80px;
 	padding-bottom: 100px;
-
+	gap: 40px;
+	
 	&-content {
 		width: 100%;
 		align-items: center;
+
+		.content_copy {
+			align-items: center;
+
+			&-secondary {
+				text-align: center;
+			}
+		}
 	}
 }
 
