@@ -1,4 +1,5 @@
-// React router
+// React stuff
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Elements import
 import Nav from './elements/navbar';
@@ -22,11 +23,18 @@ import ServicesAppointment from './views/services/appointment_scheduling';
 
 
 function App() {
+
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+    const toggleSidebar = () => {
+        setIsSidebarOpen(!isSidebarOpen);
+    };
+
     return (
       <div className="App">
         <BrowserRouter>
-            <MobileNav />
-            <Nav />
+            <MobileNav isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+            <Nav toggleSidebar={toggleSidebar} />
             <Routes>
                 <Route path="/" element={<Layout />} >
                     <Route index element={<Home />} />

@@ -1,25 +1,27 @@
 import { Link } from "react-router-dom";
-import Nav from './navbar';
 
-function MobileNav() {
+function MobileNav({ isSidebarOpen, toggleSidebar }) {
   return (
-  	<div className="navbar_mobile">
+  	<div className={`navbar_mobile ${isSidebarOpen ? "active" : ""}`}>
   		<div className="navbar_wrapper">
-	  		<ul className="">
-					<li className="" >
-						<Link to="/services" alt="Services">Services</Link>
+  			<button onClick={toggleSidebar} className="btn_close">
+          &times; {/* Close icon */}
+        </button>
+	  		<ul className="mobile_nav-container">
+					<li className="mobile_nav-link" >
+						<Link to="/services/visa-service-packages" alt="Services" onClick={toggleSidebar}>Services</Link>
 					</li>
-					<li className="" >
-						<Link to="/our-process" alt="Process">Our process</Link>
+					<li className="mobile_nav-link" >
+						<Link to="/our-process" alt="Process" onClick={toggleSidebar}>Our process</Link>
 					</li>
-					<li className="" >
-						<Link to="/testimonials" alt="Testimonials">Testimonials</Link>
+					<li className="mobile_nav-link" >
+						<Link to="/testimonials" alt="Testimonials" onClick={toggleSidebar}>Testimonials</Link>
 					</li>
-					<li className="" >
-						<Link to="/about-us" alt="About us">About us</Link>
+					<li className="mobile_nav-link" >
+						<Link to="/about-us" alt="About us" onClick={toggleSidebar}>About us</Link>
 					</li>
-					<li className="" >
-						<Link to="/contact" alt="Contact">Contact</Link>
+					<li className="mobile_nav-link" >
+						<Link to="/contact" alt="Contact" onClick={toggleSidebar}>Contact</Link>
 					</li>
 				</ul>
 			</div>

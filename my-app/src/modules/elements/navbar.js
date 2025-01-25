@@ -2,19 +2,7 @@ import React from 'react';
 import jmr_logo from '../../img/jmr-logo_onwhite@2x.png';
 import { NavLink } from "react-router-dom";
 
-// function openNav() {
-// 	const mobileNav = document.getElementsByClassName("navbar_mobile");
-// 	alert(mobileNav);
-// }
-
-function Nav() {
-
-	const [status, setStatus] = React.useState(0); 
-  // 0: no show // 1: show mobile nav
-  const navHandler = (status) => {
-    setStatus(status);
-    console.log(status);
-  };
+function Nav({ toggleSidebar }) {
 
   return (
     <nav className="navbar ctnr_cntr">
@@ -38,7 +26,7 @@ function Nav() {
 					<NavLink to="/contact" alt="Contact">Contact</NavLink>
 				</li>
 			</ul>
-			<div className="mobile_menu-cta" onClick={(e) => navHandler(1)} >
+			<div className="mobile_menu-cta" onClick={toggleSidebar}>
 				<svg viewBox="0 0 100 80" width="20" height="20">
 					<rect width="100" height="15"></rect>
 					<rect y="35" width="100" height="15"></rect>

@@ -106,44 +106,92 @@
 // 02 - Mobile navbar
 .navbar_mobile {
 
-	display: none;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
 	height: 100%;
 	width: 100%;
-	background-color: rgba(0,0,0,0.1);
+	background-color: rgba(0, 0, 0, 0.1);
 	z-index: 100;
+	opacity: 0;
+	visibility: hidden; /* Hide the overlay initially */
 	// Transition
     transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
 
 	.navbar_wrapper {
-		z-index: 110;
-		position: absolute;
-		right: 0px;
-		top: 0px;
-		bottom: 0px;
-		width: 50vw;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 1000;
+		bottom: 0;
+		width: 280px;
 		height: 100%;
 		overflow: hidden;
 		background-color: #fff;
-		transform: translateX(52vw);
+		transform: translateX(100%);
 	    // Transition
-	    transition: all .4s ease-in-out;
-	    -moz-transition: all .4s ease-in-out;
-	    -webkit-transition: all .4s ease-in-out;
+	    transition: all .6s ease-in-out;
+	    -moz-transition: all .6s ease-in-out;
+	    -webkit-transition: all .6s ease-in-out;
 	}
 
 	&.active {
-		display: block;
-		background-color: rgba(0,0,0,0.6);
+		opacity: 1;
+		visibility: visible;
+		background-color: rgba(0, 0, 0, 0.6);
 
 		.navbar_wrapper {
-			transform: translateX(0px);
+			transform: translateY(0);
+		}
+	}
+
+	// Content
+	.navbar_wrapper {
+
+		// Close CTA
+		.btn_close {
+			font-size: 42px;
+			font-weight: 200;
+			display: block;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			right: 28px;
+			top: 17px;
+			color:$font-color-reg;
+			font-weight: 300;
+		}
+
+		// Nav
+		.mobile_nav {
+
+			&-container {
+				display: flex;
+				flex-direction: column;
+				margin-top: 80px;
+			}
+			&-link {
+				font-size: $font-size-14;
+				padding: 20px 30px;
+				border-bottom: 1px solid #ddd;
+
+				&:first-child {
+					border-top: 1px solid #ddd;
+				}
+
+				// Transition
+				transition: all .2s ease-in-out;
+				-moz-transition: all .2s ease-in-out;
+				-webkit-transition: all .2s ease-in-out;
+
+				&:hover {
+					background-color: #f8f8f8;
+				}
+			}
 		}
 	}
 	
