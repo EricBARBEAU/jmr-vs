@@ -184,6 +184,7 @@
 .services_view-packages {
 	#packages {
 		display: flex;
+		padding-bottom: 40px;
 
 		.hero_visual {
 			background: url("../../img/services_hero-packages.svg") no-repeat; background-size: contain;
@@ -214,6 +215,7 @@
 .services_view-letter {
 	#letter {
 		display: flex;
+		padding-bottom: 30px;
 
 		.hero_visual {
 			background: url("../../img/services_hero-letter.svg") no-repeat; background-size: contain;
@@ -229,6 +231,7 @@
 .services_view-reservations {
 	#reservations {
 		display: flex;
+		padding-bottom: 30px;
 
 		.hero_visual {
 			background: url("../../img/services_hero-flighthotel.svg") no-repeat; background-size: contain;
