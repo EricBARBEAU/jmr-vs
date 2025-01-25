@@ -189,7 +189,7 @@
 	    }
 	    @media screen and (max-width: 1040px) {
 			font-size: $font-size-14;
-			padding-top: 26px;
+			padding-top: 25px;
 	    }
 	    @media screen and (max-width: 760px) {
 	    	display: none;
@@ -200,6 +200,23 @@
 		position: relative;
 		display: flex;
 		flex-direction: row;
+
+		overflow-x: auto; /* Enable horizontal scrolling */
+		scrollbar-width: none; /* Hide scrollbar for Firefox */
+		-ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+		white-space: nowrap; /* Prevent items from wrapping */
+
+		padding: 0;
+		margin: 0;
+
+		/* Hide scrollbar for Chrome/Safari */
+		&:-webkit-scrollbar {
+		  display: none;
+		}
+
+		@media screen and (max-width: 680px) {
+			padding-right: 80px;
+		}
 
 		li.subnav_menu-item a {
 			position: relative;
@@ -216,11 +233,8 @@
 				font-size: $font-size-16;
 		    }
 		    @media screen and (max-width: 1040px) {
-				padding: 28px 6px 20px 6px;
+				padding: 26px 6px 22px 6px;
 				font-size: $font-size-12;
-		    }
-		    @media screen and (max-width: 650px) {
-		    	padding: 18px 8px;
 		    }
 
 			// Transition
@@ -239,6 +253,26 @@
 				color: #e5656a;
 				font-weight: 600;
 			}
+		}
+	}
+
+	/* Style for the "See more" button */
+	.btn_seemore {
+		display: none; 
+		position: absolute;
+		right: 0;
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgb(236, 237, 255) 20%);
+		border: none;
+		cursor: pointer;
+		z-index: 1; 
+		height: 64px;
+		padding: 0px 15px;
+		font-size: $font-size-14;
+		color: $font-color-dark;
+		font-weight: 600;
+
+		@media screen and (max-width: 680px) {
+			display: block;
 		}
 	}
 
