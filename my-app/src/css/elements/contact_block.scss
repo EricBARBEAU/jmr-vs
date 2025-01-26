@@ -23,6 +23,10 @@
 
 		.contact_text, .contact_ctas {
 			width: calc(50% - 48px);
+
+			@media screen and (min-width: 680px) and (max-width: 860px) {
+				width: calc(50% - 20px);
+			}
 		}
 
 		.contact_text {
@@ -61,4 +65,29 @@
 		right: 0px;
 		width: 773px;
 	}
+
+	@media screen and (max-width: 680px) {
+		padding: 40px 20px;
+
+		&-content {
+			flex-direction: column;
+			gap: 30px;
+
+			.contact_text, .contact_ctas {
+				width: 100%;
+				align-items: center;
+			}
+
+			.contact_text {
+
+				&-title, &-body {
+					text-align: center;
+				}
+			}
+		}
+		&-bg {
+			height: 256px;
+			width: 100%;
+		}
+	}	
 }
