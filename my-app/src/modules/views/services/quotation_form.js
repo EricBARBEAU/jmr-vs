@@ -102,6 +102,7 @@ function ServicesQuotation() {
               <div className="radio-item">
                 <input name="Service: Service Packages"
                   className="radio-cta" type="radio" id="service-packages" 
+                  // eslint-disable-next-line
                   name="services-radio" value="Visa service packages" 
                   checked={status === 1} onClick={(e) => radioHandler(1)} 
                   onChange={e => {}} {...register("service_selection", { required: true })}  />
@@ -115,7 +116,8 @@ function ServicesQuotation() {
               {/*Item: Consultation calls*/}
               <div className="radio-item">
                 <input name="Service: Consultation Calls"
-                  className="radio-cta" type="radio" id="consultation-calls" 
+                  className="radio-cta" type="radio" id="consultation-calls"
+                  // eslint-disable-next-line 
                   name="services-radio" value="Consultation calls" 
                   checked={status === 2} onClick={(e) => radioHandler(2)} 
                   onChange={e => {}} {...register("service_selection", { required: true })} />
@@ -129,7 +131,8 @@ function ServicesQuotation() {
               {/*Item: Letter services*/}
               <div className="radio-item">
                 <input name="Service: Letter Services"
-                  className="radio-cta" type="radio" id="letter-services" 
+                  className="radio-cta" type="radio" id="letter-services"
+                  // eslint-disable-next-line 
                   name="services-radio" value="Letter services" 
                   checked={status === 3} onClick={(e) => radioHandler(3)} 
                   onChange={e => {}} {...register("service_selection", { required: true })} />
@@ -143,7 +146,8 @@ function ServicesQuotation() {
               {/*Item: Flight/hotel reservations*/}
               <div className="radio-item">
                 <input name="Service: Flight/hotel reservations"
-                  className="radio-cta" type="radio" id="flight-reservation" 
+                  className="radio-cta" type="radio" id="flight-reservation"
+                  // eslint-disable-next-line 
                   name="services-radio" value="Flight/hotel reservations" 
                   checked={status === 4} onClick={(e) => radioHandler(4)} 
                   onChange={e => {}} {...register("service_selection", { required: true })} />
@@ -157,7 +161,8 @@ function ServicesQuotation() {
               {/*Item: Appointment scheduling*/}
               <div className="radio-item">
                 <input name="Service: Appointment scheduling"
-                  className="radio-cta" type="radio" id="appointment-scheduling" 
+                  className="radio-cta" type="radio" id="appointment-scheduling"
+                  // eslint-disable-next-line 
                   name="services-radio" value="Appointment scheduling" 
                   checked={status === 5} onClick={(e) => radioHandler(5)} 
                   onChange={e => {}} {...register("service_selection", { required: true })} />
@@ -171,7 +176,8 @@ function ServicesQuotation() {
               {/*Item: General information*/}
               <div className="radio-item">
                 <input name="Service: General information"
-                  className="radio-cta" type="radio" id="general-information" 
+                  className="radio-cta" type="radio" id="general-information"
+                  // eslint-disable-next-line 
                   name="services-radio" value="General information" 
                   checked={status === 6} onClick={(e) => radioHandler(6)} 
                   onChange={e => {}} {...register("service_selection", { required: true })} />

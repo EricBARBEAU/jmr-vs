@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Elements import
+import ScrollToTop from './functions/scroll-top';
 import Nav from './elements/navbar';
 import MobileNav from './elements/mobile-navbar';
 import Footer from './elements/footer';
@@ -33,6 +34,7 @@ function App() {
     return (
       <div className="App">
         <BrowserRouter>
+            <ScrollToTop />
             <MobileNav isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
             <Nav toggleSidebar={toggleSidebar} />
             <Routes>
