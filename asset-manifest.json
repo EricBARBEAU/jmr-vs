@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jmr-vs/static/css/main.49f81a26.css",
-    "main.js": "/jmr-vs/static/js/main.3f9653d8.js",
+    "main.css": "/jmr-vs/static/css/main.354e1df6.css",
+    "main.js": "/jmr-vs/static/js/main.d4a7e99c.js",
     "static/js/845.e61d76ce.chunk.js": "/jmr-vs/static/js/845.e61d76ce.chunk.js",
     "static/media/about_hero-background@2x.jpg": "/jmr-vs/static/media/about_hero-background@2x.cc894d7907c9351268f1.jpg",
     "static/media/testimonials_hero-background@2x.jpg": "/jmr-vs/static/media/testimonials_hero-background@2x.20914a84e44ba6b639d2.jpg",
@@ -36,12 +36,12 @@
     "static/media/services_tick-icon_yellow.svg": "/jmr-vs/static/media/services_tick-icon_yellow.ecbf3dcd715225e5e9a7.svg",
     "static/media/form_tick-icon_green.svg": "/jmr-vs/static/media/form_tick-icon_green.8f1fc8fd96caa5ac1efe.svg",
     "static/media/tick_icon-white.svg": "/jmr-vs/static/media/tick_icon-white.bd17b374670344a0788d.svg",
-    "main.49f81a26.css.map": "/jmr-vs/static/css/main.49f81a26.css.map",
-    "main.3f9653d8.js.map": "/jmr-vs/static/js/main.3f9653d8.js.map",
+    "main.354e1df6.css.map": "/jmr-vs/static/css/main.354e1df6.css.map",
+    "main.d4a7e99c.js.map": "/jmr-vs/static/js/main.d4a7e99c.js.map",
     "845.e61d76ce.chunk.js.map": "/jmr-vs/static/js/845.e61d76ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.49f81a26.css",
-    "static/js/main.3f9653d8.js"
+    "static/css/main.354e1df6.css",
+    "static/js/main.d4a7e99c.js"
   ]
 }
