@@ -1,3 +1,6 @@
+// Import core
+@use '../core/main' as core;
+
 // Styling for About page
 
 .view_about {
@@ -5,13 +8,13 @@
 	// Intro
 	.about_intro {
 		.intro_title {
-			color: $font-color-dark;
+			color: core.$font-color-dark;
 		}
 		.intro_subtitle {
-			color: $font-color-reg;
+			color: core.$font-color-reg;
 
 			b {
-				color: $font-color-dark;
+				color: core.$font-color-dark;
 			}
 		}
 	}
@@ -122,20 +125,20 @@
 							position: relative;
 							flex-direction: column;
 							gap: 8px;
-							line-height: $line-height-140;
+							line-height: core.$line-height-140;
 
 							// Data styling
 							span {
-								font-size: $font-size-14;
+								font-size: core.$font-size-14;
 								color: #838199;
 							}
 							div {
-								font-size: $font-size-18;
-								color: $font-color-dark;
+								font-size: core.$font-size-18;
+								color: core.$font-color-dark;
 								font-weight: 600;
 
 								@media screen and (min-width: 860px) and (max-width: 1140px) {
-									font-size: $font-size-16;
+									font-size: core.$font-size-16;
 								}
 							}
 						}
@@ -161,15 +164,15 @@
 			}
 
 			.about_copy {
-				font-size: $font-size-16;
-				line-height: $line-height-140;
+				font-size: core.$font-size-16;
+				line-height: core.$line-height-140;
 
 				&-par {
 					padding: 10px 0px;
 					color: #656273;
 
 					b {
-						color: $font-color-dark;
+						color: core.$font-color-dark;
 						font-weight: 600;
 					}
 				}

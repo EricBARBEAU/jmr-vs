@@ -1,3 +1,6 @@
+// Import core
+@use '../core/main' as core;
+
 // Styling for the homepage
 
 .view_home {
@@ -5,22 +8,22 @@
 	// Intro for both services and testimonials
 	.home_intro {
 
-		.intro_title {
-			color: $font-color-dark;
-		}
-		.intro_subtitle {
-			color: $font-color-reg;
-
-			b {
-				color: $font-color-dark;
-			}
-		}
-
 		@media screen and (max-width: 680px) {
 			align-items: center;
 
 			.intro_title, .intro_subtitle {
 				text-align: center;
+			}
+		}
+
+		.intro_title {
+			color: core.$font-color-dark;
+		}
+		.intro_subtitle {
+			color: core.$font-color-reg;
+
+			b {
+				color: core.$font-color-dark;
 			}
 		}
 	}
@@ -120,17 +123,17 @@
 
 					// Title
 					.content_title {
-						color: $font-color-dark;
+						color: core.$font-color-dark;
 					}
 
 					// Copy
 					.content_copy {
-						color: $font-color-reg;
-						font-size: $font-size-14;
-						line-height: $line-height-140;
+						color: core.$font-color-reg;
+						font-size: core.$font-size-14;
+						line-height: core.$line-height-140;
 
 						b {
-							color: $font-color-dark;
+							color: core.$font-color-dark;
 						}
 					}
 
@@ -138,11 +141,6 @@
 					.content_ctas {
 						display: inline-flex;
 					}
-				}
-
-				// Visual
-				&-visual {
-
 				}
 			}
   		}

@@ -1,49 +1,23 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* Table of Content
 ==================================================
   
   01 - Core
   02 - Elements
   03 - Views
-  04 - External
 
 ==================================================  */
 
     /* 01 - Core
 ================================================== */
 
-@import 'core/reset';
-@import 'core/variables';
-@import 'core/mixins';
-@import 'core/blocks';
+@use 'core/main' as core;
 
     /* 02 - Elements
 ================================================== */
 
-@import 'elements/navbar';
-@import 'elements/footer';
-@import 'elements/buttons';
-@import 'elements/forms';
-@import 'elements/hero';
-@import 'elements/contact_block';
+@use 'elements/main' as elements;
 
     /* 02 - Views
 ================================================== */
 
-@import 'views/home';
-@import 'views/process';
-@import 'views/contact';
-@import 'views/about';
-@import 'views/testimonials';
-
-// Services
-@import 'views/services/global';
-@import 'views/services/packages';
-@import 'views/services/quotation';
-
-    /* 04 - External
-================================================== */
-
+@use 'views/main' as views;

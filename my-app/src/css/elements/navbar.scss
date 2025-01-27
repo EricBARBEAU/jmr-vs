@@ -1,4 +1,5 @@
-// Styles below are for the navbar
+// Import core
+@use '../core/main' as core;
 
 // 01 - Main navbar
 .navbar {
@@ -64,12 +65,12 @@
 			border-radius: 8px;
 
 			a {
-				font-size: $font-size-16;
+				font-size: core.$font-size-16;
 				padding: 8px;
 				border-radius: 8px;
 
 				@media screen and (max-width: 1000px) {
-					font-size: $font-size-14;
+					font-size: core.$font-size-14;
 					padding: 6px;
 					border-radius: 6px;
 			    }
@@ -122,6 +123,16 @@
     -moz-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
 
+    &.active {
+		opacity: 1;
+		visibility: visible;
+		background-color: rgba(0, 0, 0, 0.6);
+
+		.navbar_wrapper {
+			transform: translateY(0);
+		}
+	}
+
 	.navbar_wrapper {
 		position: fixed;
 		top: 0;
@@ -139,16 +150,6 @@
 	    -webkit-transition: all .6s ease-in-out;
 	}
 
-	&.active {
-		opacity: 1;
-		visibility: visible;
-		background-color: rgba(0, 0, 0, 0.6);
-
-		.navbar_wrapper {
-			transform: translateY(0);
-		}
-	}
-
 	// Content
 	.navbar_wrapper {
 
@@ -162,7 +163,7 @@
 			position: absolute;
 			right: 28px;
 			top: 17px;
-			color:$font-color-reg;
+			color: core.$font-color-reg;
 			font-weight: 300;
 		}
 
@@ -175,7 +176,7 @@
 				margin-top: 80px;
 			}
 			&-link {
-				font-size: $font-size-14;
+				font-size: core.$font-size-14;
 				padding: 20px 30px;
 				border-bottom: 1px solid #ddd;
 
@@ -226,17 +227,17 @@
     }	
 
 	.subnav_root {
-		font-size: $font-size-16;
+		font-size: core.$font-size-16;
 		font-weight: 600;
-		color: $font-color-dark;
+		color: core.$font-color-dark;
 		padding-top: 24px;
 
 		@media screen and (min-width: 1400px) {
-			font-size: $font-size-18;
+			font-size: core.$font-size-18;
 			padding-top: 22px;
 	    }
 	    @media screen and (max-width: 1040px) {
-			font-size: $font-size-14;
+			font-size: core.$font-size-14;
 			padding-top: 25px;
 	    }
 	    @media screen and (max-width: 760px) {
@@ -273,16 +274,16 @@
 			gap: 8px;
 			justify-content: center;
 			padding: 26px 8px 20px 8px;
-			font-size: $font-size-14;
-			color: $font-color-dark;
+			font-size: core.$font-size-14;
+			color: core.$font-color-dark;
 
 			@media screen and (min-width: 1400px) {
 				padding: 24px 12px 20px 12px;
-				font-size: $font-size-16;
+				font-size: core.$font-size-16;
 		    }
 		    @media screen and (max-width: 1040px) {
 				padding: 26px 6px 22px 6px;
-				font-size: $font-size-12;
+				font-size: core.$font-size-12;
 		    }
 
 			// Transition
@@ -315,8 +316,8 @@
 		z-index: 1; 
 		height: 64px;
 		padding: 0px 15px;
-		font-size: $font-size-14;
-		color: $font-color-dark;
+		font-size: core.$font-size-14;
+		color: core.$font-color-dark;
 		font-weight: 600;
 
 		@media screen and (max-width: 680px) {

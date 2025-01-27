@@ -1,3 +1,6 @@
+// Import core
+@use '../core/main' as core;
+
 // Forms styling
 
 .form_view {
@@ -36,8 +39,8 @@
 		}
 
 		.quotation-intro {
-			font-size: $font-size-16;
-			line-height: $line-height-140;
+			font-size: core.$font-size-16;
+			line-height: core.$line-height-140;
 		}
 	}
 
@@ -75,12 +78,12 @@
 				flex-direction: column;
 				gap: 8px;
 				width: 100%;
-				font-size: $font-size-14;
+				font-size: core.$font-size-14;
 
 				// Label
 				.input-label {
 					font-weight: 600;
-					color:$font-color-reg;
+					color: core.$font-color-reg;
 				}
 
 				// Body - Regular text input
@@ -92,12 +95,12 @@
 					gap: 10px;
 					padding: 10px 40px 10px 10px;
 					width: 100%;
-					line-height: $line-height-120;	
+					line-height: core.$line-height-120;	
 				}
 
 				// Body - Textarea input
 				textarea.input-body {
-					line-height: $line-height-140;
+					line-height: core.$line-height-140;
 				}
 
 				// Radio input
@@ -143,7 +146,7 @@
 								font-weight: 500;
 							}
 							.label-secondary {
-								font-size: $font-size-12;
+								font-size: core.$font-size-12;
 								color: #757575;
 							}
 						}
@@ -152,7 +155,7 @@
 
 				// Error
 				.input-error {
-					font-size: $font-size-12;
+					font-size: core.$font-size-12;
 					color: #F76565;
 				}
 			}
@@ -166,13 +169,13 @@
 				flex-direction: row;
 				gap: 20px;
 				width: 100%;
-				font-size: $font-size-14;
+				font-size: core.$font-size-14;
 			}
 
 			// Form success
 			.form-success {
 				display: flex;
-				font-size: $font-size-14;
+				font-size: core.$font-size-14;
 				font-weight: 400;
 				padding: 20px;
 				width: 100%;

@@ -1,3 +1,6 @@
+// Import core
+@use '../../core/main' as core;
+
 // Service Packages
 
 .services_view-packages {
@@ -104,18 +107,18 @@
 			}
 
 			&-label {
-				font-family: $font-title !important;
-				font-size: $font-size-26;
+				font-family: core.$font-title !important;
+				font-size: core.$font-size-26;
 				font-weight: 600;
-				line-height: $line-height-120;
-				color: $font-color-dark;
+				line-height: core.$line-height-120;
+				color: core.$font-color-dark;
 				position: relative;
 				text-align: center;
 				white-space: nowrap;
 				width: fit-content;
 
 				@media screen and (max-width: 1058px) {
-					font-size: $font-size-22;
+					font-size: core.$font-size-22;
 				}
 			}
 
@@ -124,7 +127,7 @@
 				color: #fff;
 				background-color: #FD6969;
 				text-transform: uppercase;
-				font-size: $font-size-10;
+				font-size: core.$font-size-10;
 				font-weight: 800;
 				border-radius: 20px;
 				display: none;
@@ -160,20 +163,20 @@
 				justify-content: center;
 				padding: 4px 10px;
 
-				font-size: $font-size-14;
-				line-height: $line-height-140;
+				font-size: core.$font-size-14;
+				line-height: core.$line-height-140;
 
 				span.duration {
-					font-size: $font-size-16;
+					font-size: core.$font-size-16;
 					font-weight: 600;
 					color: #fff;
 				}
 
 				@media screen and (max-width: 1058px) {
-					font-size: $font-size-12;
+					font-size: core.$font-size-12;
 
 					span.duration {
-						font-size: $font-size-14;
+						font-size: core.$font-size-14;
 					}
 				}
 			}
@@ -182,8 +185,8 @@
 				position: relative;
 				max-width: 100%;
 				text-align: center;
-				font-size: $font-size-14;
-				line-height: $line-height-140;
+				font-size: core.$font-size-14;
+				line-height: core.$line-height-140;
 				width: 80%;
 
 				@media screen and (max-width: 860px) {
@@ -257,9 +260,9 @@
 		}
 
 		&_inclusions, &_exclusions {
-			font-size: $font-size-14;
-			color: $font-color-dark;
-			line-height: $line-height-140;
+			font-size: core.$font-size-14;
+			color: core.$font-color-dark;
+			line-height: core.$line-height-140;
 
 			@media screen and (min-width: 860px) and (max-width: 980px) {
 				height: 260px;
@@ -267,7 +270,7 @@
 			}
 
 			@media screen and (max-width: 1058px) {
-				font-size: $font-size-12;
+				font-size: core.$font-size-12;
 			}
 
 			.inclusions_title, .exclusions_title {
@@ -415,9 +418,9 @@
 						content: "Formal obligation, Attestation d’accueil, Affidavit of Support and Guarantee";
 						padding-left: 20px;
 						padding-top: 5px;
-						font-size: $font-size-10;
+						font-size: core.$font-size-10;
 						color: #7A7A7A;
-						line-height: $line-height-120;
+						line-height: core.$line-height-120;
 						max-width: 90%;
 						}
 					}
@@ -453,7 +456,6 @@
 			}
 			.table_inclusions {
 				border-image: linear-gradient(to bottom, rgb(255, 231.92136079072952, 205.54576009511948), rgb(255, 246.12226277589798, 236.08654528856277)) 1;
-				
 				padding-bottom: 40px;
 
 				.inclusions_list .list_item {
@@ -466,9 +468,9 @@
 						content: "Certificat de coutume, Marriage Delaration act, etc";
 						padding-left: 20px;
 						padding-top: 5px;
-						font-size: $font-size-10;
+						font-size: core.$font-size-10;
 						color: #7A7A7A;
-						line-height: $line-height-120;
+						line-height: core.$line-height-120;
 						max-width: 90%;
 					}
 				}

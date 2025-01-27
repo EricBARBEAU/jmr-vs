@@ -26,7 +26,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer_blk footer_blk-02">
-        <h4 className="footer_blk-title">Our services</h4>
+        <h4 className="footer_blk-title">Services</h4>
         <div className="footer_blk-content">
           <Link to="/services/visa-service-packages" alt ="Service packages">Visa service packages</Link>
           <Link to="/services/consultation-calls" alt ="Consultation calls">Consultation calls</Link>
@@ -36,11 +36,10 @@ function Footer() {
         </div>
       </div>
       <div className="footer_blk footer_blk-03">
-        <h4 className="footer_blk-title">Our process</h4>
-        <div className="footer_blk-content">
-          <Link to="/our-process" alt ="Visa types">Visa types</Link>
-          <Link to="/our-process" alt ="JMR services guidelines">JMR services guidelines</Link>
-        </div>
+        <Link className="footer_blk-title" to="/our-process" alt ="Visa types">Our process</Link>
+        <Link className="footer_blk-title" to="/testimonials" alt ="Visa types">Testimonials</Link>
+        <Link className="footer_blk-title" to="/about-us" alt ="Visa types">About us</Link>
+        <Link className="footer_blk-title" to="/contact" alt ="Visa types">Contact</Link>
       </div>
       <div className="footer_blk footer_blk-04">
         <h4 className="footer_blk-title">Legal informations</h4>

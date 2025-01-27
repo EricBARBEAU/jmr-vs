@@ -1,3 +1,6 @@
+// Import core
+@use '../core/main' as core;
+
 // Global styling
 .hero {
 	position: relative;
@@ -52,8 +55,8 @@
 			}
 			// Secondary
 			&-secondary {
-				font-size: $font-size-18;
-				line-height: $line-height-140;
+				font-size: core.$font-size-18;
+				line-height: core.$line-height-140;
 				width: 90%;
 
 				b {
@@ -184,12 +187,12 @@
 		}
 
 		&-title {
-			color: $font-color-dark;
+			color: core.$font-color-dark;
 		}
 		&-body-1, &-body-2 {
-			color: $font-color-reg;
-			font-size: $font-size-16;
-			line-height: $line-height-140;
+			color: core.$font-color-reg;
+			font-size: core.$font-size-16;
+			line-height: core.$line-height-140;
 		}
 	}
 
@@ -390,15 +393,15 @@
 			position: relative;
 			gap: 5px;
 			flex-direction: row;
-			line-height: $line-height-140;
+			line-height: core.$line-height-140;
 
 			.main {
-				font-size: $font-size-16;
+				font-size: core.$font-size-16;
 				font-weight: 600;
 				color: #fff;
 			}
 			.secondary {
-				font-size: $font-size-14;
+				font-size: core.$font-size-14;
 				color: #D2C9DD;
 			}
 		}
@@ -425,7 +428,7 @@
 				background: linear-gradient(180deg, rgb(123.28408822417259, 100.25364562869072, 253.78990173339844) 0%, rgb(83.42135444283485, 88.82990822196007, 232.69741594791412) 100%);
 				border-radius: 30px;
 				margin-left: 1px;
-				font-size: $font-size-16;
+				font-size: core.$font-size-16;
 				font-weight: 600;
 				color: #fff;
 				padding: 0 14%;
@@ -492,8 +495,8 @@
 			flex-direction: row;
 			align-items: center;
 			position: relative;
-			line-height: $line-height-140;
-			font-size: $font-size-16;
+			line-height: core.$line-height-140;
+			font-size: core.$font-size-16;
 		}
 
 		.main {

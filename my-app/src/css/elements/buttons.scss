@@ -1,3 +1,6 @@
+// Import core
+@use '../core/main' as core;
+
 // Styling for buttons
 
 .btn {
@@ -27,7 +30,7 @@
 	&_primary {
 
 		&.btn_red {
-			background-color: $colour-jmr-red;
+			background-color: core.$colour-jmr-red;
 			border: 1px solid #F35F5F;
 
 			&:hover, &:active, &:focus{
@@ -35,7 +38,7 @@
 			}
 		}
 		&.btn_yellow {
-			background-color: $colour-jmr-yellow;
+			background-color: core.$colour-jmr-yellow;
 			border: 1px solid #f79641;
 			color: #26180D;
 
@@ -78,20 +81,20 @@
 	// 02 - Size
 
 	&_xlg {
-		font-size: $font-size-18;
+		font-size: core.$font-size-18;
 		padding: 16px 0px;
 		width: 100%;
 		text-align: center;
 	}
 	&_lg {
-		font-size: $font-size-18;
+		font-size: core.$font-size-18;
 		padding: 14px 24px;
 	}
 	&_md {
-		font-size: $font-size-18;
+		font-size: core.$font-size-18;
 		padding: 12px 20px;
 	}
 	&_sm {
-		font-size: $font-size-14;
+		font-size: core.$font-size-14;
 	}
 }

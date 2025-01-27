@@ -1,4 +1,3 @@
-
 // 01 - Animations
 
 @mixin css-animate($name,$duration,$ease) {
@@ -11,15 +10,15 @@
   @if $name == drop {
 
     @keyframes drop {
-	  from {
-	  		transform: translateY(-25px);
-	  		opacity: 0;
-	  	}
-	  to {
-	  		transform: translateY(1px); 
-	  		opacity: 1;
+		  from {
+		  		transform: translateY(-25px);
+		  		opacity: 0;
+		  	}
+		  to {
+		  		transform: translateY(1px); 
+		  		opacity: 1;
+			}
 		}
-	}
   }
 
 } 

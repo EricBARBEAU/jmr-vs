@@ -33,7 +33,7 @@ function App() {
 
     return (
       <div className="App">
-        <BrowserRouter>
+        <BrowserRouter basename="/jmr-vs">
             <ScrollToTop />
             <MobileNav isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
             <Nav toggleSidebar={toggleSidebar} />

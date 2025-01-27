@@ -1,9 +1,5 @@
 // Variables used for the website
 
-@use 'sass:color';
-@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-
 // 01 - Colours
 
 	// Main
@@ -33,23 +29,23 @@
 	$font-button:		"Afacad", sans-serif;
 
 	html, h4 {
-		font-family: $font-copy;
+		font-family: "Inter", serif;
 
 		b {
 			font-weight: 600;
 		}
 	}
 	h1, h2, h3 {
-		font-family: $font-title;
+		font-family: "Afacad", sans-serif;
 	}
 	code {
-		font-family: $font-mono;
+		font-family: monospace;
 	}
 	a, .navbar_mobile .btn_close {
-		font-family: $font-link;
+		font-family: "Inter", serif;
 	}
 	button, .btn {
-		font-family: $font-button;
+		font-family: "Afacad", sans-serif;
 	}
 
 	// Size
@@ -66,12 +62,12 @@
 
 	$font-size-h1:			5.0rem;	
 	$font-size-h2:			4.0rem;
-	$font-size-h3:			$font-size-24;
-	$font-size-h4:			$font-size-16;
+	$font-size-h3:			2.4rem;
+	$font-size-h4:			1.6rem;
 
-	h1 {	font-size: $font-size-h1; font-weight: 800;	}
-	h2 {	font-size: $font-size-h2; font-weight: 600;	}
-	h3 {	font-size: $font-size-h3; font-weight: 600;	}
+	h1 {	font-size: 5.0rem; font-weight: 800;	}
+	h2 {	font-size: 4.0rem; font-weight: 600;	}
+	h3 {	font-size: 2.4rem; font-weight: 600;	}
 
 	// Letter Spacing
 
