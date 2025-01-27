@@ -27,6 +27,19 @@
 		padding-top: 60px;
 		padding-bottom: 60px;
 
+		@media screen and (min-width: 860px) and (max-width: 1140px) {
+			gap: 20px;
+		}
+		@media screen and (max-width: 860px) {
+			flex-direction: column;
+			gap: 60px;
+		}
+		@media screen and (max-width: 500px) {
+			padding-top: 20px;
+			padding-bottom: 40px;
+			gap: 0px;
+		}
+
 		// ID
 		&-id {
 			background: url("../../img/about_id-background@2x.png") no-repeat;
@@ -35,6 +48,7 @@
 			height: 320px;
 			overflow: hidden;
 			opacity: 0.85;
+			scale: 1;
 			transform: translateY(0px);
 
 			// Transition
@@ -47,6 +61,13 @@
 				transform: translateY(-3px);
 			}
 
+			@media screen and (min-width: 860px) and (max-width: 1140px) {
+				scale: 0.8;
+				margin-left: -40px;
+			}
+			@media screen and (max-width: 500px) {
+				scale: 0.7;
+			}
 
 			// Content
 			.id_content {
@@ -112,6 +133,10 @@
 								font-size: $font-size-18;
 								color: $font-color-dark;
 								font-weight: 600;
+
+								@media screen and (min-width: 860px) and (max-width: 1140px) {
+									font-size: $font-size-16;
+								}
 							}
 						}
 					}
@@ -126,6 +151,14 @@
 			position: relative;
 			flex-direction: column;
 			gap: 20px;
+
+			@media screen and (min-width: 860px) and (max-width: 1140px) {
+				width: calc(100% - 420px);
+			}
+			@media screen and (max-width: 860px) {
+				width: 85%;
+				text-align: center;
+			}
 
 			.about_copy {
 				font-size: $font-size-16;

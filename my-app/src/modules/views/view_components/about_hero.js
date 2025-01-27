@@ -17,10 +17,10 @@ function AboutHero() {
     		<div className="approval_rate">
     			<div className="approval_rate-copy">
             <div className="main">
-    				  Our visa approval rate
+    				  Visa approval rate
             </div>
             <div className="secondary">  
-					    (January 2025)
+					    (Jan 2025)
             </div>
     			</div>
     			<div className="approval_rate-chart">
