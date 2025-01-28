@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/jmr-vs/static/css/main.d32bbae5.css",
-    "main.js": "/jmr-vs/static/js/main.7dea1372.js",
+    "main.css": "/jmr-vs/static/css/main.5ab4c05a.css",
+    "main.js": "/jmr-vs/static/js/main.b15e781a.js",
     "static/js/845.e61d76ce.chunk.js": "/jmr-vs/static/js/845.e61d76ce.chunk.js",
     "static/media/about_hero-background@2x.jpg": "/jmr-vs/static/media/about_hero-background@2x.cc894d7907c9351268f1.jpg",
     "static/media/testimonials_hero-background@2x.jpg": "/jmr-vs/static/media/testimonials_hero-background@2x.20914a84e44ba6b639d2.jpg",
     "static/media/about_id-picture@2x.png": "/jmr-vs/static/media/about_id-picture@2x.76d15d4ceddc6acfb694.png",
-    "static/media/testimonial_01-photo_02.jpg": "/jmr-vs/static/media/testimonial_01-photo_02.685f3001dc9658d2b54c.jpg",
     "static/media/about_id-background@2x.png": "/jmr-vs/static/media/about_id-background@2x.f1a20b8520dd3ad22270.png",
-    "static/media/testimonial_01-photo_01.jpg": "/jmr-vs/static/media/testimonial_01-photo_01.198b2519428858d988ec.jpg",
     "static/media/services_hero-flighthotel.svg": "/jmr-vs/static/media/services_hero-flighthotel.4fc84796f1c3e9936197.svg",
-    "static/media/testimonial_01-photo_03.jpg": "/jmr-vs/static/media/testimonial_01-photo_03.34cbbbc3e10364b55113.jpg",
     "static/media/services_hero-calls.svg": "/jmr-vs/static/media/services_hero-calls.7844f19c1c2b16e786518357a18a8b10.svg",
     "static/media/process_hero-visual.svg": "/jmr-vs/static/media/process_hero-visual.09c3a9fd195f25e41e0b51cc966ada9d.svg",
     "static/media/services_hero-packages.svg": "/jmr-vs/static/media/services_hero-packages.93151553a21ef7f498992c9a141dc1a2.svg",
@@ -19,9 +16,6 @@
     "static/media/process_support.svg": "/jmr-vs/static/media/process_support.36f1ba9d9652c2ceaf4d5902b5728933.svg",
     "static/media/contact_hero-visual.svg": "/jmr-vs/static/media/contact_hero-visual.9bb6009e2d03b403166a8db0f91548e4.svg",
     "static/media/services_hero-appointment.svg": "/jmr-vs/static/media/services_hero-appointment.d0729116165a2ca5d6b3.svg",
-    "static/media/testimonial_01-client_picture.png": "/jmr-vs/static/media/testimonial_01-client_picture.1b581753e71089f4fea4.png",
-    "static/media/testimonial_02-client_picture.png": "/jmr-vs/static/media/testimonial_02-client_picture.18ef7cf9d9812e844bea.png",
-    "static/media/testimonial_03-client_picture.png": "/jmr-vs/static/media/testimonial_03-client_picture.bae93527b7a9ab413fc1.png",
     "static/media/contact_bg.svg": "/jmr-vs/static/media/contact_bg.68ac066641d5bb76ee96.svg",
     "static/media/jmr-logo_ondark.svg": "/jmr-vs/static/media/jmr-logo_ondark.528a6bfa773e6cb60db499d3bc054313.svg",
     "static/media/logo_footer-instagram.svg": "/jmr-vs/static/media/logo_footer-instagram.f0858c95e674a0145803c1bf9a68995e.svg",
@@ -39,12 +33,12 @@
     "static/media/services_tick-icon_yellow.svg": "/jmr-vs/static/media/services_tick-icon_yellow.ecbf3dcd715225e5e9a7.svg",
     "static/media/form_tick-icon_green.svg": "/jmr-vs/static/media/form_tick-icon_green.8f1fc8fd96caa5ac1efe.svg",
     "static/media/tick_icon-white.svg": "/jmr-vs/static/media/tick_icon-white.bd17b374670344a0788d.svg",
-    "main.d32bbae5.css.map": "/jmr-vs/static/css/main.d32bbae5.css.map",
-    "main.7dea1372.js.map": "/jmr-vs/static/js/main.7dea1372.js.map",
+    "main.5ab4c05a.css.map": "/jmr-vs/static/css/main.5ab4c05a.css.map",
+    "main.b15e781a.js.map": "/jmr-vs/static/js/main.b15e781a.js.map",
     "845.e61d76ce.chunk.js.map": "/jmr-vs/static/js/845.e61d76ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d32bbae5.css",
-    "static/js/main.7dea1372.js"
+    "static/css/main.5ab4c05a.css",
+    "static/js/main.b15e781a.js"
   ]
 }
