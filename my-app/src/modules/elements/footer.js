@@ -53,7 +53,7 @@ function Footer() {
           </div>
         </div>
         <div className="footer_legal">
-          jmrvisas.com · 2025 · All Rights Reserved. 
+          2025 · All Rights Reserved. 
         </div>
       </div>
       <div className="footer-bg"></div>

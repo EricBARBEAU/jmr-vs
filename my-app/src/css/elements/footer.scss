@@ -9,17 +9,17 @@
 	grid-template-columns: repeat(4,1fr);
 	background-color: #2a2c8f;
 	overflow: hidden;
-	padding-top: 60px;
+	padding-top: 160px;
 	padding-bottom: 100px;
 
 	@media screen and (min-width: 680px) and (max-width: 1180px) {
 		grid-template-columns: repeat(3,1fr);
-		padding-top: 50px;
-		padding-bottom: 75px;
+		padding-top: 100px;
+		padding-bottom: 80px;
 	}
 	@media screen and (max-width: 680px) {
-		padding-top: 50px;
-		padding-bottom: 75px;
+		padding-top: 80px;
+		padding-bottom: 70px;
 	}
 
 	// Global block design
@@ -81,8 +81,8 @@
 		}
 		@media screen and (max-width: 680px) {
 			grid-area: 2/1/2/3;
-			margin-top: 40px;
-			padding-top: 40px;
+			margin-top: 60px;
+			padding-top: 60px;
 			border-top: 1px solid rgba(187, 189, 255, 0.24);
 		}
 
@@ -115,6 +115,9 @@
 			@media screen and (max-width: 1180px) {
 		      font-size: core.$font-size-14;
 		    }
+		    @media screen and (max-width: 680px) {
+				font-size: core.$font-size-12;
+			}
 		}
 	}
 
@@ -137,8 +140,8 @@
 		@media screen and (max-width: 1180px) {
 			grid-area: 2 / 1 / 2 / 4;
 			gap: 0px;
-			margin-top: 40px;
-			padding-top: 40px;
+			margin-top: 60px;
+			padding-top: 60px;
 			border-top: 1px solid rgba(187, 189, 255, 0.24);
 		}
 		@media screen and (max-width: 680px) {
@@ -161,6 +164,9 @@
 					gap: 4px;
 					font-size: core.$font-size-12;
 				}
+				@media screen and (max-width: 680px) {
+					font-size: core.$font-size-10;
+				}
 			}
 		}
 
@@ -168,6 +174,7 @@
 			color: #fff;
 			font-size: core.$font-size-10;
 			margin-top: 20px;
+			font-weight: 600;
 		}
 	}
 
@@ -176,9 +183,9 @@
 		display: block;
 		position: absolute;
 		right: 0px;
-		top: 10%;
+		top: 30%;
 		background: transparent;
-		height: 80%;
+		height: 50%;
 		width: calc(25% + 12vw);
 		border-left: 1px solid rgba(187, 189, 255, 0.24);
 
