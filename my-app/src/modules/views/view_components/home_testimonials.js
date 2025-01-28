@@ -1,6 +1,3 @@
-import testimonial_01 from '../../../img/services_hero-packages.svg';
-import testimonial_02 from '../../../img/services_hero-calls.svg';
-import testimonial_03 from '../../../img/services_hero-letter.svg';
 
 function HomeTestimonials() {
   return (
@@ -16,43 +13,54 @@ function HomeTestimonials() {
       	<div className="home_testimonials-grid">
       		<div className="testimonial_blk testimonial_blk-01">
       			<div className="testimonial_content">
-      				“The team at JMR Visa Services was so patient and always 
-      				very accomodative for all my queries. I really enjoy the 
-      				professionalism and touch of empathy for their clients.”
+      				“Thank you for helping me with my visa for the second time 
+      				(90 Days). The JMR team has been amazing, and I really 
+      				appreciate how easy and smooth the process was. 
+      				I’ll definitely recommend JMR to anyone needing visa help!”
       			</div>
       			<div className="testimonial_author">
-      				<img className="author_photo" src={testimonial_01} alt="Author" />
+      				<img 	className="author_photo" 
+      							src={`${process.env.PUBLIC_URL}/img/testimonials/01/testimonial_01-client_picture.png`}
+      							alt="Author" 
+      				/>
       				<div className="testimonial_author-copy">
-      					<div className="author_name">Diana F.</div>
+      					<div className="author_name">Mickey A.</div>
       					<div className="author_country">Approved Germany Visa</div>
       				</div>
       			</div>
       		</div>
       		<div className="testimonial_blk testimonial_blk-02">
       			<div className="testimonial_content">
-      				“JMR Visa Services was very  helpful when it comes to any 
-      				service, very trustworthy and  professional. I definitely 
-      				recommend to avail their visa assistance.”
+      				“Miss Jill made everything so much easier! I’m absolutely over 
+      				the moon and can’t wait to visit Switzerland! Even though it’s 
+      				just for 13 days because of work here. I’m sure I’ll be able 
+      				to visit again soon! Thank you for your assistance!”
       			</div>
       			<div className="testimonial_author">
-      				<img className="author_photo" src={testimonial_02} alt="Author" />
+      				<img 	className="author_photo" 
+      							src={`${process.env.PUBLIC_URL}/img/testimonials/02/testimonial_02-client_picture.png`}
+      							alt="Author" 
+      				/>
       				<div className="testimonial_author-copy">
-      					<div className="author_name">Sophia R.</div>
-      					<div className="author_country">Approved French Visa</div>
+      					<div className="author_name">Reynalyn R.</div>
+      					<div className="author_country">Approved Switzerland Visa</div>
       				</div>
       			</div>
       		</div>
       		<div className="testimonial_blk testimonial_blk-03">
       			<div className="testimonial_content">
-      				“Jillian at JMR Visa Services is very easy to talk with given the 
-      				fact that she can speaks different dialects. I love her services 
-      				approach, she's so professional!”
+      				“Thank you for guiding us with our application Jill. Thank you so 
+      				much and sorry to have you been stressed during the process. Thank 
+      				God! my visa is approved! Thank you so much for helping us!”
       			</div>
       			<div className="testimonial_author">
-      				<img className="author_photo" src={testimonial_03} alt="Author" />
+      				<img 	className="author_photo" 
+      							src={`${process.env.PUBLIC_URL}/img/testimonials/03/testimonial_03-client_picture.png`}
+      							alt="Author" 
+      				/>
       				<div className="testimonial_author-copy">
-      					<div className="author_name">April L.</div>
-      					<div className="author_country">Approved Danemark Visa</div>
+      					<div className="author_name">Emely A.</div>
+      					<div className="author_country">Approved France Visa</div>
       				</div>
       			</div>
       		</div>
