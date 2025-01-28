@@ -6,6 +6,10 @@
 	.testimonials_hero-content, .content_copy {
 		align-items: center;
 		width: 80% !important;
+
+		.content_copy {
+			width: 100% !important;
+		}
 	}
 	.testimonials_hero-content {
 		.content_copy-main, .content_copy-secondary {
@@ -19,6 +23,14 @@
 		position: relative;
 		width: 1200px;
 		height: 580px;
+		scale: 1;
+
+		@media screen and (max-width: 1280px) {
+  			scale: 0.95;
+  		}
+  		@media screen and (max-width: 1120px) {
+  			scale: 0.9;
+  		}
 	}
 
 	.carousel {
@@ -106,19 +118,36 @@
 			height: 100%;
 			opacity: 0.85;
 			cursor: pointer;
+			// Transition
+			transition: all .2s ease-in-out;
+			-moz-transition: all .2s ease-in-out;
+			-webkit-transition: all .2s ease-in-out;
 
 			&:hover, &.active {
 				opacity: 1;
 			}
 
+			&.active {
+				height: 516px;
+				width: 792px;
+			}
+
 			&:not(.active){
+				height: 238px;
 				width: 368px;
+
+				.testimonial_content {
+					display: -webkit-box;
+					-webkit-line-clamp: 6;
+					-webkit-box-orient: vertical;
+					overflow: hidden;
+				}
 			}
 
 			&.active .testimonial_photo {
 				display: block !important;
 				height: 222px;
-				overflow: hidden;
+				width: 360px;
 			}
 
 			&.active .testimonial_blk {
@@ -128,6 +157,7 @@
 			// Photo
 			.testimonial_photo {
 				display: none;
+				background-size: cover;
 
 				&-01 {
 					grid-area: 1/1;
@@ -149,181 +179,7 @@
 					display: block;
 					width: 40px;
 					height: 40px;
-				}
-			}
-		}
-
-		// Individual styling
-
-		// 01
-		#testimonial_01 {
-
-			.testimonial_photo {
-				&-01 {
-					background: url("../../img/testimonials/testimonial_01-photo_01.jpg") no-repeat;
-					background-size: cover;
-				}
-				&-02 {
-					background: url("../../img/testimonials/testimonial_01-photo_02.jpg") no-repeat;
-					background-size: cover;
-				}
-				&-03 {
-					background: url("../../img/testimonials/testimonial_01-photo_03.jpg") no-repeat;
-					background-size: cover;
-				}
-			}
-
-			.author_photo {
-				background: url("../../img/testimonials/testimonial_01-client_picture.png") no-repeat;
-				background-size: 100% 100%;
-
-			}
-		}
-		#testimonial_02 {
-
-			.testimonial_photo {
-				&-01 {
-					background: url("../../img/testimonials/testimonial_01-photo_01.jpg") no-repeat;
-					background-size: cover;
-				}
-				&-02 {
-					background: url("../../img/testimonials/testimonial_01-photo_02.jpg") no-repeat;
-					background-size: cover;
-				}
-				&-03 {
-					background: url("../../img/testimonials/testimonial_01-photo_03.jpg") no-repeat;
-					background-size: cover;
-				}
-			}
-
-			.author_photo {
-				background: url("../../img/testimonials/testimonial_02-client_picture.png") no-repeat;
-				background-size: 100% 100%;
-
-			}
-		}
-		#testimonial_03 {
-
-			.testimonial_photo {
-				&-01 {
-					background: url("../../img/testimonials/testimonial_01-photo_01.jpg") no-repeat;
-					background-size: cover;
-				}
-				&-02 {
-					background: url("../../img/testimonials/testimonial_01-photo_02.jpg") no-repeat;
-					background-size: cover;
-				}
-				&-03 {
-					background: url("../../img/testimonials/testimonial_01-photo_03.jpg") no-repeat;
-					background-size: cover;
-				}
-			}
-
-			.author_photo {
-				background: url("../../img/testimonials/testimonial_03-client_picture.png") no-repeat;
-				background-size: 100% 100%;
-
-			}
-		}
-		#testimonial_04 {
-
-			.testimonial_photo {
-				&-01 {
-					background: url("../../img/testimonials/testimonial_01-photo_01.jpg") no-repeat;
-					background-size: cover;
-				}
-				&-02 {
-					background: url("../../img/testimonials/testimonial_01-photo_02.jpg") no-repeat;
-					background-size: cover;
-				}
-				&-03 {
-					background: url("../../img/testimonials/testimonial_01-photo_03.jpg") no-repeat;
-					background-size: cover;
-				}
-			}
-		}
-		#testimonial_05 {
-
-			.testimonial_photo {
-				&-01 {
-					background: url("../../img/testimonials/testimonial_01-photo_01.jpg") no-repeat;
-					background-size: cover;
-				}
-				&-02 {
-					background: url("../../img/testimonials/testimonial_01-photo_02.jpg") no-repeat;
-					background-size: cover;
-				}
-				&-03 {
-					background: url("../../img/testimonials/testimonial_01-photo_03.jpg") no-repeat;
-					background-size: cover;
-				}
-			}
-		}
-		#testimonial_06 {
-
-			.testimonial_photo {
-				&-01 {
-					background: url("../../img/testimonials/testimonial_01-photo_01.jpg") no-repeat;
-					background-size: cover;
-				}
-				&-02 {
-					background: url("../../img/testimonials/testimonial_01-photo_02.jpg") no-repeat;
-					background-size: cover;
-				}
-				&-03 {
-					background: url("../../img/testimonials/testimonial_01-photo_03.jpg") no-repeat;
-					background-size: cover;
-				}
-			}
-		}
-		#testimonial_07 {
-
-			.testimonial_photo {
-				&-01 {
-					background: url("../../img/testimonials/testimonial_01-photo_01.jpg") no-repeat;
-					background-size: cover;
-				}
-				&-02 {
-					background: url("../../img/testimonials/testimonial_01-photo_02.jpg") no-repeat;
-					background-size: cover;
-				}
-				&-03 {
-					background: url("../../img/testimonials/testimonial_01-photo_03.jpg") no-repeat;
-					background-size: cover;
-				}
-			}
-		}
-		#testimonial_08 {
-
-			.testimonial_photo {
-				&-01 {
-					background: url("../../img/testimonials/testimonial_01-photo_01.jpg") no-repeat;
-					background-size: cover;
-				}
-				&-02 {
-					background: url("../../img/testimonials/testimonial_01-photo_02.jpg") no-repeat;
-					background-size: cover;
-				}
-				&-03 {
-					background: url("../../img/testimonials/testimonial_01-photo_03.jpg") no-repeat;
-					background-size: cover;
-				}
-			}
-		}
-		#testimonial_09 {
-
-			.testimonial_photo {
-				&-01 {
-					background: url("../../img/testimonials/testimonial_01-photo_01.jpg") no-repeat;
-					background-size: cover;
-				}
-				&-02 {
-					background: url("../../img/testimonials/testimonial_01-photo_02.jpg") no-repeat;
-					background-size: cover;
-				}
-				&-03 {
-					background: url("../../img/testimonials/testimonial_01-photo_03.jpg") no-repeat;
-					background-size: cover;
+					background-size: 100% 100%;
 				}
 			}
 		}

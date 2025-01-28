@@ -1,64 +1,91 @@
 [
   {
     "id": "testimonial_01",
-    "testimonial_class": "testimonial_blk testimonial_blk-01",
-    "content": "The team at JMR Visa Services was so patient and always very accomodative for all my queries. I really enjoy the professionalism and touch of empathy for their clients.",
-    "author_name": "Diana F.",
+    "photo1": "/img/testimonials/01/testimonial_01-photo_01.jpg",
+    "photo2": "/img/testimonials/01/testimonial_01-photo_02.jpg",
+    "photo3": "/img/testimonials/01/testimonial_01-photo_03.jpg",
+    "content": "Thank you for helping me with my visa for the second time (90 Days). The JMR team has been amazing, and I really appreciate how easy and smooth the process was. I’ll definitely recommend JMR to anyone needing visa help!",
+    "author_photo": "/img/testimonials/01/testimonial_01-client_picture.png",
+    "author_name": "Mickey A.",
     "author_country": "Approved Germany Visa"
   },
   {
     "id": "testimonial_02",
-    "testimonial_class": "testimonial_blk testimonial_blk-02",
-    "content": "JMR Visa Services was very  helpful when it comes to any service, very trustworthy and  professional. I definitely recommend to avail their visa assistance.",
-    "author_name": "Sophia R.",
-    "author_country": "Approved French Visa"
+    "photo1": "/img/testimonials/02/testimonial_02-photo_01.jpg",
+    "photo2": "/img/testimonials/02/testimonial_02-photo_02.jpg",
+    "photo3": "/img/testimonials/02/testimonial_02-photo_03.jpg",
+    "content": "Miss Jill made everything so much easier! I’m absolutely over the moon and can’t wait to visit Switzerland! Even though it’s just for 13 days because of work here. I’m sure I’ll be able to visit again soon! Thank you for your assistance!",
+    "author_photo": "/img/testimonials/02/testimonial_02-client_picture.png",
+    "author_name": "Reynalyn R.",
+    "author_country": "Approved Switzerland Visa"
   },
   {
     "id": "testimonial_03",
-    "testimonial_class": "testimonial_blk testimonial_blk-03",
-    "content": "Jillian at JMR Visa Services is very easy to talk with given the fact that she can speaks different dialects. I love her services approach, she's so professional!",
-    "author_name": "April L.",
-    "author_country": "Approved Danemark Visa"
+    "photo1": "/img/testimonials/03/testimonial_03-photo_01.jpg",
+    "photo2": "/img/testimonials/03/testimonial_03-photo_02.jpg",
+    "photo3": "/img/testimonials/03/testimonial_03-photo_03.jpg",
+    "content": "Thank you for guiding us with our application Jill. Thank you so much and sorry to have you been stressed during the process. Thank God! my visa is approved! Thank you so much for helping us!",
+    "author_photo": "/img/testimonials/03/testimonial_03-client_picture.png",
+    "author_name": "Emely A.",
+    "author_country": "Approved France Visa"
   },
   {
     "id": "testimonial_04",
-    "testimonial_class": "testimonial_blk testimonial_blk-04",
+    "photo1": "/img/testimonials/01/testimonial_01-photo_01.jpg",
+    "photo2": "/img/testimonials/01/testimonial_01-photo_02.jpg",
+    "photo3": "/img/testimonials/01/testimonial_01-photo_03.jpg",
     "content": "Page 2, Testimonial 1",
+    "author_photo": "/img/testimonials/01/testimonial_01-client_picture.png",
     "author_name": "Name",
     "author_country": "Approved Germany Visa"
   },
   {
     "id": "testimonial_05",
-    "testimonial_class": "testimonial_blk testimonial_blk-05",
+    "photo1": "/img/testimonials/02/testimonial_02-photo_01.jpg",
+    "photo2": "/img/testimonials/02/testimonial_02-photo_02.jpg",
+    "photo3": "/img/testimonials/02/testimonial_02-photo_03.jpg",
     "content": "Page 2, Testimonial 2",
+    "author_photo": "/img/testimonials/02/testimonial_02-client_picture.png",
     "author_name": "Name",
     "author_country": "Approved French Visa"
   },
   {
     "id": "testimonial_06",
-    "testimonial_class": "testimonial_blk testimonial_blk-06",
+    "photo1": "/img/testimonials/03/testimonial_03-photo_01.jpg",
+    "photo2": "/img/testimonials/03/testimonial_03-photo_02.jpg",
+    "photo3": "/img/testimonials/03/testimonial_03-photo_03.jpg",
     "content": "Page 2, Testimonial 3",
+    "author_photo": "/img/testimonials/03/testimonial_03-client_picture.png",
     "author_name": "Name",
     "author_country": "Approved Danemark Visa"
   },
   {
     "id": "testimonial_07",
-    "testimonial_class": "testimonial_blk testimonial_blk-04",
+    "photo1": "/img/testimonials/01/testimonial_01-photo_01.jpg",
+    "photo2": "/img/testimonials/01/testimonial_01-photo_02.jpg",
+    "photo3": "/img/testimonials/01/testimonial_01-photo_03.jpg",
     "content": "Page 3, Testimonial 1",
+    "author_photo": "/img/testimonials/01/testimonial_01-client_picture.png",
     "author_name": "Name",
     "author_country": "Approved Germany Visa"
   },
   {
     "id": "testimonial_08",
-    "testimonial_class": "testimonial_blk testimonial_blk-05",
+    "photo1": "/img/testimonials/02/testimonial_02-photo_01.jpg",
+    "photo2": "/img/testimonials/02/testimonial_02-photo_02.jpg",
+    "photo3": "/img/testimonials/02/testimonial_02-photo_03.jpg",
     "content": "Page 3, Testimonial 2",
+    "author_photo": "/img/testimonials/02/testimonial_02-client_picture.png",
     "author_name": "Name",
     "author_country": "Approved French Visa"
   },
   {
     "id": "testimonial_09",
-    "testimonial_class": "testimonial_blk testimonial_blk-06",
+    "photo1": "/img/testimonials/01/testimonial_01-photo_01.jpg",
+    "photo2": "/img/testimonials/01/testimonial_01-photo_02.jpg",
+    "photo3": "/img/testimonials/01/testimonial_01-photo_03.jpg",
     "content": "Page 3, Testimonial 3",
+    "author_photo": "/img/testimonials/03/testimonial_03-client_picture.png",
     "author_name": "Name",
     "author_country": "Approved Danemark Visa"
   }

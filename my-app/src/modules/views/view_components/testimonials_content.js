@@ -35,7 +35,7 @@ function TestimonialsContent() {
 
   return (
     <div className="testimonials_container">
-
+      {/*Carousel container*/}
       <div className="carousel">
         {chunkedData.map((page, index) => {
           let pageClass = "";
@@ -48,33 +48,68 @@ function TestimonialsContent() {
           }
 
           return (
-            <div key={index} className={`carousel_page ${pageClass}`}>
-              {page.map((item) => (
-                <div
-                  key={item.id}
-                  className="testimonial"
-                  onClick={() => handleBlockClick(item.id)}
-                >
-                  <span className={activeBlock === item.id ? "active" : ""} id={item.id}>
-                    {/* Testimonial Photos */}
-                    <div className="testimonial_photo testimonial_photo-01"></div>
-                    <div className="testimonial_photo testimonial_photo-02"></div>
-                    <div className="testimonial_photo testimonial_photo-03"></div>
 
-                    {/* Testimonial Content */}
-                    <div className={item.testimonial_class}>
-                      <div className="testimonial_content">“{item.content}”</div>
-                      <div className="testimonial_author">
-                        <div className="author_photo"></div>
-                        <div className="testimonial_author-copy">
-                          <div className="author_name">{item.author_name}</div>
-                          <div className="author_country">{item.author_country}</div>
+            // Page container
+            <div key={index} className={`carousel_page ${pageClass}`}>
+              {page.map((item) => {
+                // Generate image URLs dynamically
+                const photo1 = `${process.env.PUBLIC_URL}${item.photo1}`;
+                const photo2 = `${process.env.PUBLIC_URL}${item.photo2}`;
+                const photo3 = `${process.env.PUBLIC_URL}${item.photo3}`;
+                const authorPhoto = `${process.env.PUBLIC_URL}${item.author_photo}`;
+
+                return (
+
+                  // Block outer div
+                  <div
+                    key={item.id}
+                    className="testimonial"
+                    onClick={() => handleBlockClick(item.id)}
+                  >
+                    {/*Block container*/}
+                    <span
+                      className={activeBlock === item.id ? "active" : ""}
+                      id={item.id}
+                    >
+                      {/* Testimonial Photos */}
+                      <img
+                        className="testimonial_photo testimonial_photo-01"
+                        src={photo1}
+                        alt="testimonial number 1"
+                      />
+                      <img
+                        className="testimonial_photo testimonial_photo-02"
+                        src={photo2}
+                        alt="testimonial number 2"
+                      />
+                      <img
+                        className="testimonial_photo testimonial_photo-03"
+                        src={photo3}
+                        alt="testimonial number 3"
+                      />
+
+                      {/* Testimonial Content */}
+                      <div className="testimonial_blk">
+                        <div className="testimonial_content">
+                          “{item.content}”
+                        </div>
+                        <div className="testimonial_author">
+                          <div className="author_photo">
+                            <img src={authorPhoto} alt="author" />
+                          </div>
+                          <div className="testimonial_author-copy">
+                            <div className="author_name">{item.author_name}</div>
+                            <div className="author_country">
+                              {item.author_country}
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </span>
-                </div>
-              ))}
+
+                    </span>
+                  </div>
+                );
+              })}
             </div>
           );
         })}
@@ -88,8 +123,6 @@ function TestimonialsContent() {
           ))}
         </div>
       </div>
-
-
     </div>
   );
 }
