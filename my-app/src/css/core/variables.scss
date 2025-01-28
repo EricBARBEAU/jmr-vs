@@ -8,9 +8,6 @@
 	$colour-jmr-red:		#E5656A;
 	$colour-jmr-yellow:		#FBA356;
 	$colour-jmr-green:		#88D0E2;
-
-	// Background Colours
-
 	
 	// Font Colours
 
@@ -27,26 +24,6 @@
 	$font-mono:			monospace;
 	$font-link:			"Inter", serif;
 	$font-button:		"Afacad", sans-serif;
-
-	html, h4 {
-		font-family: "Inter", serif;
-
-		b {
-			font-weight: 600;
-		}
-	}
-	h1, h2, h3 {
-		font-family: "Afacad", sans-serif;
-	}
-	code {
-		font-family: monospace;
-	}
-	a, .navbar_mobile .btn_close {
-		font-family: "Inter", serif;
-	}
-	button, .btn {
-		font-family: "Afacad", sans-serif;
-	}
 
 	// Size
 
@@ -65,10 +42,6 @@
 	$font-size-h3:			2.4rem;
 	$font-size-h4:			1.6rem;
 
-	h1 {	font-size: 5.0rem; font-weight: 800;	}
-	h2 {	font-size: 4.0rem; font-weight: 600;	}
-	h3 {	font-size: 2.4rem; font-weight: 600;	}
-
 	// Letter Spacing
 
 	$font-spacing-title:	-0.02em;
@@ -78,3 +51,30 @@
 	$line-height-100:		100%;
 	$line-height-120:		120%;
 	$line-height-140:		140%;
+
+
+	html, h4 {
+		font-family: $font-copy;
+
+		b {
+			font-weight: 600;
+		}
+	}
+	h1, h2, h3 {
+		font-family: $font-title;
+		letter-spacing: $font-spacing-title;
+	}
+	code {
+		font-family: $font-mono;
+	}
+	a, .navbar_mobile .btn_close {
+		font-family: $font-copy;
+	}
+	button, .btn {
+		font-family: $font-title;
+	}
+
+	h1 {	font-size: $font-size-h1; font-weight: 800;	}
+	h2 {	font-size: $font-size-h2; font-weight: 600;	}
+	h3 {	font-size: $font-size-h3; font-weight: 600;	}
+	
