@@ -21,15 +21,21 @@
 	.testimonials_container, .carousel {
 		display: flex;
 		position: relative;
-		width: 1200px;
-		height: 580px;
-		scale: 1;
+		width: 120%;
+		height: 380px;
 
+		@media screen and (min-width: 1280px) {
+  			scale: 1;
+  		}
 		@media screen and (max-width: 1280px) {
   			scale: 0.95;
   		}
   		@media screen and (max-width: 1120px) {
   			scale: 0.9;
+  		}
+  		@media screen and (min-width: 1120px) {
+  			width: 1200px;
+			height: 580px;
   		}
 	}
 
@@ -38,7 +44,6 @@
 		flex-direction: column;
 		position: relative;
 
-
 		// Page
 		.carousel_page {
 			display: grid;
@@ -46,8 +51,15 @@
 			position: absolute;
 			top: 0; left: 0;
 			width: 100%;
-			gap: 40px;
+			gap: 35px;
+			height: 80%;
 			transform: translateX(100%);
+
+			@media screen and (min-width: 1120px) {
+	  			gap: 40px;
+	  			height: auto;
+	  		}
+
 			// Transition
 			transition: transform .3s ease-in-out;
 			-moz-transition: transform .3s ease-in-out;
@@ -83,9 +95,9 @@
 				background-color: rgba(255, 255, 255, 0.3);
 				cursor: pointer;
 				// Transition
-				transition: transform .3s ease-in-out;
-				-moz-transition: transform .3s ease-in-out;
-				-webkit-transition: transform .3s ease-in-out;
+				transition: transform .2s ease-in-out;
+				-moz-transition: transform .2s ease-in-out;
+				-webkit-transition: transform .2s ease-in-out;
 
 				&.active {
 					background-color: #fff;
@@ -93,65 +105,74 @@
 			}
 		}
 
-		// Global
-
 		// Outer layer for testimonial
 		.testimonial {
     		box-sizing: border-box;
 
-    		&:has(> .active) {
-				grid-column-start: 1;
-				grid-column-end: 3;
-				grid-row-start: 1;
-				grid-row-end: 3;
+    		@media screen and (min-width: 1120px) {
+	    		&:has(> .active) {
+					grid-column-start: 1;
+					grid-column-end: 3;
+					grid-row-start: 1;
+					grid-row-end: 3;
+				}
 			}
 		}
+
 		// Testimonial block
 		.testimonial span {
 			display: grid;
-			grid-template-columns: calc(50% - 12px) calc(50% - 12px);
+			grid-template-columns: 100%;
 			position: relative;
-			background-color: #fff;
 			border-radius: 8px;
 			gap: 24px;
 			padding: 24px;
 			height: 100%;
 			opacity: 0.85;
 			cursor: pointer;
-			// Transition
-			transition: all .2s ease-in-out;
-			-moz-transition: all .2s ease-in-out;
-			-webkit-transition: all .2s ease-in-out;
 
-			&:hover, &.active {
+			@media screen and (min-width: 1120px) {
+				grid-template-columns: calc(50% - 12px) calc(50% - 12px);
+			}
+
+			// Transition
+			transition: all .1s ease-in-out;
+			-moz-transition: all .1s ease-in-out;
+			-webkit-transition: all .1s ease-in-out;
+
+			&:hover {
 				opacity: 1;
 			}
 
-			&.active {
-				height: 516px;
-				width: 792px;
-			}
+			// Active state
+			@media screen and (min-width: 1120px) {
 
-			&:not(.active){
-				height: 238px;
-				width: 368px;
+				&.active {
+					opacity: 1;
+					height: 516px;
+					width: 792px;
 
-				.testimonial_content {
-					display: -webkit-box;
-					-webkit-line-clamp: 6;
-					-webkit-box-orient: vertical;
-					overflow: hidden;
+					.testimonial_photo {
+						display: block !important;
+						height: 222px;
+						width: 360px;
+					}
+					.testimonial_blk {
+						height: 222px;
+					}
 				}
-			}
 
-			&.active .testimonial_photo {
-				display: block !important;
-				height: 222px;
-				width: 360px;
-			}
+				&:not(.active){
+					height: 238px;
+					width: 368px;
 
-			&.active .testimonial_blk {
-				height: 222px;
+					.testimonial_content {
+						display: -webkit-box;
+						-webkit-line-clamp: 6;
+						-webkit-box-orient: vertical;
+						overflow: hidden;
+					}
+				}
 			}
 
 			// Photo
@@ -172,14 +193,41 @@
 
 			// Block
 			.testimonial_blk {
-				width: 320px;
+				width: 100%;
 				overflow: hidden;
+
+				@media screen and (min-width: 1120px) {
+					width: 320px;
+				}
 
 				.author_photo {
 					display: block;
 					width: 40px;
 					height: 40px;
 					background-size: 100% 100%;
+				}
+			}
+
+			// Specific design
+			&#testimonial_01, &#testimonial_04, &#testimonial_07 {
+				background-color: #FFF8F1;
+
+				.author_country {
+					color: #B97840;
+				}
+			}
+			&#testimonial_02, &#testimonial_05, &#testimonial_08 {
+				background-color: #F5F5FF;
+
+				.author_country {
+					color: #5559CD;
+				}
+			}
+			&#testimonial_03, &#testimonial_06, &#testimonial_09 {
+				background-color: #FFF7F7;
+
+				.author_country {
+					color: #E95555;
 				}
 			}
 		}

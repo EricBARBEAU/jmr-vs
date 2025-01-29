@@ -23,14 +23,17 @@ function TestimonialsContent() {
 
   // Handle block click
   const handleBlockClick = (blockId) => {
-    // Toggle active state
-    setActiveBlock(blockId === activeBlock ? null : blockId); 
+    // Only set activeBlock if the clicked block is not already active
+    if (blockId !== activeBlock) {
+      setActiveBlock(blockId);
+    }
   };
 
   // Handle page change
   const handlePageChange = (pageIndex) => {
     setCurrentPage(pageIndex);
-    setActiveBlock(chunkedData[pageIndex][0].id); // Set active block to the first testimonial of the new page
+    // Set active block to the first testimonial of the new page
+    setActiveBlock(chunkedData[pageIndex][0].id);
   };
 
   return (
@@ -72,21 +75,9 @@ function TestimonialsContent() {
                       id={item.id}
                     >
                       {/* Testimonial Photos */}
-                      <img
-                        className="testimonial_photo testimonial_photo-01"
-                        src={photo1}
-                        alt="testimonial number 1"
-                      />
-                      <img
-                        className="testimonial_photo testimonial_photo-02"
-                        src={photo2}
-                        alt="testimonial number 2"
-                      />
-                      <img
-                        className="testimonial_photo testimonial_photo-03"
-                        src={photo3}
-                        alt="testimonial number 3"
-                      />
+                      <img className="testimonial_photo" src={photo1} alt="testimonial" />
+                      <img className="testimonial_photo" src={photo2} alt="testimonial" />
+                      <img className="testimonial_photo" src={photo3} alt="testimonial" />
 
                       {/* Testimonial Content */}
                       <div className="testimonial_blk">

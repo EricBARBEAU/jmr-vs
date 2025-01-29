@@ -521,15 +521,34 @@
 
 // 05 - Testimonials page hero
 .testimonials_hero {
-	min-height: 820px;
+	height: 560px;
 	background: url("../../img/testimonials_hero-background@1.5x.jpg") no-repeat;
 	background-size: cover;
 	background-position: center;
 	flex-direction: column;
 	justify-content: flex-start;
 	padding-top: 80px;
-	padding-bottom: 100px;
-	gap: 60px;
+	padding-bottom: 0px;
+	gap: 10px;
+
+	@media screen and (min-width: 1120px) {
+		height: 920px;
+		padding-top: 80px;
+		padding-bottom: 100px;
+		gap: 60px;
+	}
+	@media screen and (max-width: 1120px) {
+		padding-left: 4vw !important;
+		padding-right: 4vw !important;
+	}
+	@media screen and (max-width: 890px) {
+		padding-left: 2vw !important;
+		padding-right: 2vw !important;
+	}
+	@media screen and (max-width: 680px) {
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
 }
 
 // 06 - Contact page hero
