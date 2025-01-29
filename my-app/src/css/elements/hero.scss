@@ -521,7 +521,7 @@
 
 // 05 - Testimonials page hero
 .testimonials_hero {
-	height: 560px;
+	height: auto;
 	background: url("../../img/testimonials_hero-background@1.5x.jpg") no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -532,7 +532,6 @@
 	gap: 10px;
 
 	@media screen and (min-width: 1120px) {
-		height: 920px;
 		padding-top: 80px;
 		padding-bottom: 100px;
 		gap: 60px;
@@ -544,10 +543,12 @@
 	@media screen and (max-width: 890px) {
 		padding-left: 2vw !important;
 		padding-right: 2vw !important;
+		padding-top: 60px;
 	}
 	@media screen and (max-width: 680px) {
 		padding-left: 20px !important;
 		padding-right: 20px !important;
+		gap: 0px;
 	}
 }
 

@@ -96,7 +96,6 @@ function TestimonialsContent() {
                           </div>
                         </div>
                       </div>
-
                     </span>
                   </div>
                 );
