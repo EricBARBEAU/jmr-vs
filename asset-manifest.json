@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jmr-vs/static/css/main.ce770cce.css",
-    "main.js": "/jmr-vs/static/js/main.d18bec78.js",
+    "main.css": "/jmr-vs/static/css/main.e65bec7f.css",
+    "main.js": "/jmr-vs/static/js/main.1adb61c4.js",
     "static/js/845.e61d76ce.chunk.js": "/jmr-vs/static/js/845.e61d76ce.chunk.js",
     "static/media/about_id-picture@2x.png": "/jmr-vs/static/media/about_id-picture@2x.dfb221b8401ee7ed076c.png",
     "static/media/about_id-background@2x.png": "/jmr-vs/static/media/about_id-background@2x.f1a20b8520dd3ad22270.png",
@@ -33,12 +33,12 @@
     "static/media/services_tick-icon_yellow.svg": "/jmr-vs/static/media/services_tick-icon_yellow.ecbf3dcd715225e5e9a7.svg",
     "static/media/form_tick-icon_green.svg": "/jmr-vs/static/media/form_tick-icon_green.8f1fc8fd96caa5ac1efe.svg",
     "static/media/tick_icon-white.svg": "/jmr-vs/static/media/tick_icon-white.bd17b374670344a0788d.svg",
-    "main.ce770cce.css.map": "/jmr-vs/static/css/main.ce770cce.css.map",
-    "main.d18bec78.js.map": "/jmr-vs/static/js/main.d18bec78.js.map",
+    "main.e65bec7f.css.map": "/jmr-vs/static/css/main.e65bec7f.css.map",
+    "main.1adb61c4.js.map": "/jmr-vs/static/js/main.1adb61c4.js.map",
     "845.e61d76ce.chunk.js.map": "/jmr-vs/static/js/845.e61d76ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce770cce.css",
-    "static/js/main.d18bec78.js"
+    "static/css/main.e65bec7f.css",
+    "static/js/main.1adb61c4.js"
   ]
 }
