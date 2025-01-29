@@ -1,4 +1,6 @@
+// React stuff import
 import React, { useState } from "react";
+import { useSwipeable } from "react-swipeable";
 import data from "./data/testimonials-data.json";
 
 // Utility function to split array into chunks
@@ -36,8 +38,22 @@ function TestimonialsContent() {
     setActiveBlock(chunkedData[pageIndex][0].id);
   };
 
+  // Swipe handlers
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: () => {
+      if (currentPage < chunkedData.length - 1) {
+        handlePageChange(currentPage + 1);
+      }
+    },
+    onSwipedRight: () => {
+      if (currentPage > 0) {
+        handlePageChange(currentPage - 1);
+      }
+    },
+  });
+
   return (
-    <div className="testimonials_container">
+    <div className="testimonials_container" {...swipeHandlers}>
       {/*Carousel container*/}
       <div className="carousel">
         {chunkedData.map((page, index) => {
