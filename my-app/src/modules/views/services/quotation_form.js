@@ -154,7 +154,7 @@ function ServicesQuotation() {
                 
                 <div className="radio-label">
                   <label className="label-main" for="flight-reservation">Flight/hotel reservations</label>
-                  <span className="label-secondary">Something here</span>
+                  <span className="label-secondary">Avoid unnecessary expenses</span>
                 </div>
               </div>
 

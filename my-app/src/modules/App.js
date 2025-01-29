@@ -1,6 +1,6 @@
 // React stuff
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
 // Elements import
 import ScrollToTop from './functions/scroll-top';
 import Nav from './elements/navbar';
@@ -33,29 +33,41 @@ function App() {
 
     return (
       <div className="App">
-        <BrowserRouter basename="/jmr-vs">
+        <HashRouter>
             <ScrollToTop />
             <MobileNav isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
             <Nav toggleSidebar={toggleSidebar} />
             <Routes>
-                <Route path="/" element={<Layout />} >
+                <Route path="/" element={<Layout />}>
                     <Route index element={<Home />} />
-                    <Route path="/" element={<ServicesLayout />} >
-                        <Route index path="/services/visa-service-packages" element={<ServicesPackages />} />
-                        <Route path="/services/consultation-calls" element={<ServicesCalls />} />
-                        <Route path="/services/letter-services" element={<ServicesLetter />} />
-                        <Route path="/services/reservations" element={<ServicesReservations />} />
-                        <Route path="/services/appointment-scheduling" element={<ServicesAppointment />} />
+                    <Route path="services" element={<ServicesLayout />}>
+                        <Route path="visa-service-packages" element={<ServicesPackages />} />
+                        <Route path="consultation-calls" element={<ServicesCalls />} />
+                        <Route path="letter-services" element={<ServicesLetter />} />
+                        <Route path="reservations" element={<ServicesReservations />} />
+                        <Route path="appointment-scheduling" element={<ServicesAppointment />} />
                     </Route>
-                    <Route path="/our-process" element={<Process />} />
-                    <Route path="/testimonials" element={<Testimonials />} />
-                    <Route path="/about-us" element={<About />} />
-                    <Route path="/contact" element={<Contact />} />
-                </Route>                
+                    <Route path="our-process" element={<Process />} />
+                    <Route path="testimonials" element={<Testimonials />} />
+                    <Route path="about-us" element={<About />} />
+                    <Route path="contact" element={<Contact />} />
+                    <Route path="*" element={<NotFound />} />
+                </Route>
             </Routes>
             <Footer />
-        </BrowserRouter>
+        </HashRouter>
       </div>
+    );
+}
+
+function NotFound() {
+    const location = useLocation();
+
+    return (
+        <div>
+            <h1>404 - Page Not Found</h1>
+            <p>No match for <code>{location.pathname}</code></p>
+        </div>
     );
 }
 
