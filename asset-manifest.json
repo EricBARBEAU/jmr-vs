@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jmr-vs/static/css/main.5ab4c05a.css",
-    "main.js": "/jmr-vs/static/js/main.b15e781a.js",
+    "main.js": "/jmr-vs/static/js/main.d18bec78.js",
     "static/js/845.e61d76ce.chunk.js": "/jmr-vs/static/js/845.e61d76ce.chunk.js",
     "static/media/about_hero-background@2x.jpg": "/jmr-vs/static/media/about_hero-background@2x.cc894d7907c9351268f1.jpg",
     "static/media/testimonials_hero-background@2x.jpg": "/jmr-vs/static/media/testimonials_hero-background@2x.20914a84e44ba6b639d2.jpg",
@@ -34,11 +34,11 @@
     "static/media/form_tick-icon_green.svg": "/jmr-vs/static/media/form_tick-icon_green.8f1fc8fd96caa5ac1efe.svg",
     "static/media/tick_icon-white.svg": "/jmr-vs/static/media/tick_icon-white.bd17b374670344a0788d.svg",
     "main.5ab4c05a.css.map": "/jmr-vs/static/css/main.5ab4c05a.css.map",
-    "main.b15e781a.js.map": "/jmr-vs/static/js/main.b15e781a.js.map",
+    "main.d18bec78.js.map": "/jmr-vs/static/js/main.d18bec78.js.map",
     "845.e61d76ce.chunk.js.map": "/jmr-vs/static/js/845.e61d76ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5ab4c05a.css",
-    "static/js/main.b15e781a.js"
+    "static/js/main.d18bec78.js"
   ]
 }
