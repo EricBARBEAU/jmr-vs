@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta http-equiv="refresh" content="0; url=/" />
     <script>
-	  // Redirect 404s to index.html
-	  var pathname = window.location.pathname;
-	  var origin = window.location.origin;
-	  window.location.replace(origin + "/index.html?redirect=" + pathname);
-	</script>
-  </head>
-  <body>
-    Redirecting...
-  </body>
+        // Redirect to the React app with the current path
+        var path = window.location.pathname + window.location.search;
+        window.location.replace("/?" + path);
+    </script>
+</head>
+<body>
+</body>
 </html>
