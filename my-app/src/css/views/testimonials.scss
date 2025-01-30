@@ -155,7 +155,6 @@
 			padding: 24px;
 			height: 100%;
 			opacity: 0.85;
-			cursor: pointer;
 
 			@media screen and (min-width: 1120px) {
 				grid-template-columns: calc(50% - 12px) calc(50% - 12px);
@@ -191,6 +190,7 @@
 				&:not(.active){
 					height: 238px;
 					width: 368px;
+					cursor: pointer;
 
 					.testimonial_content {
 						display: -webkit-box;
