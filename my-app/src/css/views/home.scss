@@ -223,5 +223,43 @@
 			}
 		}
 	}
+
+	// Payment methods section
+	.home_payment-methods {
+
+		background: linear-gradient(180deg, rgb(248.17857563495636, 248.44962269067764, 255) 0%, rgb(255, 255, 255) 100%);
+		padding-top: 80px;
+		padding-bottom: 60px;
+		gap: 40px;
+		
+		// Grid
+		.home_payments-grid {
+			display: flex;
+			position: relative;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 60px;
+			flex-direction: row;
+
+			@media screen and (max-width: 1280px) {
+				gap: 40px;
+			}
+			@media screen and (max-width: 680px) {
+				gap: 20px;
+			}
+
+			.payment_method {
+				display: block;
+				height: 120px;
+				width: 180px;
+
+				@media screen and (max-width: 1280px) {
+					height: 100px;
+					width: 150px;
+				}
+			}
+		}	
+
+	}
 }
 
