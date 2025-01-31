@@ -10,7 +10,7 @@ function AboutContent() {
 					hard way that travelling to Europe is not always 
 					an easy and relaxing process. After facing a rejected 
 					visa demand, stress and confusion regarding the whole 
-					visa demand process, Jillian started digging around 
+					visa demand process, she started digging around 
 					for all the information she could find about the 
 					application process. 
 				</div>
