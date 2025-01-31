@@ -22,7 +22,7 @@ function Footer() {
           </a>
         </div>
         <div className="footer_email">
-          contact@jmrvisas.com
+          jmrfvs@gmail.com
         </div>
       </div>
       <div className="footer_blk footer_blk-02">

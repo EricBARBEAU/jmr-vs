@@ -10,15 +10,15 @@
     "id": "process_step process_step-02",
     "alt": "Step 02",
     "color": "pill pill_yellow",
-    "title": "Pay the service fee",
-    "body": "You will receive an invoice letter with the details for payment in your email for the service(s) you chose. If you have successfully transferred the payment, send us a copy of this transaction for proof of payment. We will confirm the payment as soon as it’s received."
+    "title": "Your 1 hour consultation call",
+    "body": "We will conduct a one-on-one virtual consultation call for your visa application process. We will discuss, plan strategically and assess all the documentations we will be preparing for your visa application."
   },
   {
     "id": "process_step process_step-03",
     "alt": "Step 03",
     "color": "pill pill_blue",
-    "title": "Your 1 hour consultation call",
-    "body": "We will conduct a one-on-one virtual consultation call for your visa application process. We will discuss, plan strategically and assess all the documentations we will be preparing for your visa application."
+    "title": "Pay the service fee",
+    "body": "You will receive an invoice letter with the details for payment in your email for the service(s) you chose. If you have successfully transferred the payment, send us a copy of this transaction for proof of payment. We will confirm the payment as soon as it’s received."
   },
   {
     "id": "process_step process_step-04",

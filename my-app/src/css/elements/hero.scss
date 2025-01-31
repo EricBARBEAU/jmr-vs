@@ -573,6 +573,12 @@
 	padding-bottom: 0px;
 	gap: 10px;
 
+	@media screen and (min-width: 1280px) {
+		.content_copy-main {
+			max-width: 80% !important;
+		}
+	}
+
 	@media screen and (min-width: 1120px) {
 		padding-top: 80px;
 		padding-bottom: 100px;

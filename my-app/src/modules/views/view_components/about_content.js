@@ -15,7 +15,7 @@ function AboutContent() {
 					application process. 
 				</div>
 				<div className="intro_subtitle">
-					Five years later, Jillian helped more than 100 Filipinos 
+					Five years later, Jill helped more than 100 Filipinos 
 					follow their dreams and travel to Europe using her skills 
 					and knowledge.
 				</div>

@@ -9,7 +9,7 @@ function AboutHero() {
     		<div className="content_copy">
     			<h1 className="content_copy-main">Visa assistance powered by real-life experience.</h1>
     			<div className="content_copy-secondary">
-    				<b>Since 2021</b>, we have been putting our <b>knowledge and 
+    				<b>Since 2022</b>, we have been putting our <b>knowledge and 
     				experience</b> to the <b>service of Filipinos</b> wanting to 
     				travel to the Schengen space. 
     			</div>
