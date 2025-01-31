@@ -16,8 +16,6 @@ function HomeTestimonials() {
 
 	// Track current page
   const [currentPage, setCurrentPage] = useState(0);
-  // Initialize active block to the first testimonial
-  const [activeBlock, setActiveBlock] = useState(data[0].id);
 
   // Split data into chunks of 3 testimonials per page
   const testimonialsPerPage = 3;
@@ -26,8 +24,6 @@ function HomeTestimonials() {
   // Handle page change
   const handlePageChange = (pageIndex) => {
     setCurrentPage(pageIndex);
-    // Set active block to the first testimonial of the new page
-    setActiveBlock(chunkedData[pageIndex][0].id);
   };
 
   // Swipe handlers
