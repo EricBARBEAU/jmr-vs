@@ -50,7 +50,7 @@ function AboutContent() {
 						<div className="data_row data_row-3">
 							<div className="data_column">
 								<span>Operating since</span>
-								<div>2021</div>
+								<div>2022</div>
 							</div>
 							<div className="data_column">
 								<span>Success rate</span>
