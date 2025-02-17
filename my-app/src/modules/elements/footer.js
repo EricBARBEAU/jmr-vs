@@ -2,6 +2,7 @@ import jmr_logo from '../../img/jmr-logo_ondark.svg';
 import facebook from '../../img/logo_footer-facebook.svg';
 import instagram from '../../img/logo_footer-instagram.svg';
 import youtube from '../../img/logo_footer-youtube.svg';
+import tiktok from '../../img/logo_footer-tiktok.svg';
 
 import { Link } from "react-router-dom";
 
@@ -19,6 +20,9 @@ function Footer() {
           </a>
           <a href="https://www.youtube.com/@JMRvisas" className="social_link social_link-yt" alt="Youtube">
             <img src={youtube} className="" alt="Youtube logo" />
+          </a>
+          <a href="https://www.tiktok.com/@jmrvisaservices" className="social_link social_link-tt" alt="Tik Tok">
+            <img src={tiktok} className="" alt="TikTok logo" />
           </a>
         </div>
         <div className="footer_email">
