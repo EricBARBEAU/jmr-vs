@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.23a3ac08.css",
-    "main.js": "/static/js/main.2c2018a3.js",
+    "main.css": "/static/css/main.7b46f099.css",
+    "main.js": "/static/js/main.fb5fc4f1.js",
     "static/js/845.e61d76ce.chunk.js": "/static/js/845.e61d76ce.chunk.js",
     "static/media/about_id-picture@2x.png": "/static/media/about_id-picture@2x.dfb221b8401ee7ed076c.png",
     "static/media/about_id-background@2x.png": "/static/media/about_id-background@2x.f1a20b8520dd3ad22270.png",
@@ -20,6 +20,7 @@
     "static/media/contact_bg.svg": "/static/media/contact_bg.68ac066641d5bb76ee96.svg",
     "static/media/jmr-logo_ondark.svg": "/static/media/jmr-logo_ondark.528a6bfa773e6cb60db499d3bc054313.svg",
     "static/media/logo_footer-instagram.svg": "/static/media/logo_footer-instagram.f0858c95e674a0145803c1bf9a68995e.svg",
+    "static/media/logo_footer-tiktok.svg": "/static/media/logo_footer-tiktok.abea7a7f9150bf944122976fb41f8cca.svg",
     "index.html": "/index.html",
     "static/media/map_pointer-icon.svg": "/static/media/map_pointer-icon.c0efbf5518aa627d5c57.svg",
     "static/media/logo_footer-youtube.svg": "/static/media/logo_footer-youtube.4e5aae00194e64847608819af2f79f02.svg",
@@ -34,12 +35,12 @@
     "static/media/services_tick-icon_yellow.svg": "/static/media/services_tick-icon_yellow.ecbf3dcd715225e5e9a7.svg",
     "static/media/form_tick-icon_green.svg": "/static/media/form_tick-icon_green.8f1fc8fd96caa5ac1efe.svg",
     "static/media/tick_icon-white.svg": "/static/media/tick_icon-white.bd17b374670344a0788d.svg",
-    "main.23a3ac08.css.map": "/static/css/main.23a3ac08.css.map",
-    "main.2c2018a3.js.map": "/static/js/main.2c2018a3.js.map",
+    "main.7b46f099.css.map": "/static/css/main.7b46f099.css.map",
+    "main.fb5fc4f1.js.map": "/static/js/main.fb5fc4f1.js.map",
     "845.e61d76ce.chunk.js.map": "/static/js/845.e61d76ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23a3ac08.css",
-    "static/js/main.2c2018a3.js"
+    "static/css/main.7b46f099.css",
+    "static/js/main.fb5fc4f1.js"
   ]
 }
