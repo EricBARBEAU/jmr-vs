@@ -108,7 +108,7 @@ function ServicesQuotation() {
                   onChange={e => {}} {...register("service_selection", { required: true })}  />
                 
                 <div className="radio-label">
-                  <label className="label-main" for="service-packages">Visa service packages</label>
+                  <label className="label-main" htmlFor="service-packages">Visa service packages</label>
                   <span className="label-secondary">Our complete assistance</span>
                 </div>
               </div>
@@ -123,7 +123,7 @@ function ServicesQuotation() {
                   onChange={e => {}} {...register("service_selection", { required: true })} />
                
                 <div className="radio-label">
-                  <label className="label-main" for="consultation-calls">Consultation calls</label>
+                  <label className="label-main" htmlFor="consultation-calls">Consultation calls</label>
                   <span className="label-secondary">Professional advices</span>
                 </div>
               </div>
@@ -138,7 +138,7 @@ function ServicesQuotation() {
                   onChange={e => {}} {...register("service_selection", { required: true })} />
                 
                 <div className="radio-label">
-                  <label className="label-main" for="letter-services">Letter services</label>
+                  <label className="label-main" htmlFor="letter-services">Letter services</label>
                   <span className="label-secondary">Power up your application</span>
                 </div>
               </div>
@@ -153,7 +153,7 @@ function ServicesQuotation() {
                   onChange={e => {}} {...register("service_selection", { required: true })} />
                 
                 <div className="radio-label">
-                  <label className="label-main" for="flight-reservation">Flight/hotel reservations</label>
+                  <label className="label-main" htmlFor="flight-reservation">Flight/hotel reservations</label>
                   <span className="label-secondary">Avoid unnecessary expenses</span>
                 </div>
               </div>
@@ -168,7 +168,7 @@ function ServicesQuotation() {
                   onChange={e => {}} {...register("service_selection", { required: true })} />
                 
                 <div className="radio-label">
-                  <label className="label-main" for="appointment-scheduling">Appointment scheduling</label>
+                  <label className="label-main" htmlFor="appointment-scheduling">Appointment scheduling</label>
                   <span className="label-secondary">Administrative support</span>
                 </div>
               </div>
@@ -183,7 +183,7 @@ function ServicesQuotation() {
                   onChange={e => {}} {...register("service_selection", { required: true })} />
                 
                 <div className="radio-label">
-                  <label className="label-main" for="general-information">General information</label>
+                  <label className="label-main" htmlFor="general-information">General information</label>
                   <span className="label-secondary">You’re not sure yet</span>
                 </div>
               </div>
@@ -208,7 +208,7 @@ function ServicesQuotation() {
                       name="visa-radio" value="Tourist visa" 
                       {...register("package_selection", { required: true })} />
                     <div className="radio-label">
-                      <label className="label-main" for="tourist-visa">Tourist visa</label>
+                      <label className="label-main" htmlFor="tourist-visa">Tourist visa</label>
                       <span className="label-secondary">Self-funded</span>
                     </div>
                   </div>
@@ -219,7 +219,7 @@ function ServicesQuotation() {
                       name="visa-radio" value="Visit visa" 
                       {...register("package_selection", { required: true })} />
                     <div className="radio-label">
-                      <label className="label-main" for="visit-visa">Visit visa</label>
+                      <label className="label-main" htmlFor="visit-visa">Visit visa</label>
                       <span className="label-secondary">Sponsored</span>
                     </div>
                   </div>
@@ -230,7 +230,7 @@ function ServicesQuotation() {
                       name="visa-radio" value="Marriage/Fiancé visa" 
                       {...register("package_selection", { required: true })} />
                     <div className="radio-label">
-                      <label className="label-main" for="marriage-visa">Marriage/Fiancé visa</label>
+                      <label className="label-main" htmlFor="marriage-visa">Marriage/Fiancé visa</label>
                       <span className="label-secondary">Getting married</span>
                     </div>
                   </div>
@@ -241,7 +241,7 @@ function ServicesQuotation() {
                       name="visa-radio" value="Long Stay visa" 
                       {...register("package_selection", { required: true })} />
                     <div className="radio-label">
-                      <label className="label-main" for="longstay-visa">Long Stay visa</label>
+                      <label className="label-main" htmlFor="longstay-visa">Long Stay visa</label>
                       <span className="label-secondary">Settling down</span>
                     </div>
                   </div>
@@ -268,7 +268,7 @@ function ServicesQuotation() {
                       name="letter-checkbox" value="Cover letter" 
                       {...register("letter_service", { required: true })} />
                     <div className="radio-label">
-                      <label className="label-main" for="cover-letter">Cover letter</label>
+                      <label className="label-main" htmlFor="cover-letter">Cover letter</label>
                     </div>
                   </div>
 
@@ -278,7 +278,7 @@ function ServicesQuotation() {
                       name="letter-checkbox" value="Invitation letter" 
                       {...register("letter_service", { required: true })} />
                     <div className="radio-label">
-                      <label className="label-main" for="invitation-letter">Invitation letter</label>
+                      <label className="label-main" htmlFor="invitation-letter">Invitation letter</label>
                     </div>
                   </div>
 
@@ -288,7 +288,7 @@ function ServicesQuotation() {
                       name="letter-checkbox" value="Sponsorship letter" 
                       {...register("letter_service", { required: true })} />
                     <div className="radio-label">
-                      <label className="label-main" for="sponsorship-letter">Sponsorship letter</label>
+                      <label className="label-main" htmlFor="sponsorship-letter">Sponsorship letter</label>
                     </div>
                   </div>
 
@@ -298,7 +298,7 @@ function ServicesQuotation() {
                       name="letter-checkbox" value="Day-to-day itinerary" 
                       {...register("letter_service", { required: true })} />
                     <div className="radio-label">
-                      <label className="label-main" for="itinerary">Day-to-day itinerary</label>
+                      <label className="label-main" htmlFor="itinerary">Day-to-day itinerary</label>
                     </div>
                   </div>
 
@@ -320,7 +320,7 @@ function ServicesQuotation() {
                       name="letter-checkbox" value="Flight reservation" 
                       {...register("flight_hotel", { required: true })} />
                     <div className="radio-label">
-                      <label className="label-main" for="flight-reservation">Flight reservation</label>
+                      <label className="label-main" htmlFor="flight-reservation">Flight reservation</label>
                     </div>
                   </div>
 
@@ -330,7 +330,7 @@ function ServicesQuotation() {
                       name="letter-checkbox" value="Hotel reservation" 
                       {...register("flight_hotel", { required: true })} />
                     <div className="radio-label">
-                      <label className="label-main" for="hotel-reservation">Hotel reservation</label>
+                      <label className="label-main" htmlFor="hotel-reservation">Hotel reservation</label>
                     </div>
                   </div>
 
@@ -352,7 +352,7 @@ function ServicesQuotation() {
           {/*Textarea input - Not mandatory*/}
           <div className="form-input form-input_textarea">
               <span className="input-label">Tell us more about your needs (Optional)</span>
-              <textarea className="input-body" placeholder="Your message here" maxlength="400" 
+              <textarea className="input-body" placeholder="Your message here" maxLength="400" 
                 {...register("message", 
                 { required: false })} >
               </textarea>

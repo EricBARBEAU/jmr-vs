@@ -4,7 +4,7 @@ function ServicesTable() {
   return (
     <div className="services_table">
     	{data.map((item) => (
-			<div className="services_table-section" id={item.id}>
+			<div className="services_table-section" key={item.id} id={item.id}>
 				<div className="table_top">
 					<div className="table_title">
 						<div className="table_title-label">{item.title}</div>

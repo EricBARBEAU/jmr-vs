@@ -7,7 +7,7 @@ function ProcessContent() {
 
     	{/*Process Steps*/}
     	{data.map((item) => (
-				<div className={item.id}>
+				<div className={item.id} key={item.id}>
 					<div className="step_visual" alt={item.alt} ></div>
 					<div className="step_content">
 						<div className="step_content-title">

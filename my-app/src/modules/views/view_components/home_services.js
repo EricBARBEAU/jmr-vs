@@ -8,7 +8,7 @@ function HomeServices() {
   return (
     <div className="content_blk home_services ctnr_cntr">
     	<div className="intro home_intro">
-        <h2 className="intro_title">Our Schengen visa services</h2>
+        <h2 className="intro_title">Schengen visa services</h2>
         <div className="intro_subtitle">
           From our comprehensive solution that supports you through 
           the entire visa application process to our one-time letter 
@@ -20,7 +20,7 @@ function HomeServices() {
       <div className="home_services-grid">
         <div className="grid_blk grid_blk-01">
           <div className="grid_blk-visual">
-            <img src={services_visual_01} alt="Visa service packages" />
+            <img src={services_visual_01} alt="Schengen Visa service packages for Filipinos" />
           </div>
           <div className="grid_blk-content">
             <h3 className="content_title">Visa service packages</h3>
@@ -37,7 +37,7 @@ function HomeServices() {
         </div>
         <div className="grid_blk grid_blk-02">
           <div className="grid_blk-visual">
-            <img src={services_visual_02} alt="Consultation calls" />
+            <img src={services_visual_02} alt="Schengen Visa consultation calls" />
           </div>
           <div className="grid_blk-content">
             <h3 className="content_title">Consultation calls</h3>
@@ -54,7 +54,7 @@ function HomeServices() {
         </div>
         <div className="grid_blk grid_blk-03">
           <div className="grid_blk-visual">
-            <img src={services_visual_03} alt="Letter services" />
+            <img src={services_visual_03} alt="Schengen Visa letter services" />
           </div>
           <div className="grid_blk-content">
             <h3 className="content_title">Letter services</h3>

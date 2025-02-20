@@ -18,7 +18,7 @@ function ContactHero() {
     		</div>
     	</div>
     	<div className="hero_visual contact_hero-visual">
-    		<img src={hero_visual} alt="Hero visual" />
+    		<img src={hero_visual} alt="Schengen visa assistance for Filipinos" />
     	</div>
     </div>
   );

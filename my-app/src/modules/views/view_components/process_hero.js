@@ -19,7 +19,7 @@ function ProcessHero() {
     		</div>
     	</div>
     	<div className="hero_visual process_hero-visual">
-    		<img src={hero_visual} alt="Hero visual" />
+    		<img src={hero_visual} alt="Step-by-step Schengen visa guide for Filipinos" />
     	</div>
     </div>
   );

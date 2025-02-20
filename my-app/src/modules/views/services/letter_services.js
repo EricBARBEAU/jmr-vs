@@ -11,7 +11,7 @@ function ServicesLetter() {
       <ServicesHero />
       <div className="letter_services ctnr_cntr">
         {data.map((item) => (
-          <div className={item.class}>
+          <div className={item.class} key={item.title}>
             <h3>{item.title}</h3>
             <div className="services_blk-content">
               <p>{item.body_1}</p>

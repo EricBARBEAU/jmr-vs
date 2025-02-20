@@ -94,7 +94,7 @@ function ContactForm() {
           {/*Textarea input - Mandatory*/}
           <div className="form-input form-input_textarea">
               <span className="input-label">Your message *</span>
-              <textarea className="input-body" placeholder="Your message here" maxlength="600" 
+              <textarea className="input-body" placeholder="Your message here" maxLength="600" 
                 {...register("message", 
                 { required: true })} >
               </textarea>
