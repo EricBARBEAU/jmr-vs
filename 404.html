@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta http-equiv="refresh" content="0; url=/" />
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting…</title>
     <script>
-      // Get the pathname and search parameters
-      var path = window.location.pathname + window.location.search;
-
-      // Redirect to the root with the correct path for React Router
-      window.location.replace(path);
+      const redirectTo = window.location.pathname + window.location.search + window.location.hash;
+      sessionStorage.setItem("redirectPath", redirectTo);
+      window.location.replace("/");
     </script>
-</head>
-<body>
-</body>
+  </head>
+  <body>
+    <p>Redirecting…</p>
+  </body>
 </html>
