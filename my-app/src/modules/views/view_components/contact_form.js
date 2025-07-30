@@ -1,5 +1,5 @@
 // Components
-import React from 'react';
+import React, { useEffect } from 'react';
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 
@@ -25,7 +25,7 @@ function ContactForm() {
     await new Promise(resolve => setTimeout(resolve, 2000));
     clientName(`${data.firstname}`);
     emailjs
-      .send("service_kl5d86n", "template_a1r7mg6", emailData, "2AlAPb8LU6099B9e6")
+      .send("service_q4c6e3c", "template_a1r7mg6", emailData, "2AlAPb8LU6099B9e6")
       .then(
         (result) => {
           console.log(result.text);
@@ -38,6 +38,18 @@ function ContactForm() {
     reset();
   };
 
+  // Clear the post-submit state after 3 seconds
+  useEffect(() => {
+    if (SubmitMessage) {
+      const timer = setTimeout(() => {
+        clientName('');
+      }, 4200);
+
+      // Cleanup timeout if component unmounts or message changes
+      return () => clearTimeout(timer);
+    }
+  }, [SubmitMessage]);
+
   return (
     <div className="form_view contact_body ctnr_cntr">
 
@@ -47,7 +59,7 @@ function ContactForm() {
         <form onSubmit={handleSubmit(sendEmail)} className="form contact-form" >
 
           {/*Success*/}
-          {isSubmitSuccessful && 
+          {isSubmitSuccessful && SubmitMessage &&
             <span className="form-success">
             	Thank you <b>{SubmitMessage}</b> for your request. We will get back to you within 2 working days.
             </span>

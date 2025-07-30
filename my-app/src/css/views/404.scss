@@ -1,0 +1,54 @@
+// Import core
+@use '../core/main' as core;
+
+.view_404 {
+
+	// Main container
+	.f0f_content {
+		display: flex;
+		flex-direction: row;
+		gap: 50px;
+		align-items: center;
+		justify-content: center;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		background-color: #D8D9FF;
+
+		@media screen and (max-width: 860px) {
+			flex-direction: column;
+			gap: 40px;
+		}
+
+		// Image
+		.visual {
+			height: 320px;
+
+			@media screen and (max-width: 860px) {
+				height: 200px;
+			}
+		}
+
+		.content_text {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+
+			@media screen and (max-width: 860px) {
+				text-align: center;
+			}
+
+			h1 {
+				color: core.$font-color-dark;
+			}
+			p {
+				font-size: core.$font-size-16;
+				color: core.$font-color-reg;
+
+				code {
+					font-weight: 600;
+					color: core.$colour-jmr-blue;
+				}
+			}
+		}
+	}
+}

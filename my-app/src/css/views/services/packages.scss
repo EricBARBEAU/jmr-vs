@@ -341,7 +341,7 @@
 					&:before {
 						content: url("../../../img/services_tick-icon_blue.svg");
 					}
-					&-12, &-13 {
+					&-04, &-12, &-13 {
 						display: none;
 					}
 				}
@@ -409,7 +409,7 @@
 						content: url("../../../img/services_tick-icon_red.svg");
 					}
 
-					&-12, &-13 {
+					&-04, &-12, &-13 {
 						display: none;
 					}
 
@@ -468,6 +468,9 @@
 					&:before {
 						content: url("../../../img/services_tick-icon_yellow.svg");
 					}
+					&-04 {
+						display: none;
+					}
 					&-12 {
 						letter-spacing: -0.04rem;
 					}
@@ -521,19 +524,19 @@
 				border-image: linear-gradient(to bottom, rgb(210.00000268220901, 240.00000089406967, 248.0000004172325), rgb(233.00000131130219, 250.00000029802322, 255)) 1;
 
 				@media screen and (min-width: 1140px) {
-					padding-bottom: 185px;
+					padding-bottom: 158px;
 				}
 				@media screen and (min-width: 1060px) and (max-width: 1140px) {
-					padding-bottom: 198px;
+					padding-bottom: 170px;
 				}
 				@media screen and (min-width: 980px) and (max-width: 1060px) {
-					padding-bottom: 187px;
+					padding-bottom: 162px;
 				}
 				@media screen and (max-width: 860px) {
-					padding-bottom: 163px;
+					padding-bottom: 138px;
 				}
 				@media screen and (max-width: 692px) {
-					padding-bottom: 175px;
+					padding-bottom: 150px;
 				}
 				@media screen and (max-width: 520px) {
 					padding-bottom: 40px;

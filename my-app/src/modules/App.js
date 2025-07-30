@@ -1,6 +1,6 @@
 // React stuff
 import React, { useState } from "react";
-import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 // Elements import
 import ScrollToTop from './functions/scroll-top';
 import Nav from './elements/navbar';
@@ -21,6 +21,8 @@ import ServicesCalls from './views/services/consultation_calls';
 import ServicesLetter from './views/services/letter_services';
 import ServicesReservations from './views/services/reservations';
 import ServicesAppointment from './views/services/appointment_scheduling';
+// View - 404
+import FourZeroFour from './views/404';
 
 
 function App() {
@@ -31,9 +33,16 @@ function App() {
         setIsSidebarOpen(!isSidebarOpen);
     };
 
+    // Redirection when 404
+    const redirectPath = sessionStorage.getItem("redirectPath");
+    if (redirectPath) {
+      sessionStorage.removeItem("redirectPath");
+      window.history.replaceState(null, "", redirectPath);
+    }
+
     return (
       <div className="App">
-        <HashRouter>
+        <BrowserRouter>
             <ScrollToTop />
             <MobileNav isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
             <Nav toggleSidebar={toggleSidebar} />
@@ -51,11 +60,12 @@ function App() {
                     <Route path="testimonials" element={<Testimonials />} />
                     <Route path="about-us" element={<About />} />
                     <Route path="contact" element={<Contact />} />
+                    {/*404*/}
                     <Route path="*" element={<NotFound />} />
                 </Route>
             </Routes>
             <Footer />
-        </HashRouter>
+        </BrowserRouter>
       </div>
     );
 }
@@ -64,10 +74,9 @@ function NotFound() {
     const location = useLocation();
 
     return (
-        <div>
-            <h1>404 - Page Not Found</h1>
-            <p>No match for <code>{location.pathname}</code></p>
-        </div>
+        <FourZeroFour
+          location={location}
+        />
     );
 }
 

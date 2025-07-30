@@ -1,5 +1,6 @@
 // Components
-import React from 'react';
+import React, { useEffect } from 'react';
+import { getNames } from "country-list";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 
@@ -13,26 +14,58 @@ function ServicesQuotation() {
 
   const [SubmitMessage, clientName] = React.useState('');
 
+  // Countries for the dropdown
+  let countries = getNames();
+
+  // Filter them
+  const excludedCountries = ["Israel", "North Korea", "Saudi Arabia"]; 
+  countries = countries.filter(country => !excludedCountries.includes(country));
+
+  // Order alphabetically
+  countries.sort();
+
   const sendEmail = async data => {
 
     const emailData = {
       user_name: data.name,
       user_email: data.email,
       service_selected: data.service_selection,
-      service_package: data.package_selection,
-      letter_service: data.letter_service,
-      flight_hotel: data.flight_hotel,
       message: data.message
     };
+
+    // Only display the selected sub-service with matching intro
+    if (data.service_selection === "Visa service packages") {
+      emailData.sub_intro = "Package selected";
+      emailData.sub_service = data.package_selection;
+    }
+    if (data.service_selection === "Letter services") {
+      emailData.sub_intro = "Letter service selected";
+      emailData.sub_service = data.letter_service;
+    }
+    if (data.service_selection === "Flight/hotel reservations") {
+      emailData.sub_intro = "Choice made";
+      emailData.sub_service = data.flight_hotel;
+    }
+
+    // Only use country when it exists
+    if (data.country) {
+      emailData.country = data.country;
+    } else {
+      emailData.country = "Not informed";
+    }
 
     await new Promise(resolve => setTimeout(resolve, 2000));
     clientName(`${data.name}`);
     emailjs
-      .send("service_kl5d86n", "template_q09msrq", emailData, "2AlAPb8LU6099B9e6")
+      .send(
+        "service_q4c6e3c", 
+        "template_q09msrq", 
+        emailData, 
+        "2AlAPb8LU6099B9e6"
+      )
       .then(
         (result) => {
           console.log(result.text);
-          // console.log(data);
         },
         (error) => {
           console.log(error.text);
@@ -42,10 +75,30 @@ function ServicesQuotation() {
   };
 
   const [status, setStatus] = React.useState(0); 
-  // 0: no show // 1: service packages // 2: consultation calls // 3: letter services // 4: flight/hotel reservation // 5: show appointment scheduling // 6: show general information
+  // 0: no show 
+  // 1: service packages 
+  // 2: consultation calls 
+  // 3: letter services 
+  // 4: flight/hotel reservation 
+  // 5: show appointment scheduling 
+  // 6: show general information
   const radioHandler = (status) => {
     setStatus(status);
   };
+
+  // Clear the post-submit state after 3 seconds
+  useEffect(() => {
+    if (SubmitMessage) {
+      const timer = setTimeout(() => {
+        clientName('');
+      }, 4200);
+
+      // Cleanup timeout if component unmounts or message changes
+      return () => clearTimeout(timer);
+    }
+  }, [SubmitMessage]);
+
+  console.log(status);
 
   return (
     <div className="form_view services_quotation ctnr_cntr">
@@ -62,7 +115,7 @@ function ServicesQuotation() {
         <form onSubmit={handleSubmit(sendEmail)} className="form quotation-form" >
 
           {/*Success*/}
-          {isSubmitSuccessful && 
+          {isSubmitSuccessful && SubmitMessage &&
             <span className="form-success">
             Thank you <b>{SubmitMessage}</b> for your request. We will get back to you within 2 working days.
             </span>
@@ -343,11 +396,41 @@ function ServicesQuotation() {
             {status===5 && 
               <div></div>
             }
-            {/* 6 - Appointment scheduling*/}
+            {/* 6 - General information*/}
             {status===6 && 
               <div></div>
             }
           </div>
+
+          {/*Country input - When not general information*/}
+          {(status !== 0 && status !== 6) && (
+
+            <div className="form-input form-input_country">
+              <span className="input-label">Destination country *</span>
+              <select
+                name="country"
+                className="input-body"
+                {...register("country", {
+                  required: true,
+                  validate: (value) => countries.includes(value),
+                })}
+              >
+                <option value="">Select a country</option>
+                {countries.map((country) => (
+                  <option key={country} value={country}>
+                    {country}
+                  </option>
+                ))}
+              </select>
+
+              {/* Errors */}
+              {errors.country && <span className="input-error">This field is required</span>}
+              {errors?.country?.type === "validate" && (
+                <span className="input-error">Please enter a valid country</span>
+              )}
+            </div>
+
+          )}
 
           {/*Textarea input - Not mandatory*/}
           <div className="form-input form-input_textarea">
