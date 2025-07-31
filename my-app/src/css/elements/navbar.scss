@@ -58,38 +58,65 @@
 		@media screen and (max-width: 1000px) {
 			max-width: 80vw;
 	    }
-		@media screen and (max-width: 680px) {
+		@media screen and (max-width: 780px) {
 	      display: none;
 	    }
 
 		// Menu item
 		&-item {
-
 			padding: 8px;
-			border-radius: 8px;
+
 
 			a {
 				font-size: core.$font-size-16;
-				padding: 8px;
-				border-radius: 8px;
+
+				// Transition
+				transition: all .2s ease-in-out;
 
 				@media screen and (max-width: 1000px) {
 					font-size: core.$font-size-14;
 					padding: 6px;
-					border-radius: 6px;
 			    }
 
+			    &.active {
+			    	font-weight: 500;
+			    }
+			}
+		}
+		&-item:not(.navbar_menu-item--contact) {
+
+			border-radius: 8px;
+
+			a {
+				padding: 8px;
+				border-radius: 8px;
+
+				@media screen and (max-width: 1000px) {
+					border-radius: 6px;
+			    }
 				// Hover & Active
-				&:hover, &:active, &:focus {
+				&:hover, &:active, &:focus, &.active {
 					background-color: #F7F7FD;
-				}
-				&.active {
-					background-color: #F7F7FD;
-					font-weight: 500;
 				}
 			}
 		}
-	}
+		&-item--contact {
+			border-radius: 20px;
+			margin-left: 20px;
+
+			a {
+				padding: 8px 12px;
+				border-radius: 20px;
+				background-color: core.$colour-jmr-blue;
+				color: #fff;
+
+				// Hover & Active
+				&:hover, &:active, &:focus, &.active {
+					background-color: #696EFF;
+				}
+			}
+		}
+	}	
 
 	// Mobile menu (hamburger)
 	.mobile_menu-cta {
@@ -102,7 +129,7 @@
 			background-color: #F5F5F5;
 		}
 
-		@media screen and (min-width: 680px) {
+		@media screen and (min-width: 780px) {
 	      display: none;
 	    }
 	}

@@ -9,11 +9,11 @@ import Footer from './elements/footer';
 // Views import
 import Layout from './views/_layout';
 import Home from './views/home';
-// import Services from './views/services';
 import Process from './views/process';
 import Testimonials from './views/testimonials';
 import About from './views/about';
 import Contact from './views/contact';
+import Videos from './views/videos';
 // Services views
 import ServicesLayout from './views/services/_layout';
 import ServicesPackages from './views/services/service_packages';
@@ -59,6 +59,7 @@ function App() {
                     <Route path="our-process" element={<Process />} />
                     <Route path="testimonials" element={<Testimonials />} />
                     <Route path="about-us" element={<About />} />
+                    <Route path="videos" element={<Videos />} />
                     <Route path="contact" element={<Contact />} />
                     {/*404*/}
                     <Route path="*" element={<NotFound />} />

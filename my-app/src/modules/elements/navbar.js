@@ -22,6 +22,9 @@ function Nav({ toggleSidebar }) {
 				<li className="navbar_menu-item navbar_menu-item--about" >
 					<NavLink to="/about-us" alt="About us">About us</NavLink>
 				</li>
+				<li className="navbar_menu-item navbar_menu-item--videos" >
+					<NavLink to="/videos" alt="Videos">Videos</NavLink>
+				</li>
 				<li className="navbar_menu-item navbar_menu-item--contact" >
 					<NavLink to="/contact" alt="Contact">Contact</NavLink>
 				</li>

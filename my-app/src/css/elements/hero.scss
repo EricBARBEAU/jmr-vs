@@ -629,3 +629,43 @@
 	}
 }
 
+// 07 - Videos page hero
+.video_hero {
+	gap: 60px;
+	min-height: 460px;
+	background: linear-gradient(280deg, rgba(255, 171, 86, 1) 0%, rgba(255, 177, 81, 1) 17.499999701976776%, rgba(255, 147, 59, 1) 88.49999904632568%);
+	padding-top: 100px;
+	padding-bottom: 80px;
+	overflow: hidden;
+
+	@media screen and (max-width: 820px) {
+
+		padding-bottom: 80px !important;
+
+		.hero_content {
+			background: linear-gradient(280deg,rgba(255, 171, 86, 0.29),rgba(255, 177, 81, 0.2),rgba(255, 147, 59, 0.19));
+		}
+		.hero_visual {
+			width: 360px !important;
+			bottom: -7px;
+    	right: calc(50% - 180px);
+		}
+	}
+
+	// Content
+	.content_copy-secondary {
+		color: #FFEAD4;
+	}
+
+	// Visual (Right)
+	&-visual {
+
+		width: 24vw !important;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+	}
+}

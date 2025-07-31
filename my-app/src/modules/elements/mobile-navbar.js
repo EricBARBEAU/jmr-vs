@@ -21,6 +21,9 @@ function MobileNav({ isSidebarOpen, toggleSidebar }) {
 						<Link to="/about-us" alt="About us" onClick={toggleSidebar}>About us</Link>
 					</li>
 					<li className="mobile_nav-link" >
+						<Link to="/videos" alt="Videos" onClick={toggleSidebar}>Videos</Link>
+					</li>
+					<li className="mobile_nav-link" >
 						<Link to="/contact" alt="Contact" onClick={toggleSidebar}>Contact</Link>
 					</li>
 				</ul>

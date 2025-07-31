@@ -40,10 +40,11 @@ function Footer() {
         </div>
       </div>
       <div className="footer_blk footer_blk-03">
-        <Link className="footer_blk-title" to="/our-process" alt ="Visa types">Our process</Link>
-        <Link className="footer_blk-title" to="/testimonials" alt ="Visa types">Testimonials</Link>
-        <Link className="footer_blk-title" to="/about-us" alt ="Visa types">About us</Link>
-        <Link className="footer_blk-title" to="/contact" alt ="Visa types">Contact</Link>
+        <Link className="footer_blk-title" to="/our-process" alt ="Our process">Our process</Link>
+        <Link className="footer_blk-title" to="/testimonials" alt ="Testimonials">Testimonials</Link>
+        <Link className="footer_blk-title" to="/about-us" alt ="About us">About us</Link>
+        <Link className="footer_blk-title" to="/videos" alt ="Videos">Videos</Link>
+        <Link className="footer_blk-title" to="/contact" alt ="Contact">Contact</Link>
       </div>
       <div className="footer_blk footer_blk-04">
         <h4 className="footer_blk-title">Legal informations</h4>
