@@ -19,10 +19,10 @@ function VideoContent() {
               <h2 className="intro_title">Schengen visa guide and tips for Filipinos</h2>
               <div className="intro_subtitle">
                 <p>
-                  Learn how to confidently pass through Philippine immigration with ease.
+                  A step-by-step guide to help Filipinos apply for a Schengen visa successfully.
                 </p>
                 <p>
-                  This guide includes practical tips to avoid offloading and ensure a smooth departure.
+                  Includes requirements, tips, and common mistakes to avoid during the process.
                 </p>
               </div>
             </div>
@@ -70,10 +70,10 @@ function VideoContent() {
               <h2 className="intro_title">JMR Philippine immigration tips and guide</h2>
               <div className="intro_subtitle">
                 <p>
-                  A step-by-step guide to help Filipinos apply for a Schengen visa successfully.
+                  Learn how to confidently pass through Philippine immigration with ease.
                 </p>
                 <p>
-                  Includes requirements, tips, and common mistakes to avoid during the process.
+                  This guide includes practical tips to avoid offloading and ensure a smooth departure.
                 </p>
               </div>
             </div>
