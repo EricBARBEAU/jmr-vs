@@ -21,6 +21,9 @@ import ServicesCalls from './views/services/consultation_calls';
 import ServicesLetter from './views/services/letter_services';
 import ServicesReservations from './views/services/reservations';
 import ServicesAppointment from './views/services/appointment_scheduling';
+// Legal
+import LegalNotice from './views/legal/legal_notice';
+import PrivacyPolicy from './views/legal/privacy_policy';
 // View - 404
 import FourZeroFour from './views/404';
 
@@ -61,6 +64,9 @@ function App() {
                     <Route path="about-us" element={<About />} />
                     <Route path="videos" element={<Videos />} />
                     <Route path="contact" element={<Contact />} />
+                    {/*Legal*/}
+                    <Route path="legal-notice" element={<LegalNotice />} />
+                    <Route path="privacy-policy" element={<PrivacyPolicy />} />
                     {/*404*/}
                     <Route path="*" element={<NotFound />} />
                 </Route>

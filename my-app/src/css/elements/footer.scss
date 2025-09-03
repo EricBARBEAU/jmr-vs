@@ -152,28 +152,6 @@
 			grid-area: 2/3/2/5;
 		}
 
-		.footer_blk-content {
-			font-size: core.$font-size-12;
-			line-height: core.$line-height-140;
-
-			@media screen and (max-width: 1180px) {
-				gap: 4px;
-				font-size: core.$font-size-10;
-			}
-
-			b {
-				font-weight: 600;
-				font-size: core.$font-size-14;
-				@media screen and (max-width: 1180px) {
-					gap: 4px;
-					font-size: core.$font-size-12;
-				}
-				@media screen and (max-width: 680px) {
-					font-size: core.$font-size-10;
-				}
-			}
-		}
-
 		.footer_legal {
 			color: #fff;
 			font-size: core.$font-size-10;

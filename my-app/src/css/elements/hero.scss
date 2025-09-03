@@ -669,3 +669,53 @@
 
 	}
 }
+
+// 08 - Legal pages hero
+.legal_hero {
+	gap: 40px;
+	min-height: 300px;
+	background: #f4f4f4;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	justify-content: flex-start;
+
+	.hero_content {
+		width: 100%;
+
+		.content_copy {
+			color: core.$font-color-dark;
+			width: 100%;
+
+			b {
+				color: core.$font-color-dark !important;
+			}
+
+			&-secondary {
+
+				display: flex;
+				flex-direction: column;
+				gap: 12px;
+
+				// Last updated zone
+				.last_update {
+
+					display: flex;
+					flex-direction: row;
+					gap: 8px;
+					font-size: core.$font-size-16;
+					align-items: center;
+					color: rgba(0,0,0,0.6);
+
+					span {
+						font-size: core.$font-size-12;
+						font-weight: 800;
+						color: #fff;
+						padding: 2px 6px;
+						border-radius: 4px;
+						background-color: core.$colour-jmr-blue;
+					}
+				}
+			}
+		}
+	}
+}

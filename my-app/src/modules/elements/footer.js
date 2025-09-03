@@ -47,15 +47,10 @@ function Footer() {
         <Link className="footer_blk-title" to="/contact" alt ="Contact">Contact</Link>
       </div>
       <div className="footer_blk footer_blk-04">
-        <h4 className="footer_blk-title">Legal informations</h4>
+        <h4 className="footer_blk-title">Legal information</h4>
         <div className="footer_blk-content">
-          <div>
-            Business name registered under the Department of Trade and 
-            Industry of the Philippines.
-          </div>
-          <div>
-            Registration number: <b>6482135</b>
-          </div>
+          <Link to="/legal-notice" alt ="Legal notice">Legal notice</Link>
+          <Link to="/privacy-policy" alt ="Privacy policy">Privacy policy</Link>
         </div>
         <div className="footer_legal">
           2025 · All Rights Reserved. 
