@@ -37,8 +37,8 @@ function LegalNotice() {
     			<div className="legal_blk">
     				<h3 className="title">Website hosting provider</h3>
     				<ul className="body">
-    					<li><b>Name:</b> Canva</li>
-    					<li><b>Address:</b> Canva Pty Ltd 110 Kippax St Surry Hills 2010 AU</li>
+    					<li><b>Name:</b> Cloudflare, Inc.</li>
+    					<li><b>Address:</b> 101 Townsend St, San Francisco, CA 94107, USA</li>
     				</ul>
     			</div>
     			<div className="legal_blk">
