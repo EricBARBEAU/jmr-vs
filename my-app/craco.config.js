@@ -5,7 +5,12 @@ module.exports = {
     },
   },
   webpackDevServer: {
-    // Customize Webpack Dev Server config if needed
+    client: {
+      overlay: {
+        errors: false,
+        warnings: false,
+      },
+    },
     setupMiddlewares: (middlewares, devServer) => {
       // Add custom middlewares if needed
       return middlewares;

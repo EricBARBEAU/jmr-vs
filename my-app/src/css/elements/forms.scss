@@ -170,6 +170,11 @@
 				gap: 20px;
 				width: 100%;
 				font-size: core.$font-size-14;
+
+				@media screen and (max-width: 520px) { 
+					flex-direction: column;
+					gap: 10px;
+				}
 			}
 
 			// Form success

@@ -19,6 +19,7 @@ function ContactForm() {
       first_name: data.firstname,
       last_name: data.lastname,
       email: data.email,
+      phone: data.phone,
       message: data.message
     };
 
@@ -91,16 +92,30 @@ function ContactForm() {
 	          </div>
           </div>
 
-          {/*Email input - Mandatory*/}
-          <div className="form-input form-input_email">
-            <span className="input-label">Email *</span>
-            <input name="email"
-              className="input-body" 
-              {...register("email", 
-              { required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i })} />
-            {/*Errors*/}
-            {errors.email && <span className="input-error">This field is required</span>}
-            {errors?.email?.type === "pattern" && (<span className="input-error">Please enter a valid email</span>)}
+          <div className="double-input">
+            {/*Email input - Mandatory*/}
+            <div className="form-input form-input_email">
+              <span className="input-label">Email *</span>
+              <input name="email"
+                className="input-body" 
+                {...register("email", 
+                { required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i })} />
+              {/*Errors*/}
+              {errors.email && <span className="input-error">This field is required</span>}
+              {errors?.email?.type === "pattern" && (<span className="input-error">Please enter a valid email</span>)}
+            </div>
+
+            {/*Phone input - Not Mandatory*/}
+            <div className="form-input form-input_phone">
+              <span className="input-label">Phone number (WhatsApp)</span>
+              <input name="phone"
+                className="input-body" 
+                {...register("phone", 
+                { required: false, pattern: /^\+?[0-9\s\-()]+$/i })} 
+              />
+              {/*Errors*/}
+              {errors?.phone?.type === "pattern" && (<span className="input-error">Please enter a valid phone number</span>)}
+            </div>
           </div>
 
           {/*Textarea input - Mandatory*/}
