@@ -20,12 +20,12 @@ function AboutHero() {
     				  Visa approval rate
             </div>
             <div className="secondary">  
-					    (May 2025)
+					    (Feb 2026)
             </div>
     			</div>
     			<div className="approval_rate-chart">
             <div className="chart">
-              <CountUp start={0} end={95} duration={2.5}/>%
+              <CountUp start={0} end={97} duration={2.5}/>%
             </div>
     			</div>
     		</div>

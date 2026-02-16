@@ -53,7 +53,7 @@ function Footer() {
           <Link to="/privacy-policy" alt ="Privacy policy">Privacy policy</Link>
         </div>
         <div className="footer_legal">
-          2025 · All Rights Reserved. 
+          2026 · All Rights Reserved. 
         </div>
       </div>
       <div className="footer-bg"></div>
