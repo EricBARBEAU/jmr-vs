@@ -4,20 +4,16 @@ function AboutContent() {
     <div className="about_content">
     	<div className="content_blk ctnr_cntr">
 			<div className="intro about_intro">
-				<h2 className="intro_title">Thriving to help others follow their dreams</h2>
+				<h2 className="intro_title">Our mission: Helping Filipinos follow their dreams</h2>
 				<div className="intro_subtitle">
-					Behind JMR Visa Services is Jill who’s learnt the 
-					hard way that travelling to Europe is not always 
-					an easy and relaxing process. After facing a rejected 
-					visa demand, stress and confusion regarding the whole 
-					visa demand process, she started digging around 
-					for all the information she could find about the 
-					application process. 
+					For many Filipinos, Europe can feel distant and complicated. 
+					JMR Visa Services started to exist to change that. 
+					Working closely with you to make European travel and migration accessible, 
+					transparent, and achievable, so every journey starts with clarity and confidence.
 				</div>
 				<div className="intro_subtitle">
-					Five years later, Jill helped more than 100 Filipinos 
-					follow their dreams and travel to Europe using her skills 
-					and knowledge.
+					We do this through honest guidance, professional care, 
+					and the belief that every European dream is valid, no matter where we come from.
 				</div>
 			</div>
 		</div>
@@ -64,20 +60,19 @@ function AboutContent() {
 				<h2>Hello!</h2>
 				<div className="about_copy">
 					<div className="about_copy-par">
-						I’m <b>Jill</b>, the smiling face behind JMR Visa Services.
+						I’m <b>Jill</b>, the smiling face behind <b>JMR Visa Services</b>.
 					</div>
 					<div className="about_copy-par">
-						I am originally from <b>Zamboanga City, Philippines</b>, 
-						and <b>I now reside in France</b>. Five years ago, I never 
-						imagined I would discover a passion for traveling 
-						and exploring the world. 
+						Coming from <b>Zamboanga City</b> in the <b>🇵🇭 Philippines</b> and now living in <b>🇫🇷 France</b>, 
+						my path unfolded in ways I never expected. 
+						Through my own experiences, I developed a strong passion for travel 
+						and <b>a deep understanding of what it means to navigate international journeys</b>.
 					</div>
 					<div className="about_copy-par">
-						Today, I have embraced this passion and <b>developed 
-						a deep love for travel</b>. It’s beyond anything I could 
-						have dreamed of to journey from Southeast Asia to 
-						Europe, experiencing the wonders of different 
-						cultures and places.
+						Today, <b>I bring that experience into my work</b> as a visa consultant and 
+						founder of JMR Visa Services. 
+						<b> I guide Filipinos through Schengen visa applications</b> and Philippine 
+						and European immigration processes with <b>clarity, structure, and genuine care</b>.
 					</div>
 				</div>
 			</div>
