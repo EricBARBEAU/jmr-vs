@@ -16,7 +16,7 @@ function VideoContent() {
         <div className="container">
           <div className="video_blk">
             <div className="intro video_intro">
-              <h2 className="intro_title">Schengen visa guide and tips for Filipinos</h2>
+              <h2 className="intro_title">Schengen visa tips and guides for Filipinos</h2>
               <div className="intro_subtitle">
                 <p>
                   A step-by-step guide to help Filipinos apply for a Schengen visa successfully.
@@ -38,6 +38,9 @@ function VideoContent() {
               </div>
               <div className="video">
                  <YouTube videoId="2gZl2kn1avU" opts={opts} />
+              </div>
+              <div className="video">
+                 <YouTube videoId="21XyTNwuY6g" opts={opts} />
               </div>
             </div>
           </div>
@@ -79,7 +82,7 @@ function VideoContent() {
           </div>
           <div className="video_blk">
             <div className="intro video_intro">
-              <h2 className="intro_title">JMR Philippine immigration tips and guide</h2>
+              <h2 className="intro_title">Philippines immigration departure guides</h2>
               <div className="intro_subtitle">
                 <p>
                   Learn how to confidently pass through Philippine immigration with ease.
@@ -98,9 +101,6 @@ function VideoContent() {
               </div>
               <div className="video">
                  <YouTube videoId="gWvWSGy3grA" opts={opts} />
-              </div>
-              <div className="video">
-                 <YouTube videoId="21XyTNwuY6g" opts={opts} />
               </div>
             </div>
           </div>
