@@ -1,8 +1,9 @@
 // Import visuals
 import payment_method_gcash from '../../../img/home_payment-gcash.png';
-import payment_method_wise from '../../../img/home_payment-wise.png';
+// import payment_method_wise from '../../../img/home_payment-wise.png';
 import payment_method_transfer from '../../../img/home_payment-transfer.png';
-import payment_method_revolut from '../../../img/home_payment-revolut.png';
+// import payment_method_revolut from '../../../img/home_payment-revolut.png';
+import payment_method_shine from '../../../img/home_payment-shine.png';
 
 function HomePaymentMethods() {
   return (
@@ -12,9 +13,8 @@ function HomePaymentMethods() {
     	</div>
     	<div className="home_payments-grid">
     		<img className="payment_method" src={payment_method_gcash} alt="GCash" />
-    		<img className="payment_method" src={payment_method_wise} alt="Wise" />
+    		<img className="payment_method" src={payment_method_shine} alt="Shine" />
     		<img className="payment_method" src={payment_method_transfer} alt="Bank Transfer" />
-    		<img className="payment_method" src={payment_method_revolut} alt="Revolut" />
     	</div>
     </div>
   );
