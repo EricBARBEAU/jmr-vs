@@ -20,22 +20,22 @@ function AboutHero() {
     				  Visa approval rate
             </div>
             <div className="secondary">  
-					    (Feb 2026)
+					    (Jun 2026)
             </div>
     			</div>
     			<div className="approval_rate-chart">
             <div className="chart">
-              <CountUp start={0} end={97} duration={2.5}/>%
+              <CountUp start={0} end={98} duration={2.5}/>%
             </div>
     			</div>
     		</div>
     	</div>
       <div className="hero_legend">
         <div className="main">
-          Sierra Nevada, Spain
+          Vendée, France
         </div>
         <div className="secondary">  
-          October 2024
+          January 2026
         </div>
       </div>
     </div>

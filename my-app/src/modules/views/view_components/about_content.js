@@ -50,7 +50,7 @@ function AboutContent() {
 							</div>
 							<div className="data_column">
 								<span>Success rate</span>
-								<div>97%</div>
+								<div>98%</div>
 							</div>
 						</div>
 					</div>
