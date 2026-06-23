@@ -42,6 +42,12 @@ function VideoContent() {
               <div className="video">
                  <YouTube videoId="21XyTNwuY6g" opts={opts} />
               </div>
+              <div className="video">
+                 <YouTube videoId="H5xIx--Y2BQ" opts={opts} />
+              </div>
+              <div className="video">
+                 <YouTube videoId="gJoinJ2zsFU" opts={opts} />
+              </div>
             </div>
           </div>
           <div className="video_blk">
